@@ -1,0 +1,11 @@
+PORTFÓLIO TCHELO NOGUEIRA — PROTÓTIPO
+
+O site tem grade de 9 projetos e páginas individuais, sem depender do Behance.
+
+Para publicar: extraia este ZIP. No repositório do GitHub, escolha Add file > Upload files e arraste os arquivos index.html, projeto.html, style.css, site.js e a pasta assets (ou seu conteúdo). Confirme o envio. Em Settings > Pages, selecione Deploy from a branch, main, /(root), Save. Aguarde alguns minutos.
+
+Endereço esperado: https://SEU-USUARIO.github.io/tchelo-portfolio/
+
+Imagens: dentro de assets, use nomes como onu-capa.jpg (miniatura), onu-01.jpg (primeira peça), onu-02.jpg (segunda peça). Para filme, onu.mp4. Repita o padrão dos outros projetos. A versão inicial usa espaços reservados, não imagens reais.
+
+Atenção: arquivos de vídeo grandes não são adequados para o GitHub. Posteriormente podemos incorporar vídeos de hospedagem externa. Não publique materiais confidenciais. Os textos e o layout são preliminares.
