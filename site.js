@@ -68,8 +68,9 @@ if (project) {
 
     if (slug === 'onu') {
       media = `
-        <div class="media">
-          <video controls preload="metadata" src="assets/UN%202009.mp4"></video>
+        <div class="media video-with-play">
+          <video preload="metadata" playsinline src="assets/UN%202009.mp4"></video>
+          <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
         </div>
         <div class="media">
           <img src="assets/UNARM%20copy.jpg" alt="ONU — UNARM">
@@ -115,5 +116,26 @@ if (project) {
         <a href="projeto.html?id=${next[0]}">PRÓXIMO PROJETO →</a>
       </nav>
     `;
+  }
+}
+
+// Botão central para iniciar o vídeo; controles aparecem durante a reprodução.
+if (project) {
+  const playButton = project.querySelector('.center-play');
+  const featuredVideo = project.querySelector('.video-with-play video');
+  if (playButton && featuredVideo) {
+    playButton.addEventListener('click', async () => {
+      try {
+        await featuredVideo.play();
+        featuredVideo.controls = true;
+        playButton.hidden = true;
+      } catch (error) {
+        featuredVideo.controls = true;
+      }
+    });
+    featuredVideo.addEventListener('ended', () => {
+      featuredVideo.controls = false;
+      playButton.hidden = false;
+    });
   }
 }
