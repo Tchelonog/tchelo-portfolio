@@ -35,12 +35,18 @@ function cover(p) {
 const grid = document.getElementById('grid');
 
 if (grid) {
-  grid.innerHTML = projects.map(p => `
+  const projectTiles = projects.map(p => `
     <a class="tile" href="projeto.html?id=${p[0]}">
       ${cover(p)}
       <div class="meta">${p[1]}<small>${p[2]}</small></div>
     </a>
-  `).join('');
+  `);
+  const emptyTiles = Array.from({ length: Math.max(0, 24 - projects.length) }, () => `
+    <div class="tile empty-tile" aria-label="Espaço reservado para novo trabalho">
+      <div class="cover"></div>
+    </div>
+  `);
+  grid.innerHTML = [...projectTiles, ...emptyTiles].join('');
 }
 
 // Página individual de cada projeto.
