@@ -13,7 +13,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
-  'onu': '',
+  'onu': 'Campanha para ONU.',
   'gm-oleo': '',
   'hilux': '',
   'hopi-hari': '',
