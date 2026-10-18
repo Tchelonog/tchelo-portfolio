@@ -35,3 +35,8 @@
 .project-media{margin-top:20px!important}
 .contact-details{font-size:18px}
 @media(max-width:530px){.project-head{padding-top:18px!important}.project-head p{font-size:19px!important}.project-media{margin-top:18px!important}.contact-details{font-size:18px}}
+
+/* Ajustes finos de tipografia */
+.project-head p{font-size:16px!important}
+.brand-line .logo{letter-spacing:-.025em!important}
+@media(max-width:530px){.project-head p{font-size:16px!important}.brand-line .logo{letter-spacing:-.025em!important}}
