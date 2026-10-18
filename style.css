@@ -40,3 +40,7 @@
 .project-head p{font-size:16px!important}
 .brand-line .logo{letter-spacing:-.025em!important}
 @media(max-width:530px){.project-head p{font-size:16px!important}.brand-line .logo{letter-spacing:-.025em!important}}
+
+/* Ajuste sutil do espaçamento do nome */
+.brand-line .logo{letter-spacing:-.04em!important}
+@media(max-width:530px){.brand-line .logo{letter-spacing:-.04em!important}}
