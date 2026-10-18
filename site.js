@@ -31,22 +31,133 @@ function cover(p) {
   </div>`;
 }
 
-// Página inicial: grade de trabalhos.
+// Página inicial: 23 thumbnails na ordem numérica definida pelo portfólio.
+// Somente trabalhos com páginas já criadas têm links ativos.
+const thumbnails = [
+  {
+    "image": "assets/01%20hilux%20thumb%20copy.jpg",
+    "title": "Toyota Hilux",
+    "slug": "hilux"
+  },
+  {
+    "image": "assets/02%20oleo%20thumb%20copy.jpg",
+    "title": "General Motors — Óleo",
+    "slug": "gm-oleo"
+  },
+  {
+    "image": "assets/03%20derdic%20thumb%20copy.jpg",
+    "title": "Derdic",
+    "slug": null
+  },
+  {
+    "image": "assets/04%20un%20thumb%20copy.jpg",
+    "title": "ONU",
+    "slug": "onu"
+  },
+  {
+    "image": "assets/05%20coco%20thumb%20copy.jpg",
+    "title": "Cocô de passarinho",
+    "slug": "coco-de-passarinho"
+  },
+  {
+    "image": "assets/06%20corolla%20thumb%20copy.jpg",
+    "title": "Toyota Corolla",
+    "slug": "corolla"
+  },
+  {
+    "image": "assets/07%20escada%20thumb%20copy.jpg",
+    "title": "Hopi Hari — Escada Rolante",
+    "slug": "hopi-hari"
+  },
+  {
+    "image": "assets/08%20metro%20thumb%20copy.jpg",
+    "title": "Metrô",
+    "slug": null
+  },
+  {
+    "image": "assets/09%203m%20thumb%20copy.jpg",
+    "title": "3M — Surround Sound",
+    "slug": "3m"
+  },
+  {
+    "image": "assets/10%20sw4%20thumb%20copy.jpg",
+    "title": "Toyota SW4",
+    "slug": "sw4"
+  },
+  {
+    "image": "assets/11%20santoro%20thumb%20copy.jpg",
+    "title": "Santoro",
+    "slug": null
+  },
+  {
+    "image": "assets/12%20presente%20thumb%20copy.jpg",
+    "title": "Presente",
+    "slug": null
+  },
+  {
+    "image": "assets/13%20judeu%20thumb%20copy.jpg",
+    "title": "Judeu",
+    "slug": null
+  },
+  {
+    "image": "assets/14%20raia%20thumb%20copy.jpg",
+    "title": "Droga Raia",
+    "slug": "droga-raia"
+  },
+  {
+    "image": "assets/15%20walkman%20thumb%20copy.jpg",
+    "title": "Walkman",
+    "slug": null
+  },
+  {
+    "image": "assets/16%20salompas%20thumb%20copy.jpg",
+    "title": "Salompas",
+    "slug": null
+  },
+  {
+    "image": "assets/17%20maestro%20thumb%20copy.jpg",
+    "title": "Maestro",
+    "slug": null
+  },
+  {
+    "image": "assets/18%20ciam%20thumb%20copy.jpg",
+    "title": "CIAM",
+    "slug": null
+  },
+  {
+    "image": "assets/19%20bravia%20thumb%20copy.jpg",
+    "title": "Bravia",
+    "slug": null
+  },
+  {
+    "image": "assets/20%20jimmy%20thumb%20copy.jpg",
+    "title": "Jimmy",
+    "slug": null
+  },
+  {
+    "image": "assets/21%20banana%20thumb%20copy.jpg",
+    "title": "Banana",
+    "slug": null
+  },
+  {
+    "image": "assets/22%20monkey%20thumb%20copy.jpg",
+    "title": "Monkey",
+    "slug": null
+  },
+  {
+    "image": "assets/23%20nota%20escla%20thumb%20copy.jpg",
+    "title": "Nota de esclarecimento",
+    "slug": null
+  }
+];
 const grid = document.getElementById('grid');
-
 if (grid) {
-  const projectTiles = projects.map(p => `
-    <a class="tile" href="projeto.html?id=${p[0]}">
-      ${cover(p)}
-      <div class="meta">${p[1]}<small>${p[2]}</small></div>
-    </a>
-  `);
-  const emptyTiles = Array.from({ length: Math.max(0, 24 - projects.length) }, () => `
-    <div class="tile empty-tile" aria-label="Espaço reservado para novo trabalho">
-      <div class="cover"></div>
-    </div>
-  `);
-  grid.innerHTML = [...projectTiles, ...emptyTiles].join('');
+  grid.innerHTML = thumbnails.map(item => {
+    const image = `<div class="cover"><img src="${item.image}" alt="${item.title}" loading="lazy"></div>`;
+    return item.slug
+      ? `<a class="tile" href="projeto.html?id=${item.slug}" aria-label="${item.title}">${image}</a>`
+      : `<div class="tile" aria-label="${item.title}">${image}</div>`;
+  }).join('');
 }
 
 // Página individual de cada projeto.
