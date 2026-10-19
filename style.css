@@ -92,4 +92,4 @@ body.lightbox-open{overflow:hidden}
 
 /* Sony Microsystem: peça inteira visível na abertura da página */
 .sony-microsystem-media{background:transparent;min-height:0}
-.sony-microsystem-media img{width:auto;max-width:100%;max-height:calc(100vh - 185px);object-fit:contain}
+.sony-microsystem-media img{width:auto;max-width:100%;max-height:calc((100vh - 185px) * 1.15);object-fit:contain}
