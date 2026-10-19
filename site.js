@@ -2,7 +2,6 @@
 const projects = [
   ['sony-microsystem', 'Sony Microsystem', 'Anúncio'],
   ['monkey-cyber-cafe', 'Monkey Cyber Cafe', 'Campanha'],
-  ['molho-jimmi', 'Molho Jimmi', 'Campanha impressa'],
   ['sony-bravia', 'Sony Bravia', 'Anúncio'],
   ['ciam', 'CIAM', 'Campanha'],
   ['salompas', 'Salompas — Pescoço', 'Filme'],
@@ -26,7 +25,6 @@ const projects = [
 const descriptions = {
   'sony-microsystem': 'Anúncio publicado na seção de classificados de jornal para divulgar o microsystem Sony.',
   'monkey-cyber-cafe': 'Campanha integrada de conscientização sobre o desarmamento, composta por filme e anúncios impressos para o Monkey Cyber Café.',
-  'molho-jimmi': 'Campanha de anúncios impressos para o molho de pimenta Jimmi.',
   'sony-bravia': 'Peça de mídia alternativa veiculada em revista para destacar a espessura ultrafina da TV Sony Bravia.',
   'ciam': 'Comercial e ação de rua para incentivar doações ao CIAM (Centro Israelita de Apoio Multidisciplinar).',
   'salompas': 'Comercial para Salompas, destacando o alívio de dores musculares e torcicolos.',
@@ -159,12 +157,6 @@ const thumbnails = [
     "slug": "sony-bravia"
   },
   {
-    "image": "assets/20%20jimmy%20thumb%20copy.jpg",
-    "title": "Jimmy",
-    "advertiser": "Molho Jimmi",
-    "slug": "molho-jimmi"
-  },
-  {
     "image": "assets/22%20monkey%20thumb%20copy.jpg",
     "title": "Monkey",
     "advertiser": "Monkey Cyber Café",
@@ -218,11 +210,6 @@ if (project) {
           <video preload="metadata" playsinline src="assets/Monkey%20Game.mp4"></video>
           <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
         </div>
-      `;
-    } else if (slug === 'molho-jimmi') {
-      media = `
-        <div class="media"><img src="assets/Jimmy1.jpg" alt="Molho Jimmi — anúncio 1"></div>
-        <div class="media"><img src="assets/Jimmy2.jpg" alt="Molho Jimmi — anúncio 2"></div>
       `;
     } else if (slug === 'sony-bravia') {
       media = `
