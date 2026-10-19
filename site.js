@@ -1,5 +1,6 @@
 
 const projects = [
+  ['ciam', 'CIAM', 'Campanha'],
   ['toyota-varejo', 'Toyota Varejo — Corolla', 'Filmes'],
   ['salompas', 'Salompas — Pescoço', 'Filme'],
   ['sony-walkman', 'Sony Walkman', 'Anúncio'],
@@ -21,6 +22,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
+  'ciam': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'toyota-varejo': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'salompas': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'sony-walkman': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -156,7 +158,7 @@ const thumbnails = [
     "image": "assets/18%20ciam%20thumb%20copy.jpg",
     "title": "CIAM",
     "advertiser": "CIAM",
-    "slug": null
+    "slug": "ciam"
   },
   {
     "image": "assets/19%20bravia%20thumb%20copy.jpg",
@@ -216,7 +218,15 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'toyota-varejo') {
+    if (slug === 'ciam') {
+      media = `
+        <div class="media"><img src="assets/pranchabalinha52X36%20copy.jpg" alt="CIAM — ação com balinhas, composição de duas fotografias"></div>
+        <div class="media video-with-play">
+          <video preload="metadata" playsinline src="assets/Ciam%20Portugue%CC%82s%20com%20efeito.mp4"></video>
+          <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
+        </div>
+      `;
+    } else if (slug === 'toyota-varejo') {
       media = `
         <div class="media video-with-play">
           <video preload="metadata" playsinline src="assets/Varejo%20Corolla%20Loja.mp4"></video>
