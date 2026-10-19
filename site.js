@@ -14,7 +14,7 @@ const projects = [
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
   'onu': 'Campanha para ONU.',
-  'gm-oleo': '',
+  'gm-oleo': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'hilux': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'hopi-hari': '',
   'corolla': '',
@@ -195,6 +195,10 @@ if (project) {
         <div class="media">
           <img src="assets/UNTIE%20copy.jpg" alt="ONU — UNTIE">
         </div>
+      `;
+    } else if (slug === 'gm-oleo') {
+      media = `
+        <div class="media"><img src="assets/jornal-GM%20copy.jpg" alt="General Motors — Peças Genuínas GM"></div>
       `;
     } else if (slug === 'hilux') {
       media = `
