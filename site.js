@@ -22,7 +22,7 @@ const descriptions = {
   'corolla': '',
   'droga-raia': '',
   'sw4': '',
-  'coco-de-passarinho': '',
+  'coco-de-passarinho': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   '3m': ''
 };
 
@@ -204,6 +204,10 @@ if (project) {
         <div class="media">
           <img src="assets/UNTIE%20copy.jpg" alt="ONU — UNTIE">
         </div>
+      `;
+    } else if (slug === 'coco-de-passarinho') {
+      media = `
+        <div class="media"><img src="assets/coco%20de%20passarinho%20ok%20new%20copy.jpg" alt="Cocô de passarinho — ação para lava-rápido"></div>
       `;
     } else if (slug === 'gm-oleo') {
       media = `
