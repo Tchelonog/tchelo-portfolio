@@ -102,5 +102,5 @@ body.lightbox-open{overflow:hidden}
 @media(max-width:530px){.authorial-grid{gap:10px}.authorial-section{padding-top:28px;padding-bottom:60px}}
 
 /* Divisórias com contraste adequado ao fundo claro */
-.site-header{border-bottom-color:#a09f9c}
-.authorial-section{border-top-color:#a09f9c}
+.site-header{border-bottom-color:#b0afac}
+.authorial-section{border-top-color:#b0afac}
