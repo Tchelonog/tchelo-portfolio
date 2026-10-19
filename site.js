@@ -222,7 +222,7 @@ if (project) {
 
     if (slug === 'sony-microsystem') {
       media = `
-        <div class="media"><img src="assets/nota%20esclarecimento%20ok%20copy.jpg" alt="Sony Microsystem — Nota de Esclarecimento"></div>
+        <div class="media sony-microsystem-media"><img src="assets/nota%20esclarecimento%20ok%20copy.jpg" alt="Sony Microsystem — Nota de Esclarecimento"></div>
       `;
     } else if (slug === 'monkey-cyber-cafe') {
       media = `
