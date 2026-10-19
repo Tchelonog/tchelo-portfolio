@@ -26,10 +26,10 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
-  'sony-microsystem': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  'monkey-cyber-cafe': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  'molho-jimmi': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  'sony-bravia': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  'sony-microsystem': 'Anúncio publicado na seção de classificados de jornal para divulgar o microsystem Sony.',
+  'monkey-cyber-cafe': 'Campanha integrada de conscientização sobre o desarmamento, composta por filme e anúncios impressos para o Monkey Cyber Café.',
+  'molho-jimmi': 'Campanha de anúncios impressos para o molho de pimenta Jimmi.',
+  'sony-bravia': 'Peça de mídia alternativa veiculada em revista para destacar a espessura ultrafina da TV Sony Bravia.',
   'ciam': 'Comercial e ação de rua para incentivar doações ao CIAM (Centro Israelita de Apoio Multidisciplinar).',
   'toyota-varejo': 'Campanha com dois comerciais para divulgar condições especiais de compra do Toyota Corolla.',
   'salompas': 'Comercial para Salompas, destacando o alívio de dores musculares e torcicolos.',
