@@ -104,3 +104,10 @@ body.lightbox-open{overflow:hidden}
 /* Divisórias com contraste adequado ao fundo claro */
 .site-header{border-bottom-color:#dcdcd9}
 .authorial-section{border-top-color:#dcdcd9}
+
+/* Página Sobre */
+.about-page{padding-top:72px;padding-bottom:105px;min-height:65vh}
+.about-content{max-width:850px;margin:0 auto}
+.about-content h1{font-size:clamp(42px,6vw,72px);letter-spacing:-.065em;line-height:1;margin:0 0 40px;font-weight:800}
+.about-content p{font-size:19px;line-height:1.65;letter-spacing:0;margin:0 0 25px;color:#333}
+@media(max-width:530px){.about-page{padding-top:45px;padding-bottom:65px}.about-content h1{margin-bottom:30px}.about-content p{font-size:17px;line-height:1.6;margin-bottom:22px}}
