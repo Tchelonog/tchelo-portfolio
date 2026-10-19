@@ -19,7 +19,7 @@ const descriptions = {
   'gm-oleo': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'hilux': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'hopi-hari': '',
-  'corolla': '',
+  'corolla': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'droga-raia': '',
   'sw4': '',
   'coco-de-passarinho': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -204,6 +204,15 @@ if (project) {
         <div class="media">
           <img src="assets/UNTIE%20copy.jpg" alt="ONU — UNTIE">
         </div>
+      `;
+    } else if (slug === 'corolla') {
+      media = `
+        <div class="media video-with-play">
+          <video preload="metadata" playsinline src="assets/Corolla2010.mp4"></video>
+          <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
+        </div>
+        <div class="media"><img src="assets/an%20corolla%20copy1.jpg" alt="Toyota Corolla — anúncio 1"></div>
+        <div class="media"><img src="assets/an%20corolla%20copy2.jpg" alt="Toyota Corolla — anúncio 2"></div>
       `;
     } else if (slug === 'coco-de-passarinho') {
       media = `
