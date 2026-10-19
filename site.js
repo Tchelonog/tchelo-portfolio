@@ -1,5 +1,6 @@
 
 const projects = [
+  ['derdic', 'Derdic', 'Filme'],
   ['onu', 'ONU', 'Campanha'],
   ['gm-oleo', 'General Motors — Óleo', 'Anúncio'],
   ['hilux', 'Toyota Hilux', 'Campanha integrada'],
@@ -13,6 +14,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
+  'derdic': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'onu': 'Campanha para ONU.',
   'gm-oleo': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'hilux': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -47,7 +49,7 @@ const thumbnails = [
   {
     "image": "assets/03%20derdic%20thumb%20copy.jpg",
     "title": "Derdic",
-    "slug": null
+    "slug": "derdic"
   },
   {
     "image": "assets/04%20un%20thumb%20copy.jpg",
@@ -177,7 +179,14 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'onu') {
+    if (slug === 'derdic') {
+      media = `
+        <div class="media video-with-play">
+          <video preload="metadata" playsinline src="assets/derdic.mp4"></video>
+          <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
+        </div>
+      `;
+    } else if (slug === 'onu') {
       media = `
         <div class="media video-with-play">
           <video preload="metadata" playsinline src="assets/UN%202009.mp4"></video>
