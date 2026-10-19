@@ -1,5 +1,6 @@
 
 const projects = [
+  ['preserv-banana', 'Preserv — Banana', 'Filme'],
   ['molho-jimmi', 'Molho Jimmi', 'Campanha impressa'],
   ['sony-bravia', 'Sony Bravia', 'Anúncio'],
   ['ciam', 'CIAM', 'Campanha'],
@@ -24,6 +25,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
+  'preserv-banana': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'molho-jimmi': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'sony-bravia': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'ciam': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -180,7 +182,7 @@ const thumbnails = [
     "image": "assets/21%20banana%20thumb%20copy.jpg",
     "title": "Banana",
     "advertiser": "Preserv",
-    "slug": null
+    "slug": "preserv-banana"
   },
   {
     "image": "assets/22%20monkey%20thumb%20copy.jpg",
@@ -222,7 +224,14 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'molho-jimmi') {
+    if (slug === 'preserv-banana') {
+      media = `
+        <div class="media video-with-play">
+          <video preload="metadata" playsinline src="assets/PRESERV%20BANANA(3).mp4"></video>
+          <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
+        </div>
+      `;
+    } else if (slug === 'molho-jimmi') {
       media = `
         <div class="media"><img src="assets/Jimmy1.jpg" alt="Molho Jimmi — anúncio 1"></div>
         <div class="media"><img src="assets/Jimmy2.jpg" alt="Molho Jimmi — anúncio 2"></div>
