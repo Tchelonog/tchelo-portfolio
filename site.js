@@ -35,8 +35,8 @@ const descriptions = {
   'salompas': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'sony-walkman': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'centro-cultura-judaica': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  'hopi-hari-brinquedos': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  'corolla-santoro': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  'hopi-hari-brinquedos': 'Campanha de anúncios impressos para incentivar o público a conhecer os brinquedos do Hopi Hari.',
+  'corolla-santoro': 'Campanha de lançamento do novo motor VVT-i Flex do Toyota Corolla.',
   'metro': 'Campanha de anúncios impressos para o Metrô de São Paulo.',
   'derdic': 'Comercial publicado no Anuário do Clube de Criação de São Paulo (CCSP). Criado para a Derdic, instituição dedicada à educação bilíngue de Surdos, ao ensino em Libras e à inclusão profissional de pessoas com deficiência auditiva.',
   'onu': 'Campanha internacional da ONU de conscientização contra a violência em conflitos armados.',
@@ -45,7 +45,7 @@ const descriptions = {
   'hopi-hari': 'Peça publicada no Anuário do Clube de Criação de São Paulo (CCSP). Adesivos aplicados em escadas rolantes anunciam a nova montanha-russa do Hopi Hari.',
   'corolla': 'Campanha integrada de lançamento do novo Toyota Corolla, composta por filme e anúncios.',
   'droga-raia': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  'sw4': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  'sw4': 'Campanha integrada de lançamento da nova Toyota SW4, composta por filme e anúncios.',
   'coco-de-passarinho': 'Peça finalista na categoria Mídia do Festival de Cannes e publicada no Anuário do Clube de Criação de São Paulo (CCSP). Adesivo eletrostático aplicado nos vidros de carros estacionados nas proximidades de um lava-rápido.',
   '3m': 'Campanha de cartazes para os headphones Surround Sound da 3M.'
 };
