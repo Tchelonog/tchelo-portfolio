@@ -103,7 +103,7 @@ const thumbnails = [
   {
     "image": "assets/11%20santoro%20thumb%20copy.jpg",
     "title": "Toyota Corolla Flex — Santoro",
-    "advertiser": "Toyota Corolla",
+    "advertiser": "Toyota Corolla Flex",
     "slug": "corolla-santoro"
   },
   {
