@@ -1,5 +1,6 @@
 
 const projects = [
+  ['sony-microsystem', 'Sony Microsystem', 'Anúncio'],
   ['monkey-cyber-cafe', 'Monkey Cyber Cafe', 'Campanha'],
   ['preserv-banana', 'Preserv — Banana', 'Filme'],
   ['molho-jimmi', 'Molho Jimmi', 'Campanha impressa'],
@@ -26,6 +27,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
+  'sony-microsystem': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'monkey-cyber-cafe': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'preserv-banana': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'molho-jimmi': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -196,7 +198,7 @@ const thumbnails = [
     "image": "assets/23%20nota%20escla%20thumb%20copy.jpg",
     "title": "Nota de esclarecimento",
     "advertiser": "Microsystem Sony",
-    "slug": null
+    "slug": "sony-microsystem"
   }
 ];
 const grid = document.getElementById('grid');
@@ -226,7 +228,11 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'monkey-cyber-cafe') {
+    if (slug === 'sony-microsystem') {
+      media = `
+        <div class="media"><img src="assets/nota%20esclarecimento%20ok%20copy.jpg" alt="Sony Microsystem — Nota de Esclarecimento"></div>
+      `;
+    } else if (slug === 'monkey-cyber-cafe') {
       media = `
         <div class="media"><img src="assets/Young%20man%20copy.jpg" alt="Monkey Cyber Cafe — Young man"></div>
         <div class="media"><img src="assets/Woman%20copy.jpg" alt="Monkey Cyber Cafe — Woman"></div>
