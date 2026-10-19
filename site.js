@@ -105,13 +105,13 @@ const thumbnails = [
   {
     "image": "assets/12%20presente%20thumb%20copy.jpg",
     "title": "Presente",
-    "advertiser": "Presente",
+    "advertiser": "Hopi Hari",
     "slug": null
   },
   {
     "image": "assets/13%20judeu%20thumb%20copy.jpg",
     "title": "Judeu",
-    "advertiser": "Judeu",
+    "advertiser": "Centro da Cultura Judaica",
     "slug": null
   },
   {
@@ -135,7 +135,7 @@ const thumbnails = [
   {
     "image": "assets/17%20maestro%20thumb%20copy.jpg",
     "title": "Maestro",
-    "advertiser": "Maestro",
+    "advertiser": "Varejo Toyota",
     "slug": null
   },
   {
@@ -153,25 +153,25 @@ const thumbnails = [
   {
     "image": "assets/20%20jimmy%20thumb%20copy.jpg",
     "title": "Jimmy",
-    "advertiser": "Jimmy",
+    "advertiser": "Molho Jimmi",
     "slug": null
   },
   {
     "image": "assets/21%20banana%20thumb%20copy.jpg",
     "title": "Banana",
-    "advertiser": "Banana",
+    "advertiser": "Preserv",
     "slug": null
   },
   {
     "image": "assets/22%20monkey%20thumb%20copy.jpg",
     "title": "Monkey",
-    "advertiser": "Monkey",
+    "advertiser": "Monkey Ciber Café",
     "slug": null
   },
   {
     "image": "assets/23%20nota%20escla%20thumb%20copy.jpg",
     "title": "Nota de esclarecimento",
-    "advertiser": "Nota de esclarecimento",
+    "advertiser": "Microsystem Sony",
     "slug": null
   }
 ];
