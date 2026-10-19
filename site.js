@@ -1,5 +1,6 @@
 
 const projects = [
+  ['salompas', 'Salompas — Pescoço', 'Filme'],
   ['sony-walkman', 'Sony Walkman', 'Anúncio'],
   ['centro-cultura-judaica', 'Centro da Cultura Judaica', 'Anúncio'],
   ['hopi-hari-brinquedos', 'Hopi Hari — Brinquedos', 'Campanha impressa'],
@@ -19,6 +20,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
+  'salompas': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'sony-walkman': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'centro-cultura-judaica': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'hopi-hari-brinquedos': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -140,7 +142,7 @@ const thumbnails = [
     "image": "assets/16%20salompas%20thumb%20copy.jpg",
     "title": "Salompas",
     "advertiser": "Salompas",
-    "slug": null
+    "slug": "salompas"
   },
   {
     "image": "assets/17%20maestro%20thumb%20copy.jpg",
@@ -212,7 +214,14 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'sony-walkman') {
+    if (slug === 'salompas') {
+      media = `
+        <div class="media video-with-play">
+          <video preload="metadata" playsinline src="assets/Salompas%20Pescoc%CC%A7o.mp4"></video>
+          <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
+        </div>
+      `;
+    } else if (slug === 'sony-walkman') {
       media = `
         <div class="media"><img src="assets/an%20walkman%20pasta%20ok%20copy.jpg" alt="Sony Walkman — A cópia nunca é igual ao original"></div>
       `;
