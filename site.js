@@ -10,7 +10,6 @@ const projects = [
   ['sony-walkman', 'Sony Walkman', 'Anúncio'],
   ['centro-cultura-judaica', 'Centro da Cultura Judaica', 'Anúncio'],
   ['hopi-hari-brinquedos', 'Hopi Hari — Brinquedos', 'Campanha impressa'],
-  ['corolla-santoro', 'Toyota Corolla Flex — Santoro', 'Filme'],
   ['metro', 'Metrô de São Paulo', 'Campanha impressa'],
   ['derdic', 'Derdic', 'Filme'],
   ['onu', 'ONU', 'Campanha'],
@@ -36,7 +35,6 @@ const descriptions = {
   'sony-walkman': 'Anúncio de página dupla central de jornal para a Sony. A página da direita, aparentemente em branco, utiliza a transferência de tinta da página oposta para revelar o texto.',
   'centro-cultura-judaica': 'Anúncio para a mostra de cinema Cultura Judaica no Brasil.',
   'hopi-hari-brinquedos': 'Campanha de anúncios impressos para incentivar o público a conhecer os brinquedos do Hopi Hari.',
-  'corolla-santoro': 'Campanha de lançamento do novo motor VVT-i Flex do Toyota Corolla.',
   'metro': 'Campanha de anúncios impressos para o Metrô de São Paulo.',
   'derdic': 'Comercial publicado no Anuário do Clube de Criação de São Paulo (CCSP). Criado para a Derdic, instituição dedicada à educação bilíngue de Surdos, ao ensino em Libras e à inclusão profissional de pessoas com deficiência auditiva.',
   'onu': 'Campanha internacional da ONU de conscientização contra a violência em conflitos armados.',
@@ -119,12 +117,6 @@ const thumbnails = [
     "title": "Toyota SW4",
     "advertiser": "Toyota SW4",
     "slug": "sw4"
-  },
-  {
-    "image": "assets/11%20santoro%20thumb%20copy.jpg",
-    "title": "Toyota Corolla Flex — Santoro",
-    "advertiser": "Toyota Corolla Flex",
-    "slug": "corolla-santoro"
   },
   {
     "image": "assets/12%20presente%20thumb%20copy.jpg",
@@ -287,13 +279,6 @@ if (project) {
         <div class="media"><img src="assets/hopi%20pasta%20brinquedos%203.jpg" alt="Hopi Hari Brinquedos — Montanha-russa"></div>
         <div class="media"><img src="assets/hopi%20pasta%20brinquedos%201.jpg" alt="Hopi Hari Brinquedos — Ekatomb"></div>
         <div class="media"><img src="assets/hopi%20pasta%20brinquedos%202.jpg" alt="Hopi Hari Brinquedos — La Tour Eiffel"></div>
-      `;
-    } else if (slug === 'corolla-santoro') {
-      media = `
-        <div class="media video-with-play">
-          <video preload="metadata" playsinline src="assets/Corolla%20Flex%20Santoro.mp4"></video>
-          <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
-        </div>
       `;
     } else if (slug === 'sw4') {
       media = `
