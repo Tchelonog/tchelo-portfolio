@@ -39,14 +39,14 @@ const descriptions = {
   'corolla-santoro': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'metro': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'derdic': 'Comercial publicado no Anuário do Clube de Criação de São Paulo (CCSP). Criado para a Derdic, instituição dedicada à educação bilíngue de Surdos, ao ensino em Libras e à inclusão profissional de pessoas com deficiência auditiva.',
-  'onu': 'Campanha para ONU.',
+  'onu': 'Campanha internacional de conscientização contra a violência em conflitos armados.',
   'gm-oleo': 'Anúncio vencedor do Prêmio ANJ (Associação Nacional de Jornais). A peça simula uma folha de jornal colocada sob um carro para absorver um vazamento de óleo do motor.',
   'hilux': 'Campanha integrada de lançamento da nova Toyota Hilux, composta por filme e anúncios.',
   'hopi-hari': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  'corolla': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  'corolla': 'Campanha integrada de lançamento do novo Toyota Corolla, composta por filme e anúncios.',
   'droga-raia': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'sw4': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  'coco-de-passarinho': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  'coco-de-passarinho': 'Peça finalista na categoria Mídia do Festival de Cannes e publicada no Anuário do Clube de Criação de São Paulo (CCSP). Adesivo eletrostático aplicado nos vidros de carros estacionados nas proximidades de um lava-rápido.',
   '3m': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 };
 
