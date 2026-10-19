@@ -233,7 +233,7 @@ if (project) {
       </section>
       <div class="project-media">${media}</div>
       <nav class="next">
-        <a href="index.html">← TODOS OS TRABALHOS</a>
+        <a href="index.html">HOMEPAGE</a>
         <a href="projeto.html?id=${next[0]}">PRÓXIMO PROJETO →</a>
       </nav>
     `;
