@@ -1,5 +1,6 @@
 
 const projects = [
+  ['toyota-varejo', 'Toyota Varejo — Corolla', 'Filmes'],
   ['salompas', 'Salompas — Pescoço', 'Filme'],
   ['sony-walkman', 'Sony Walkman', 'Anúncio'],
   ['centro-cultura-judaica', 'Centro da Cultura Judaica', 'Anúncio'],
@@ -20,6 +21,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
+  'toyota-varejo': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'salompas': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'sony-walkman': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'centro-cultura-judaica': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -146,9 +148,9 @@ const thumbnails = [
   },
   {
     "image": "assets/17%20maestro%20thumb%20copy.jpg",
-    "title": "Maestro",
+    "title": "Toyota Varejo",
     "advertiser": "Toyota Varejo",
-    "slug": null
+    "slug": "toyota-varejo"
   },
   {
     "image": "assets/18%20ciam%20thumb%20copy.jpg",
@@ -214,7 +216,18 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'salompas') {
+    if (slug === 'toyota-varejo') {
+      media = `
+        <div class="media video-with-play">
+          <video preload="metadata" playsinline src="assets/Varejo%20Corolla%20Loja.mp4"></video>
+          <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
+        </div>
+        <div class="media video-with-play">
+          <video preload="metadata" playsinline src="assets/Varejo%20Corolla%20Orquestra.mp4"></video>
+          <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
+        </div>
+      `;
+    } else if (slug === 'salompas') {
       media = `
         <div class="media video-with-play">
           <video preload="metadata" playsinline src="assets/Salompas%20Pescoc%CC%A7o.mp4"></video>
@@ -363,9 +376,10 @@ if (project) {
 
 // Botão central para iniciar o vídeo; controles aparecem durante a reprodução.
 if (project) {
-  const playButton = project.querySelector('.center-play');
-  const featuredVideo = project.querySelector('.video-with-play video');
-  if (playButton && featuredVideo) {
+  project.querySelectorAll('.video-with-play').forEach(container => {
+    const playButton = container.querySelector('.center-play');
+    const featuredVideo = container.querySelector('video');
+    if (!playButton || !featuredVideo) return;
     playButton.addEventListener('click', async () => {
       try {
         await featuredVideo.play();
@@ -379,7 +393,7 @@ if (project) {
       featuredVideo.controls = false;
       playButton.hidden = false;
     });
-  }
+  });
 }
 
 // Zoom real nas peças impressas: roda do mouse e arrastar para explorar detalhes.
