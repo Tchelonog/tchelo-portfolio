@@ -1,5 +1,6 @@
 
 const projects = [
+  ['hopi-hari-brinquedos', 'Hopi Hari — Brinquedos', 'Campanha impressa'],
   ['corolla-santoro', 'Toyota Corolla Flex — Santoro', 'Filme'],
   ['metro', 'Metrô de São Paulo', 'Campanha impressa'],
   ['derdic', 'Derdic', 'Filme'],
@@ -16,6 +17,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
+  'hopi-hari-brinquedos': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'corolla-santoro': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'metro': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'derdic': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -108,9 +110,9 @@ const thumbnails = [
   },
   {
     "image": "assets/12%20presente%20thumb%20copy.jpg",
-    "title": "Presente",
+    "title": "Hopi Hari — Brinquedos",
     "advertiser": "Hopi Hari",
-    "slug": null
+    "slug": "hopi-hari-brinquedos"
   },
   {
     "image": "assets/13%20judeu%20thumb%20copy.jpg",
@@ -206,7 +208,13 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'corolla-santoro') {
+    if (slug === 'hopi-hari-brinquedos') {
+      media = `
+        <div class="media"><img src="assets/hopi%20pasta%20brinquedos%203.jpg" alt="Hopi Hari Brinquedos — Montanha-russa"></div>
+        <div class="media"><img src="assets/hopi%20pasta%20brinquedos%201.jpg" alt="Hopi Hari Brinquedos — Ekatomb"></div>
+        <div class="media"><img src="assets/hopi%20pasta%20brinquedos%202.jpg" alt="Hopi Hari Brinquedos — La Tour Eiffel"></div>
+      `;
+    } else if (slug === 'corolla-santoro') {
       media = `
         <div class="media video-with-play">
           <video preload="metadata" playsinline src="assets/Corolla%20Flex%20Santoro.mp4"></video>
