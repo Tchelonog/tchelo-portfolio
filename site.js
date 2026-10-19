@@ -39,7 +39,7 @@ const descriptions = {
   'corolla-santoro': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'metro': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'derdic': 'Comercial publicado no Anuário do Clube de Criação de São Paulo (CCSP). Criado para a Derdic, instituição dedicada à educação bilíngue de Surdos, ao ensino em Libras e à inclusão profissional de pessoas com deficiência auditiva.',
-  'onu': 'Campanha internacional de conscientização contra a violência em conflitos armados.',
+  'onu': 'Campanha internacional da ONU de conscientização contra a violência em conflitos armados.',
   'gm-oleo': 'Anúncio finalista na categoria Mídia do Festival de Cannes e vencedor do Prêmio ANJ (Associação Nacional de Jornais). Publicada em página dupla de jornal, a peça simula uma folha colocada sob um carro para absorver um vazamento de óleo do motor.',
   'hilux': 'Campanha integrada de lançamento da nova Toyota Hilux, composta por filme e anúncios.',
   'hopi-hari': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
