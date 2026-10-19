@@ -63,3 +63,9 @@
 .project-lightbox img{display:block;max-width:100%;max-height:calc(100vh - 80px);object-fit:contain;cursor:default}
 .lightbox-close{position:absolute;top:12px;right:22px;color:#fff;background:transparent;border:0;font:40px Arial,sans-serif;cursor:pointer;line-height:1}
 body.lightbox-open{overflow:hidden}
+
+/* Nome do anunciante sobre o thumbnail, sem alterar a grade */
+.tile .cover{position:relative}
+.tile-advertiser{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:20px;text-align:center;background:rgba(0,0,0,.62);color:#fff;font-size:clamp(16px,2vw,25px);font-weight:700;letter-spacing:.025em;opacity:0;transition:opacity .2s ease;pointer-events:none}
+.tile:hover .tile-advertiser,.tile:focus-visible .tile-advertiser{opacity:1}
+@media(hover:none){.tile-advertiser{display:none}}
