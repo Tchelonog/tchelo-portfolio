@@ -139,3 +139,6 @@ body.lightbox-open{overflow:hidden}
 @media(min-width:801px){.about-layout{max-width:820px;grid-template-columns:175px minmax(0,1fr);column-gap:38px;transform:translateX(18px)}.about-photo{width:175px}.about-content{max-width:540px}}
 @media(min-width:601px) and (max-width:800px){.about-layout{max-width:700px;grid-template-columns:175px minmax(0,1fr);gap:28px}.about-photo{width:175px}.about-content{max-width:470px}}
 @media(max-width:600px){.about-layout{transform:none}.about-photo{width:min(100%,175px)}.about-content{max-width:100%}}
+
+/* Sobre: margens laterais mais amplas */
+@media(min-width:801px){.about-layout{max-width:680px;grid-template-columns:175px minmax(0,1fr);gap:34px;transform:none}.about-content{max-width:471px}}
