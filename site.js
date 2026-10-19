@@ -1,5 +1,6 @@
 
 const projects = [
+  ['mercedes-sprinter', 'Mercedes-Benz Sprinter', 'Anúncio'],
   ['sony-microsystem', 'Sony Microsystem', 'Anúncio'],
   ['monkey-cyber-cafe', 'Monkey Cyber Cafe', 'Campanha'],
   ['sony-bravia', 'Sony Bravia', 'Anúncio'],
@@ -23,6 +24,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
+  'mercedes-sprinter': '',
   'sony-microsystem': 'Anúncio publicado na seção de classificados de jornal para divulgar o microsystem Sony.',
   'monkey-cyber-cafe': 'Campanha integrada de conscientização sobre o desarmamento, composta por filme e anúncios impressos para o Monkey Cyber Café.',
   'sony-bravia': 'Peça de mídia alternativa veiculada em revista para destacar a espessura ultrafina da TV Sony Bravia.',
@@ -167,6 +169,12 @@ const thumbnails = [
     "title": "Nota de esclarecimento",
     "advertiser": "Microsystem Sony",
     "slug": "sony-microsystem"
+  },
+  {
+    "image": "assets/24%20sprinter%20thumb%20copy.jpg",
+    "title": "Mercedes-Benz Sprinter",
+    "advertiser": "Mercedes-Benz",
+    "slug": "mercedes-sprinter"
   }
 ];
 const grid = document.getElementById('grid');
@@ -196,7 +204,11 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'sony-microsystem') {
+    if (slug === 'mercedes-sprinter') {
+      media = `
+        <div class="media"><img src="assets/an%20sprinter(1).jpg" alt="Anúncio Mercedes-Benz Sprinter"></div>
+      `;
+    } else if (slug === 'sony-microsystem') {
       media = `
         <div class="media sony-microsystem-media"><img src="assets/nota%20esclarecimento%20ok%20copy.jpg" alt="Sony Microsystem — Nota de Esclarecimento"></div>
       `;
