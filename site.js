@@ -2,7 +2,6 @@
 const projects = [
   ['sony-microsystem', 'Sony Microsystem', 'Anúncio'],
   ['monkey-cyber-cafe', 'Monkey Cyber Cafe', 'Campanha'],
-  ['preserv-banana', 'Preserv — Banana', 'Filme'],
   ['molho-jimmi', 'Molho Jimmi', 'Campanha impressa'],
   ['sony-bravia', 'Sony Bravia', 'Anúncio'],
   ['ciam', 'CIAM', 'Campanha'],
@@ -29,7 +28,6 @@ const projects = [
 const descriptions = {
   'sony-microsystem': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'monkey-cyber-cafe': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  'preserv-banana': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'molho-jimmi': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'sony-bravia': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'ciam': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -59,7 +57,7 @@ function cover(p) {
   </div>`;
 }
 
-// Página inicial: 23 thumbnails na ordem numérica definida pelo portfólio.
+// Página inicial: 22 thumbnails na ordem numérica definida pelo portfólio.
 // Somente trabalhos com páginas já criadas têm links ativos.
 const thumbnails = [
   {
@@ -183,12 +181,6 @@ const thumbnails = [
     "slug": "molho-jimmi"
   },
   {
-    "image": "assets/21%20banana%20thumb%20copy.jpg",
-    "title": "Banana",
-    "advertiser": "Preserv",
-    "slug": "preserv-banana"
-  },
-  {
     "image": "assets/22%20monkey%20thumb%20copy.jpg",
     "title": "Monkey",
     "advertiser": "Monkey Ciber Café",
@@ -240,13 +232,6 @@ if (project) {
         <div class="media"><img src="assets/FAVELA%20FINAL%20copy.jpg" alt="Monkey Cyber Cafe — Favela"></div>
         <div class="media video-with-play">
           <video preload="metadata" playsinline src="assets/Monkey%20Game.mp4"></video>
-          <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
-        </div>
-      `;
-    } else if (slug === 'preserv-banana') {
-      media = `
-        <div class="media video-with-play">
-          <video preload="metadata" playsinline src="assets/PRESERV%20BANANA.mp4"></video>
           <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
         </div>
       `;
