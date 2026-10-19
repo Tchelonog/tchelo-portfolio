@@ -294,3 +294,48 @@ if (project) {
     });
   }
 }
+
+// Ampliação das peças impressas em todas as páginas de projetos.
+if (project) {
+  const lightbox = document.createElement('div');
+  lightbox.className = 'project-lightbox';
+  lightbox.setAttribute('role', 'dialog');
+  lightbox.setAttribute('aria-modal', 'true');
+  lightbox.setAttribute('aria-label', 'Imagem ampliada');
+  lightbox.hidden = true;
+  lightbox.innerHTML = '<button type="button" class="lightbox-close" aria-label="Fechar imagem ampliada">×</button><img alt="">';
+  document.body.appendChild(lightbox);
+  const enlarged = lightbox.querySelector('img');
+  let previousFocus = null;
+  const close = () => {
+    lightbox.hidden = true;
+    document.body.classList.remove('lightbox-open');
+    if (previousFocus) previousFocus.focus();
+  };
+  project.querySelectorAll('.project-media .media img').forEach(img => {
+    img.classList.add('zoomable-image');
+    img.tabIndex = 0;
+    img.setAttribute('role', 'button');
+    img.setAttribute('aria-label', 'Ampliar imagem: ' + (img.alt || 'anúncio'));
+    const open = () => {
+      previousFocus = document.activeElement;
+      enlarged.src = img.currentSrc || img.src;
+      enlarged.alt = img.alt;
+      lightbox.hidden = false;
+      document.body.classList.add('lightbox-open');
+      lightbox.querySelector('.lightbox-close').focus();
+    };
+    img.addEventListener('click', open);
+    img.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        open();
+      }
+    });
+  });
+  lightbox.querySelector('.lightbox-close').addEventListener('click', close);
+  lightbox.addEventListener('click', event => { if (event.target === lightbox) close(); });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && !lightbox.hidden) close();
+  });
+}
