@@ -1,5 +1,6 @@
 
 const projects = [
+  ['sony-walkman', 'Sony Walkman', 'Anúncio'],
   ['centro-cultura-judaica', 'Centro da Cultura Judaica', 'Anúncio'],
   ['hopi-hari-brinquedos', 'Hopi Hari — Brinquedos', 'Campanha impressa'],
   ['corolla-santoro', 'Toyota Corolla Flex — Santoro', 'Filme'],
@@ -18,6 +19,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
+  'sony-walkman': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'centro-cultura-judaica': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'hopi-hari-brinquedos': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'corolla-santoro': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -132,7 +134,7 @@ const thumbnails = [
     "image": "assets/15%20walkman%20thumb%20copy.jpg",
     "title": "Walkman",
     "advertiser": "Sony",
-    "slug": null
+    "slug": "sony-walkman"
   },
   {
     "image": "assets/16%20salompas%20thumb%20copy.jpg",
@@ -210,7 +212,11 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'droga-raia') {
+    if (slug === 'sony-walkman') {
+      media = `
+        <div class="media"><img src="assets/an%20walkman%20pasta%20ok%20copy.jpg" alt="Sony Walkman — A cópia nunca é igual ao original"></div>
+      `;
+    } else if (slug === 'droga-raia') {
       media = `
         <div class="media"><img src="assets/Montagem%20Disfun%C3%A7%C3%A3o.jpg" alt="Droga Raia — intervenção Disfunção Erétil"></div>
       `;
