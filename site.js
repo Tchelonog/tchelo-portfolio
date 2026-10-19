@@ -1,5 +1,6 @@
 
 const projects = [
+  ['monkey-cyber-cafe', 'Monkey Cyber Cafe', 'Campanha'],
   ['preserv-banana', 'Preserv — Banana', 'Filme'],
   ['molho-jimmi', 'Molho Jimmi', 'Campanha impressa'],
   ['sony-bravia', 'Sony Bravia', 'Anúncio'],
@@ -25,6 +26,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
+  'monkey-cyber-cafe': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'preserv-banana': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'molho-jimmi': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'sony-bravia': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -188,7 +190,7 @@ const thumbnails = [
     "image": "assets/22%20monkey%20thumb%20copy.jpg",
     "title": "Monkey",
     "advertiser": "Monkey Ciber Café",
-    "slug": null
+    "slug": "monkey-cyber-cafe"
   },
   {
     "image": "assets/23%20nota%20escla%20thumb%20copy.jpg",
@@ -224,7 +226,18 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'preserv-banana') {
+    if (slug === 'monkey-cyber-cafe') {
+      media = `
+        <div class="media"><img src="assets/Young%20man%20copy.jpg" alt="Monkey Cyber Cafe — Young man"></div>
+        <div class="media"><img src="assets/Woman%20copy.jpg" alt="Monkey Cyber Cafe — Woman"></div>
+        <div class="media"><img src="assets/Man%20copy.jpg" alt="Monkey Cyber Cafe — Man"></div>
+        <div class="media"><img src="assets/FAVELA%20FINAL%20copy.jpg" alt="Monkey Cyber Cafe — Favela"></div>
+        <div class="media video-with-play">
+          <video preload="metadata" playsinline src="assets/Monkey%20Game.mp4"></video>
+          <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
+        </div>
+      `;
+    } else if (slug === 'preserv-banana') {
       media = `
         <div class="media video-with-play">
           <video preload="metadata" playsinline src="assets/PRESERV%20BANANA(3).mp4"></video>
