@@ -1,5 +1,6 @@
 
 const projects = [
+  ['metro', 'Metrô de São Paulo', 'Campanha impressa'],
   ['derdic', 'Derdic', 'Filme'],
   ['onu', 'ONU', 'Campanha'],
   ['gm-oleo', 'General Motors — Óleo', 'Anúncio'],
@@ -14,6 +15,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
+  'metro': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'derdic': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'onu': 'Campanha para ONU.',
   'gm-oleo': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -82,7 +84,7 @@ const thumbnails = [
     "image": "assets/08%20metro%20thumb%20copy.jpg",
     "title": "Metrô",
     "advertiser": "Metrô",
-    "slug": null
+    "slug": "metro"
   },
   {
     "image": "assets/09%203m%20thumb%20copy.jpg",
@@ -202,7 +204,13 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'derdic') {
+    if (slug === 'metro') {
+      media = `
+        <div class="media"><img src="assets/lay%20metro%20copy1.jpg" alt="Metrô de São Paulo — Do Carandiru à Liberdade em 5 minutos"></div>
+        <div class="media"><img src="assets/lay%20metro%20copy2.jpg" alt="Metrô de São Paulo — Tá com pressa? Passa por baixo"></div>
+        <div class="media"><img src="assets/lay%20metro%20copy3.jpg" alt="Metrô de São Paulo — Toda vez que aparece um buraco na cidade a gente comemora"></div>
+      `;
+    } else if (slug === 'derdic') {
       media = `
         <div class="media video-with-play">
           <video preload="metadata" playsinline src="assets/derdic.mp4"></video>
