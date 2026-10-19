@@ -100,3 +100,7 @@ body.lightbox-open{overflow:hidden}
 .authorial-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 .authorial-slot{aspect-ratio:1.54;background:#e6e5e0}
 @media(max-width:530px){.authorial-grid{gap:10px}.authorial-section{padding-top:28px;padding-bottom:60px}}
+
+/* Divisórias com contraste adequado ao fundo claro */
+.site-header{border-bottom-color:#bcbcb9}
+.authorial-section{border-top-color:#bcbcb9}
