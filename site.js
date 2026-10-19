@@ -159,16 +159,16 @@ const thumbnails = [
     "slug": "sony-bravia"
   },
   {
-    "image": "assets/22%20monkey%20thumb%20copy.jpg",
-    "title": "Monkey",
-    "advertiser": "Monkey Cyber Café",
-    "slug": "monkey-cyber-cafe"
-  },
-  {
     "image": "assets/23%20nota%20escla%20thumb%20copy.jpg",
     "title": "Nota de esclarecimento",
     "advertiser": "Microsystem Sony",
     "slug": "sony-microsystem"
+  },
+  {
+    "image": "assets/22%20monkey%20thumb%20copy.jpg",
+    "title": "Monkey",
+    "advertiser": "Monkey Cyber Café",
+    "slug": "monkey-cyber-cafe"
   },
   {
     "image": "assets/24%20sprinter%20thumb%20copy.jpg",
