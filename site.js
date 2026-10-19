@@ -15,7 +15,7 @@ const projects = [
 const descriptions = {
   'onu': 'Campanha para ONU.',
   'gm-oleo': '',
-  'hilux': '',
+  'hilux': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'hopi-hari': '',
   'corolla': '',
   'droga-raia': '',
@@ -195,6 +195,16 @@ if (project) {
         <div class="media">
           <img src="assets/UNTIE%20copy.jpg" alt="ONU — UNTIE">
         </div>
+      `;
+    } else if (slug === 'hilux') {
+      media = `
+        <div class="media video-with-play">
+          <video preload="metadata" playsinline src="assets/hilux.mp4"></video>
+          <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
+        </div>
+        <div class="media"><img src="assets/ans hilux pasta new port copy1.jpg" alt="Toyota Hilux — anúncio 1"></div>
+        <div class="media"><img src="assets/ans hilux pasta new port copy2.jpg" alt="Toyota Hilux — anúncio 2"></div>
+        <div class="media"><img src="assets/ans hilux pasta new port copy3.jpg" alt="Toyota Hilux — anúncio 3"></div>
       `;
     } else {
       media = `
