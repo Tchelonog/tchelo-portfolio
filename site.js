@@ -5,7 +5,6 @@ const projects = [
   ['molho-jimmi', 'Molho Jimmi', 'Campanha impressa'],
   ['sony-bravia', 'Sony Bravia', 'Anúncio'],
   ['ciam', 'CIAM', 'Campanha'],
-  ['toyota-varejo', 'Toyota Varejo — Corolla', 'Filmes'],
   ['salompas', 'Salompas — Pescoço', 'Filme'],
   ['sony-walkman', 'Sony Walkman', 'Anúncio'],
   ['centro-cultura-judaica', 'Centro da Cultura Judaica', 'Anúncio'],
@@ -30,7 +29,6 @@ const descriptions = {
   'molho-jimmi': 'Campanha de anúncios impressos para o molho de pimenta Jimmi.',
   'sony-bravia': 'Peça de mídia alternativa veiculada em revista para destacar a espessura ultrafina da TV Sony Bravia.',
   'ciam': 'Comercial e ação de rua para incentivar doações ao CIAM (Centro Israelita de Apoio Multidisciplinar).',
-  'toyota-varejo': 'Campanha com dois comerciais para divulgar condições especiais de compra do Toyota Corolla.',
   'salompas': 'Comercial para Salompas, destacando o alívio de dores musculares e torcicolos.',
   'sony-walkman': 'Anúncio de página dupla central de jornal para a Sony. A página da direita, aparentemente em branco, utiliza a transferência de tinta da página oposta para revelar o texto.',
   'centro-cultura-judaica': 'Anúncio para a mostra de cinema Cultura Judaica no Brasil.',
@@ -149,12 +147,6 @@ const thumbnails = [
     "slug": "salompas"
   },
   {
-    "image": "assets/17%20maestro%20thumb%20copy.jpg",
-    "title": "Toyota Varejo",
-    "advertiser": "Toyota Varejo",
-    "slug": "toyota-varejo"
-  },
-  {
     "image": "assets/18%20ciam%20thumb%20copy.jpg",
     "title": "CIAM",
     "advertiser": "CIAM",
@@ -243,17 +235,6 @@ if (project) {
           <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
         </div>
         <div class="media"><img src="assets/pranchabalinha52X36%20copy.jpg" alt="CIAM — ação com balinhas, composição de duas fotografias"></div>
-      `;
-    } else if (slug === 'toyota-varejo') {
-      media = `
-        <div class="media video-with-play">
-          <video preload="metadata" playsinline src="assets/Varejo%20Corolla%20Loja.mp4"></video>
-          <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
-        </div>
-        <div class="media video-with-play">
-          <video preload="metadata" playsinline src="assets/Varejo%20Corolla%20Orquestra.mp4"></video>
-          <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
-        </div>
       `;
     } else if (slug === 'salompas') {
       media = `
