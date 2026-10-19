@@ -54,3 +54,12 @@
 /* Grade definitiva da home: duas colunas no desktop e tablet */
 .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:530px){.grid{grid-template-columns:1fr}}
+
+/* Lupa e visualização ampliada das peças */
+.zoomable-image{cursor:zoom-in}
+.zoomable-image:focus-visible{outline:3px solid #777;outline-offset:4px}
+.project-lightbox[hidden]{display:none}
+.project-lightbox{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.93);display:flex;align-items:center;justify-content:center;padding:55px 25px 25px;cursor:zoom-out}
+.project-lightbox img{display:block;max-width:100%;max-height:calc(100vh - 80px);object-fit:contain;cursor:default}
+.lightbox-close{position:absolute;top:12px;right:22px;color:#fff;background:transparent;border:0;font:40px Arial,sans-serif;cursor:pointer;line-height:1}
+body.lightbox-open{overflow:hidden}
