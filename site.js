@@ -1,5 +1,6 @@
 
 const projects = [
+  ['molho-jimmi', 'Molho Jimmi', 'Campanha impressa'],
   ['sony-bravia', 'Sony Bravia', 'Anúncio'],
   ['ciam', 'CIAM', 'Campanha'],
   ['toyota-varejo', 'Toyota Varejo — Corolla', 'Filmes'],
@@ -23,6 +24,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
+  'molho-jimmi': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'sony-bravia': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'ciam': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'toyota-varejo': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -172,7 +174,7 @@ const thumbnails = [
     "image": "assets/20%20jimmy%20thumb%20copy.jpg",
     "title": "Jimmy",
     "advertiser": "Molho Jimmi",
-    "slug": null
+    "slug": "molho-jimmi"
   },
   {
     "image": "assets/21%20banana%20thumb%20copy.jpg",
@@ -220,7 +222,12 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'sony-bravia') {
+    if (slug === 'molho-jimmi') {
+      media = `
+        <div class="media"><img src="assets/Jimmy1.jpg" alt="Molho Jimmi — anúncio 1"></div>
+        <div class="media"><img src="assets/Jimmy2.jpg" alt="Molho Jimmi — anúncio 2"></div>
+      `;
+    } else if (slug === 'sony-bravia') {
       media = `
         <div class="media"><img src="assets/puxe%20tv%20port%20pasta%20novo%20copy.jpg" alt="Sony Bravia — anúncio com encarte e cartão destacável"></div>
       `;
