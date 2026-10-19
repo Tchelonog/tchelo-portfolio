@@ -28,7 +28,7 @@ const descriptions = {
   'hilux': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'hopi-hari': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'corolla': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  'droga-raia': '',
+  'droga-raia': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'sw4': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'coco-de-passarinho': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   '3m': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -210,7 +210,11 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'centro-cultura-judaica') {
+    if (slug === 'droga-raia') {
+      media = `
+        <div class="media"><img src="assets/Montagem%20Disfun%C3%A7%C3%A3o.jpg" alt="Droga Raia — intervenção Disfunção Erétil"></div>
+      `;
+    } else if (slug === 'centro-cultura-judaica') {
       media = `
         <div class="media"><img src="assets/ccj%20gratuita%20copy.jpg" alt="Centro da Cultura Judaica — A entrada é gratuita"></div>
       `;
