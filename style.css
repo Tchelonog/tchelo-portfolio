@@ -142,3 +142,6 @@ body.lightbox-open{overflow:hidden}
 
 /* Sobre: margens laterais mais amplas */
 @media(min-width:801px){.about-layout{max-width:680px;grid-template-columns:175px minmax(0,1fr);gap:34px;transform:none}.about-content{max-width:471px}}
+
+/* Sobre: ampliar mais 100px de margem de cada lado no desktop */
+@media(min-width:801px){.about-layout{max-width:480px;grid-template-columns:145px minmax(0,1fr);gap:25px}.about-photo{width:145px}.about-content{max-width:310px}}
