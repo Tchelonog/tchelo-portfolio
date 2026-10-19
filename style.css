@@ -93,3 +93,10 @@ body.lightbox-open{overflow:hidden}
 /* Sony Microsystem: peça inteira visível na abertura da página */
 .sony-microsystem-media{background:transparent;min-height:0}
 .sony-microsystem-media img{width:auto;max-width:100%;max-height:calc((100vh - 185px) * 1.15);object-fit:contain}
+
+/* Divisão entre publicidade e futura galeria de projetos autorais */
+.home-main > .grid{padding-bottom:48px}
+.authorial-section{border-top:1px solid #ddd;padding:42px 0 85px}
+.authorial-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.authorial-slot{aspect-ratio:1.54;background:#e6e5e0}
+@media(max-width:530px){.authorial-grid{gap:10px}.authorial-section{padding-top:28px;padding-bottom:60px}}
