@@ -18,7 +18,7 @@ const descriptions = {
   'onu': 'Campanha para ONU.',
   'gm-oleo': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'hilux': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  'hopi-hari': '',
+  'hopi-hari': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'corolla': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'droga-raia': '',
   'sw4': '',
@@ -203,6 +203,14 @@ if (project) {
         </div>
         <div class="media">
           <img src="assets/UNTIE%20copy.jpg" alt="ONU — UNTIE">
+        </div>
+      `;
+    } else if (slug === 'hopi-hari') {
+      media = `
+        <div class="media"><img src="assets/HopiHari%20escada%20copy.jpg" alt="Hopi Hari — intervenção em escada rolante"></div>
+        <div class="media video-with-play">
+          <video preload="metadata" playsinline src="assets/hopy%20escada.mp4"></video>
+          <button class="center-play" type="button" aria-label="Reproduzir vídeo ilustrativo">▶</button>
         </div>
       `;
     } else if (slug === 'corolla') {
