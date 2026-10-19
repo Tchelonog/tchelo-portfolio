@@ -122,3 +122,10 @@ body.lightbox-open{overflow:hidden}
 .about-content p{font-size:18px;line-height:1.35;margin:0 0 19px;color:#252525}
 @media(max-width:800px){.about-page{padding-top:65px}.about-layout{grid-template-columns:minmax(180px,32%) minmax(0,1fr);gap:24px}.about-photo{min-height:0}.about-content p{font-size:16px;line-height:1.4}}
 @media(max-width:600px){.about-page{padding-top:40px;padding-bottom:70px}.about-layout{grid-template-columns:1fr;gap:30px}.about-photo{width:min(100%,310px);min-height:0}.about-content p{font-size:17px;line-height:1.45;margin-bottom:18px}}
+
+/* Sobre: fotografia menor e texto reduzido em 3 pontos */
+.about-layout{grid-template-columns:250px minmax(0,1fr)}
+.about-photo{min-height:0}
+.about-content p{font-size:15px}
+@media(max-width:800px){.about-layout{grid-template-columns:minmax(150px,27%) minmax(0,1fr)}.about-content p{font-size:13px}}
+@media(max-width:600px){.about-layout{grid-template-columns:1fr}.about-photo{width:min(100%,250px)}.about-content p{font-size:14px}}
