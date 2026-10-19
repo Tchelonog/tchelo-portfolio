@@ -1,5 +1,6 @@
 
 const projects = [
+  ['sony-bravia', 'Sony Bravia', 'Anúncio'],
   ['ciam', 'CIAM', 'Campanha'],
   ['toyota-varejo', 'Toyota Varejo — Corolla', 'Filmes'],
   ['salompas', 'Salompas — Pescoço', 'Filme'],
@@ -22,6 +23,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
+  'sony-bravia': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'ciam': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'toyota-varejo': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'salompas': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -164,7 +166,7 @@ const thumbnails = [
     "image": "assets/19%20bravia%20thumb%20copy.jpg",
     "title": "Bravia",
     "advertiser": "Sony",
-    "slug": null
+    "slug": "sony-bravia"
   },
   {
     "image": "assets/20%20jimmy%20thumb%20copy.jpg",
@@ -218,7 +220,11 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'ciam') {
+    if (slug === 'sony-bravia') {
+      media = `
+        <div class="media"><img src="assets/puxe%20tv%20port%20pasta%20novo%20copy.jpg" alt="Sony Bravia — anúncio com encarte e cartão destacável"></div>
+      `;
+    } else if (slug === 'ciam') {
       media = `
         <div class="media video-with-play">
           <video preload="metadata" playsinline src="assets/Ciam%20Portugue%CC%82s%20com%20efeito.mp4"></video>
