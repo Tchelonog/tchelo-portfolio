@@ -39,7 +39,7 @@ const thumbnails = [
   {
     "image": "assets/01%20hilux%20thumb%20copy.jpg",
     "title": "Toyota Hilux",
-    "advertiser": "Toyota",
+    "advertiser": "\"Toyota Hilux\"",
     "slug": "hilux"
   },
   {
@@ -69,7 +69,7 @@ const thumbnails = [
   {
     "image": "assets/06%20corolla%20thumb%20copy.jpg",
     "title": "Toyota Corolla",
-    "advertiser": "Toyota",
+    "advertiser": "\"Toyota Corolla\"",
     "slug": "corolla"
   },
   {
@@ -93,7 +93,7 @@ const thumbnails = [
   {
     "image": "assets/10%20sw4%20thumb%20copy.jpg",
     "title": "Toyota SW4",
-    "advertiser": "Toyota",
+    "advertiser": "\"Toyota SW4\"",
     "slug": "sw4"
   },
   {
