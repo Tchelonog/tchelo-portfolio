@@ -1,5 +1,6 @@
 
 const projects = [
+  ['corolla-santoro', 'Toyota Corolla Flex — Santoro', 'Filme'],
   ['metro', 'Metrô de São Paulo', 'Campanha impressa'],
   ['derdic', 'Derdic', 'Filme'],
   ['onu', 'ONU', 'Campanha'],
@@ -15,6 +16,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
+  'corolla-santoro': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'metro': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'derdic': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'onu': 'Campanha para ONU.',
@@ -100,9 +102,9 @@ const thumbnails = [
   },
   {
     "image": "assets/11%20santoro%20thumb%20copy.jpg",
-    "title": "Santoro",
+    "title": "Toyota Corolla Flex — Santoro",
     "advertiser": "Toyota Corolla",
-    "slug": null
+    "slug": "corolla-santoro"
   },
   {
     "image": "assets/12%20presente%20thumb%20copy.jpg",
@@ -204,7 +206,14 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'sw4') {
+    if (slug === 'corolla-santoro') {
+      media = `
+        <div class="media video-with-play">
+          <video preload="metadata" playsinline src="assets/Corolla%20Flex%20Santoro.mp4"></video>
+          <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
+        </div>
+      `;
+    } else if (slug === 'sw4') {
       media = `
         <div class="media"><img src="assets/ans%20sw4%20pasta%20port%20copy3.jpg" alt="Toyota SW4 — Um jeito esperto de manter a família unida. Dê espaço."></div>
         <div class="media"><img src="assets/ans%20sw4%20pasta%20port%20copy2.jpg" alt="Toyota SW4 — Cabem até 7 rabudos."></div>
