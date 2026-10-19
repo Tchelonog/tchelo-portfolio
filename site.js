@@ -147,7 +147,7 @@ const thumbnails = [
   {
     "image": "assets/17%20maestro%20thumb%20copy.jpg",
     "title": "Maestro",
-    "advertiser": "Varejo Toyota",
+    "advertiser": "Toyota Varejo",
     "slug": null
   },
   {
