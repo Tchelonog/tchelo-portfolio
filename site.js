@@ -246,7 +246,7 @@ if (project) {
     } else if (slug === 'preserv-banana') {
       media = `
         <div class="media video-with-play">
-          <video preload="metadata" playsinline src="assets/PRESERV%20BANANA(3).mp4"></video>
+          <video preload="metadata" playsinline src="assets/PRESERV%20BANANA.mp4"></video>
           <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
         </div>
       `;
