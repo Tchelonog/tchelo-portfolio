@@ -69,3 +69,14 @@ body.lightbox-open{overflow:hidden}
 .tile-advertiser{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:20px;text-align:center;background:rgba(0,0,0,.62);color:#fff;font-size:clamp(16px,2vw,25px);font-weight:700;letter-spacing:.025em;opacity:0;transition:opacity .2s ease;pointer-events:none}
 .tile:hover .tile-advertiser,.tile:focus-visible .tile-advertiser{opacity:1}
 @media(hover:none){.tile-advertiser{display:none}}
+
+/* Zoom detalhado com movimentação da imagem */
+.project-lightbox{flex-direction:column;gap:12px;padding:52px 20px 18px;cursor:default}
+.lightbox-viewport{width:100%;flex:1;min-height:0;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;touch-action:none}
+.lightbox-viewport img{max-width:100%;max-height:100%;object-fit:contain;transform-origin:center center;user-select:none;will-change:transform}
+.lightbox-viewport.can-drag{cursor:grab}
+.lightbox-viewport.dragging{cursor:grabbing}
+.lightbox-tools{display:flex;align-items:center;justify-content:center;gap:16px;color:white;font:14px Arial,sans-serif;flex-shrink:0}
+.lightbox-tools button{background:#292929;color:white;border:1px solid #777;border-radius:5px;min-width:40px;padding:9px 12px;font:16px Arial,sans-serif;cursor:pointer}
+.lightbox-tools .zoom-reset{font-size:13px}
+.zoom-value{min-width:48px;text-align:center}
