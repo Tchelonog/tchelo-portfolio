@@ -183,7 +183,7 @@ const thumbnails = [
   {
     "image": "assets/22%20monkey%20thumb%20copy.jpg",
     "title": "Monkey",
-    "advertiser": "Monkey Ciber Café",
+    "advertiser": "Monkey Cyber Café",
     "slug": "monkey-cyber-cafe"
   },
   {
