@@ -25,7 +25,7 @@ const descriptions = {
   'droga-raia': '',
   'sw4': '',
   'coco-de-passarinho': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  '3m': ''
+  '3m': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 };
 
 function cover(p) {
@@ -204,7 +204,13 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'metro') {
+    if (slug === '3m') {
+      media = `
+        <div class="media"><img src="assets/cartaz%281%29.jpg" alt="3M Surround Sound Headphones — anúncio rosa"></div>
+        <div class="media"><img src="assets/cartaz2%281%29.jpg" alt="3M Surround Sound Headphones — anúncio amarelo"></div>
+        <div class="media"><img src="assets/cartaz3%281%29.jpg" alt="3M Surround Sound Headphones — anúncio azul"></div>
+      `;
+    } else if (slug === 'metro') {
       media = `
         <div class="media"><img src="assets/lay%20metro%20copy1.jpg" alt="Metrô de São Paulo — Do Carandiru à Liberdade em 5 minutos"></div>
         <div class="media"><img src="assets/lay%20metro%20copy2.jpg" alt="Metrô de São Paulo — Tá com pressa? Passa por baixo"></div>
