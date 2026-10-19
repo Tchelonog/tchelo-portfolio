@@ -218,7 +218,7 @@ if (project) {
       `;
     } else if (slug === 'droga-raia') {
       media = `
-        <div class="media"><img src="assets/Montagem%20Disfun%C3%A7%C3%A3o.jpg" alt="Droga Raia — intervenção Disfunção Erétil"></div>
+        <div class="media"><img src="assets/Montagem%20Disfunc%CC%A7a%CC%83o.jpg" alt="Droga Raia — intervenção Disfunção Erétil"></div>
       `;
     } else if (slug === 'centro-cultura-judaica') {
       media = `
