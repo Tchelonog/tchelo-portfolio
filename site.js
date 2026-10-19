@@ -99,7 +99,7 @@ const thumbnails = [
   {
     "image": "assets/11%20santoro%20thumb%20copy.jpg",
     "title": "Santoro",
-    "advertiser": "Santoro",
+    "advertiser": "Toyota Corolla",
     "slug": null
   },
   {
