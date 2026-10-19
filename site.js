@@ -24,7 +24,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
-  'mercedes-sprinter': '',
+  'mercedes-sprinter': 'Anúncio/conceito para a Mercedes-Benz Sprinter, posicionada como veículo premium no segmento de vans e furgões.',
   'sony-microsystem': 'Anúncio publicado na seção de classificados de jornal para divulgar o microsystem Sony.',
   'monkey-cyber-cafe': 'Campanha integrada de conscientização sobre o desarmamento, composta por filme e anúncios impressos para o Monkey Cyber Café.',
   'sony-bravia': 'Peça de mídia alternativa veiculada em revista para destacar a espessura ultrafina da TV Sony Bravia.',
