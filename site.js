@@ -1,5 +1,6 @@
 
 const projects = [
+  ['centro-cultura-judaica', 'Centro da Cultura Judaica', 'Anúncio'],
   ['hopi-hari-brinquedos', 'Hopi Hari — Brinquedos', 'Campanha impressa'],
   ['corolla-santoro', 'Toyota Corolla Flex — Santoro', 'Filme'],
   ['metro', 'Metrô de São Paulo', 'Campanha impressa'],
@@ -17,6 +18,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
+  'centro-cultura-judaica': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'hopi-hari-brinquedos': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'corolla-santoro': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'metro': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -116,9 +118,9 @@ const thumbnails = [
   },
   {
     "image": "assets/13%20judeu%20thumb%20copy.jpg",
-    "title": "Judeu",
+    "title": "Centro da Cultura Judaica",
     "advertiser": "Centro da Cultura Judaica",
-    "slug": null
+    "slug": "centro-cultura-judaica"
   },
   {
     "image": "assets/14%20raia%20thumb%20copy.jpg",
@@ -208,7 +210,11 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'hopi-hari-brinquedos') {
+    if (slug === 'centro-cultura-judaica') {
+      media = `
+        <div class="media"><img src="assets/ccj%20gratuita%20copy.jpg" alt="Centro da Cultura Judaica — A entrada é gratuita"></div>
+      `;
+    } else if (slug === 'hopi-hari-brinquedos') {
       media = `
         <div class="media"><img src="assets/hopi%20pasta%20brinquedos%203.jpg" alt="Hopi Hari Brinquedos — Montanha-russa"></div>
         <div class="media"><img src="assets/hopi%20pasta%20brinquedos%201.jpg" alt="Hopi Hari Brinquedos — Ekatomb"></div>
