@@ -212,9 +212,11 @@ if (project) {
       `;
     } else if (slug === '3m') {
       media = `
-        <div class="media"><img src="assets/cartaz.jpg" alt="3M Surround Sound Headphones — anúncio rosa"></div>
-        <div class="media"><img src="assets/cartaz2.jpg" alt="3M Surround Sound Headphones — anúncio amarelo"></div>
-        <div class="media"><img src="assets/cartaz3.jpg" alt="3M Surround Sound Headphones — anúncio azul"></div>
+        <div class="three-m-grid">
+          <div class="media"><img src="assets/cartaz.jpg" alt="3M Surround Sound Headphones — anúncio rosa"></div>
+          <div class="media"><img src="assets/cartaz2.jpg" alt="3M Surround Sound Headphones — anúncio amarelo"></div>
+          <div class="media"><img src="assets/cartaz3.jpg" alt="3M Surround Sound Headphones — anúncio azul"></div>
+        </div>
       `;
     } else if (slug === 'metro') {
       media = `
