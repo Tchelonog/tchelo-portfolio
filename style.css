@@ -129,3 +129,8 @@ body.lightbox-open{overflow:hidden}
 .about-content p{font-size:15px}
 @media(max-width:800px){.about-layout{grid-template-columns:minmax(150px,27%) minmax(0,1fr)}.about-content p{font-size:13px}}
 @media(max-width:600px){.about-layout{grid-template-columns:1fr}.about-photo{width:min(100%,250px)}.about-content p{font-size:14px}}
+
+/* Sobre: texto de 12 pontos em todas as telas */
+.about-content p{font-size:12px}
+@media(max-width:800px){.about-content p{font-size:12px}}
+@media(max-width:600px){.about-content p{font-size:12px}}
