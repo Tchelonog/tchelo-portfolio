@@ -80,3 +80,9 @@ body.lightbox-open{overflow:hidden}
 .lightbox-tools button{background:#292929;color:white;border:1px solid #777;border-radius:5px;min-width:40px;padding:9px 12px;font:16px Arial,sans-serif;cursor:pointer}
 .lightbox-tools .zoom-reset{font-size:13px}
 .zoom-value{min-width:48px;text-align:center}
+
+/* 3M: duas peças verticais lado a lado e a terceira abaixo, no mesmo tamanho */
+.three-m-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;max-width:780px;margin:0 auto}
+.three-m-grid .media{margin:0;min-height:0;align-items:flex-start;background:transparent}
+.three-m-grid .media img{width:100%;height:auto;max-width:100%;object-fit:contain}
+@media(max-width:530px){.three-m-grid{gap:12px}}
