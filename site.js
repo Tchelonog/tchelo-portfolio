@@ -23,7 +23,7 @@ const descriptions = {
   'hopi-hari': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'corolla': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'droga-raia': '',
-  'sw4': '',
+  'sw4': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   'coco-de-passarinho': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   '3m': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 };
@@ -204,7 +204,13 @@ if (project) {
 
     let media = '';
 
-    if (slug === '3m') {
+    if (slug === 'sw4') {
+      media = `
+        <div class="media"><img src="assets/ans%20sw4%20pasta%20port%20copy3.jpg" alt="Toyota SW4 — Um jeito esperto de manter a família unida. Dê espaço."></div>
+        <div class="media"><img src="assets/ans%20sw4%20pasta%20port%20copy2.jpg" alt="Toyota SW4 — Cabem até 7 rabudos."></div>
+        <div class="media"><img src="assets/ans%20sw4%20pasta%20port%20copy1.jpg" alt="Toyota SW4 — Você nunca ficou tão confortável causando inveja."></div>
+      `;
+    } else if (slug === '3m') {
       media = `
         <div class="media"><img src="assets/cartaz%281%29.jpg" alt="3M Surround Sound Headphones — anúncio rosa"></div>
         <div class="media"><img src="assets/cartaz2%281%29.jpg" alt="3M Surround Sound Headphones — anúncio amarelo"></div>
