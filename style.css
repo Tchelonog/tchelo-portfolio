@@ -152,3 +152,26 @@ body.lightbox-open{overflow:hidden}
 
 /* Sobre: restaurar 100px de largura por lado */
 @media(min-width:801px){.about-layout{max-width:680px;grid-template-columns:175px minmax(0,1fr);gap:34px}.about-photo{width:175px}.about-content{max-width:471px}}
+
+/* Trabalho autoral 01: curta-metragem */
+.authorial-slot-featured{position:relative;display:block;overflow:hidden;background:#333;padding:0;text-align:left}
+.authorial-slot-featured>img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.authorial-slot-featured:hover>img,.authorial-slot-featured:focus-visible>img{transform:scale(1.045)}
+.authorial-slot-featured:focus-visible{outline:3px solid #555;outline-offset:3px}
+.authorial-slot-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08) 32%,rgba(0,0,0,.80) 100%);color:#fff;display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;gap:5px;padding:15px}
+.authorial-slot-category{font-size:10px;font-weight:700;letter-spacing:.13em}
+.authorial-slot-film-title{font-size:clamp(14px,1.45vw,19px);font-weight:700;line-height:1.17}
+.authorial-project{padding-top:52px;padding-bottom:90px}
+.authorial-project-inner{max-width:1000px;margin:0 auto}
+.authorial-back{display:inline-block;font-size:12px;letter-spacing:.05em;color:#666;margin-bottom:28px}
+.authorial-back:hover{text-decoration:underline}
+.authorial-project h1{font-size:clamp(34px,5vw,64px);line-height:1.04;letter-spacing:-.055em;margin:0 0 13px;font-weight:800}
+.authorial-project-type{font-size:13px;color:#777;margin:0 0 28px}
+.authorial-video-frame{position:relative;width:100%;aspect-ratio:16/9;background:#171717}
+.authorial-video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.authorial-project-info{max-width:780px;padding:28px 0 0;display:grid;grid-template-columns:minmax(0,1.7fr) minmax(180px,1fr);gap:30px}
+.authorial-project-info p{font-size:15px;line-height:1.55;color:#444;margin:0 0 16px}
+.authorial-credit{font-size:13px;line-height:1.55;margin-bottom:11px}
+.authorial-credit strong{display:block;font-size:11px;letter-spacing:.08em;margin-bottom:2px}
+.authorial-watch-link{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:600px){.authorial-project{padding-top:32px;padding-bottom:55px}.authorial-project-info{grid-template-columns:1fr;gap:10px}.authorial-project-info p{font-size:14px}.authorial-slot-film-title{font-size:14px}.authorial-slot-overlay{padding:11px}}
