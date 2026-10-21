@@ -159,16 +159,16 @@ const thumbnails = [
     "slug": "ciam"
   },
   {
-    "image": "assets/19%20bravia%20thumb%20copy.jpg",
-    "title": "Bravia",
-    "advertiser": "Sony",
-    "slug": "sony-bravia"
-  },
-  {
     "image": "assets/23%20nota%20escla%20thumb%20copy.jpg",
     "title": "Nota de esclarecimento",
     "advertiser": "Microsystem Sony",
     "slug": "sony-microsystem"
+  },
+  {
+    "image": "assets/19%20bravia%20thumb%20copy.jpg",
+    "title": "Bravia",
+    "advertiser": "Sony",
+    "slug": "sony-bravia"
   },
   {
     "image": "assets/22%20monkey%20thumb%20copy.jpg",
