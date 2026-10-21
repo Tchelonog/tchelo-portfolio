@@ -182,3 +182,8 @@ body.lightbox-open{overflow:hidden}
 .animation-project p{font-size:13px;color:#777;margin:0 0 18px}
 .animation-video-placeholder{width:100%;aspect-ratio:16/9;background:#e6e5e0;display:flex;align-items:center;justify-content:center;text-align:center;color:#777;font-size:12px;letter-spacing:.03em}
 @media(max-width:670px){.animation-projects{grid-template-columns:1fr;gap:37px}}
+
+.animation-project video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#171717}
+.animation-credits{margin-top:36px;padding-top:22px;border-top:1px solid #dcdcd9;font-size:14px;line-height:1.55}
+.animation-credits strong{display:block;font-size:11px;letter-spacing:.1em;margin-bottom:7px}
+.animation-credits p{margin:0;color:#444}
