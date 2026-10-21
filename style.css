@@ -189,3 +189,15 @@ body.lightbox-open{overflow:hidden}
 /* Terceira thumbnail autoral: experiências criativas para empresas */
 .authorial-slot-experiences>img{transition:none}
 .authorial-slot-experiences:hover>img{transform:none}
+
+/* Trabalhos autorais 03: experiências criativas para empresas */
+.experiences-page .experience-case h1{font-size:clamp(32px,4.6vw,58px);line-height:1.08;margin-bottom:38px}
+.experience-case-copy{max-width:850px;margin-bottom:35px}
+.experience-case-copy section+section{margin-top:27px}
+.experience-case-copy h2{font-size:13px;line-height:1.4;letter-spacing:.065em;font-weight:800;margin:0 0 8px}
+.experience-case-copy p{font-size:16px;line-height:1.6;color:#333;margin:0}
+.experience-case-mosaic{margin:0 0 36px}
+.experience-case-mosaic img{display:block;width:100%;height:auto}
+.experience-case-video .authorial-video-frame{width:100%}
+.experience-video-caption{margin:10px 0 0;font-size:13px;line-height:1.5;text-align:right;color:#444}
+@media(max-width:600px){.experiences-page .experience-case h1{font-size:clamp(28px,8vw,39px);margin-bottom:27px}.experience-case-copy p{font-size:14px;line-height:1.6}.experience-case-copy{margin-bottom:26px}.experience-case-mosaic{margin-bottom:27px}}
