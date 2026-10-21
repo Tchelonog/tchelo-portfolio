@@ -10,13 +10,37 @@
 <meta property="og:image" content="https://www.tchelonogueira.com.br/assets/roche-mosaico.jpg">
 <title>Conceitos que Viram Experiências — Tchelo Nogueira</title>
 <link rel="stylesheet" href="style.css?v=experiencias-2">
+<style>
+/* Prévia isolada: imagem à esquerda, textos à direita, vídeo em largura completa */
+.experiences-layout-split .experience-case{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);column-gap:36px;align-items:start}
+.experiences-layout-split .experience-case h1{grid-column:1/-1;font-size:clamp(32px,4.4vw,56px);margin:0 0 27px;letter-spacing:-.045em}
+.experiences-layout-split .experience-case-mosaic{grid-column:1;grid-row:2;margin:0;min-width:0}
+.experiences-layout-split .experience-case-copy{grid-column:2;grid-row:2;margin:0;min-width:0;max-width:none}
+.experiences-layout-split .experience-case-copy h2{font-size:15px;line-height:1.4;letter-spacing:.065em;font-weight:800;margin:0 0 8px}
+.experiences-layout-split .experience-case-copy p{font-size:16px;line-height:1.6}
+.experiences-layout-split .experience-case-copy section+section{margin-top:22px}
+.experiences-layout-split .experience-case-video{grid-column:1/-1;grid-row:3;margin-top:35px}
+.experiences-layout-split .experience-case+.experience-case{margin-top:105px}
+@media(max-width:780px){
+  .experiences-layout-split .experience-case{grid-template-columns:minmax(0,1fr)}
+  .experiences-layout-split .experience-case h1{grid-column:1;font-size:clamp(29px,7vw,45px);margin-bottom:22px}
+  .experiences-layout-split .experience-case-mosaic{grid-column:1;grid-row:2;margin:0 0 24px}
+  .experiences-layout-split .experience-case-copy{grid-column:1;grid-row:3}
+  .experiences-layout-split .experience-case-video{grid-column:1;grid-row:4;margin-top:27px}
+  .experiences-layout-split .experience-case+.experience-case{margin-top:76px}
+}
+@media(max-width:600px){
+  .experiences-layout-split .experience-case-copy p{font-size:14px;line-height:1.6}
+  .experiences-layout-split .experience-case+.experience-case{margin-top:64px}
+}
+</style>
 </head>
 <body>
 <header class="site-header">
   <div class="brand-line"><a href="index.html" class="logo">TCHELO NOGUEIRA</a><span class="brand-divider">|</span><span>REDATOR PUBLICITÁRIO</span><span class="brand-divider">|</span><span>CONCEITO E DIREÇÃO CRIATIVA</span></div>
   <nav class="header-links" aria-label="Navegação"><a href="sobre.html">Sobre</a><span>|</span><a href="https://www.linkedin.com/in/tchelo-nogueira-99b717169/" target="_blank" rel="noopener noreferrer">LinkedIn</a><span>|</span><a href="contato.html">Contato</a></nav>
 </header>
-<main class="authorial-project experiences-page">
+<main class="authorial-project experiences-page experiences-layout-split">
   <div class="authorial-project-inner">
     <a class="authorial-back" href="index.html#trabalhos-autorais">← CRIAÇÃO ALÉM DA PUBLICIDADE</a>
     <article class="experience-case" aria-labelledby="roche-case-title">
@@ -88,5 +112,6 @@
   </div>
 </main>
 <footer>TCHELO NOGUEIRA · SÃO PAULO</footer>
+<script src="mosaico-zoom.js?v=2"></script>
 </body>
 </html>
