@@ -53,7 +53,7 @@ function cover(p) {
   </div>`;
 }
 
-// Página inicial: 22 thumbnails na ordem numérica definida pelo portfólio.
+// Página inicial: 20 thumbnails na ordem de apresentação do portfólio.
 // Somente trabalhos com páginas já criadas têm links ativos.
 const thumbnails = [
   {
@@ -91,6 +91,12 @@ const thumbnails = [
     "title": "Toyota Corolla",
     "advertiser": "Toyota Corolla",
     "slug": "corolla"
+  },
+  {
+    "image": "assets/24%20sprinter%20thumb%20copy.jpg",
+    "title": "Mercedes-Benz Sprinter",
+    "advertiser": "Mercedes-Benz",
+    "slug": "mercedes-sprinter"
   },
   {
     "image": "assets/07%20escada%20thumb%20copy.jpg",
@@ -169,12 +175,6 @@ const thumbnails = [
     "title": "Monkey",
     "advertiser": "Monkey Cyber Café",
     "slug": "monkey-cyber-cafe"
-  },
-  {
-    "image": "assets/24%20sprinter%20thumb%20copy.jpg",
-    "title": "Mercedes-Benz Sprinter",
-    "advertiser": "Mercedes-Benz",
-    "slug": "mercedes-sprinter"
   }
 ];
 const grid = document.getElementById('grid');
@@ -198,7 +198,9 @@ if (project) {
     project.innerHTML = '<p>Projeto não encontrado. <a href="index.html">Voltar</a></p>';
   } else {
     const p = projects[i];
-    const next = projects[(i + 1) % projects.length];
+    const orderedProjects = thumbnails.map(item => projects.find(p => p[0] === item.slug)).filter(Boolean);
+    const currentIndex = orderedProjects.findIndex(p => p[0] === slug);
+    const next = orderedProjects[(currentIndex + 1) % orderedProjects.length];
 
     document.title = p[1] + ' — Tchelo Nogueira';
 
