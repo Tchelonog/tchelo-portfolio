@@ -201,3 +201,7 @@ body.lightbox-open{overflow:hidden}
 .experience-case-video .authorial-video-frame{width:100%}
 .experience-video-caption{margin:10px 0 0;font-size:13px;line-height:1.5;text-align:right;color:#444}
 @media(max-width:600px){.experiences-page .experience-case h1{font-size:clamp(28px,8vw,39px);margin-bottom:27px}.experience-case-copy p{font-size:14px;line-height:1.6}.experience-case-copy{margin-bottom:26px}.experience-case-mosaic{margin-bottom:27px}}
+
+/* Espaçamento entre projetos de experiências para empresas */
+.experiences-page .experience-case + .experience-case{margin-top:96px}
+@media(max-width:600px){.experiences-page .experience-case + .experience-case{margin-top:64px}}
