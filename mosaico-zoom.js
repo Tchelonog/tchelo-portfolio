@@ -1,5 +1,5 @@
-// Mesma lupa das peças publicitárias, aplicada aos mosaicos das páginas de experiências.
-const mosaics = document.querySelectorAll('.experiences-layout-split .experience-case-mosaic img, .experiences-layout-preview .experience-case-mosaic img');
+// Mesma lupa das peças publicitárias, aplicada aos mosaicos de experiências e às obras de arte contemporânea.
+const mosaics = document.querySelectorAll('.experiences-layout-split .experience-case-mosaic img, .experiences-layout-preview .experience-case-mosaic img, .contemporary-art-page .contemporary-art-image img');
 if (mosaics.length) {
   const lightbox = document.createElement('div');
   lightbox.className = 'project-lightbox';
