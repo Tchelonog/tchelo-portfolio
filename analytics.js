@@ -6,7 +6,7 @@
 (() => {
   'use strict';
 
-  const GA4_MEASUREMENT_ID = '';
+  const GA4_MEASUREMENT_ID = 'G-CRNPBVKKNP';
   if (!/^G-[A-Z0-9]{5,}$/i.test(GA4_MEASUREMENT_ID)) return;
 
   const preferenceKey = 'tchelo_portfolio_analytics_consent_v1';
