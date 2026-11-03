@@ -1,0 +1,18 @@
+/* São Paulo Metro — English print project page */
+.metro-main{max-width:1120px;margin:0 auto;padding-top:0}
+.metro-intro{padding:62px 0 48px;border-bottom:1px solid #d6d6d3}
+.metro-kicker{font-size:11px;font-weight:700;letter-spacing:.16em;color:#71716f;margin:0 0 17px}
+.metro-kicker span{margin:0 10px;color:#aaa}
+.metro-intro h1{font-size:clamp(42px,6.3vw,76px);font-weight:750;letter-spacing:-.07em;line-height:1.02;margin:0 0 20px}
+.metro-intro-subtitle{font-size:16px;color:#696969;line-height:1.55;margin:0}
+.metro-ad{padding:53px 0 63px;border-bottom:1px solid #d6d6d3}
+.metro-caption{max-width:1000px;margin:0 auto 28px}
+.metro-number{font-size:11px;font-weight:700;letter-spacing:.14em;color:#92928e;display:block;margin:0 0 16px}
+.metro-caption h2{font-size:clamp(30px,3.7vw,48px);line-height:1.17;letter-spacing:-.05em;font-weight:750;margin:0 0 14px;max-width:960px}
+.metro-explanation{font-size:16px;line-height:1.58;color:#585858;margin:0;max-width:880px}
+.metro-figure{margin:0 auto;max-width:1000px;background:#e8e8e5;display:flex;justify-content:center;align-items:center}
+.metro-figure a{display:block;width:100%;line-height:0;text-align:center;cursor:zoom-in}
+.metro-figure img{max-width:100%;width:auto;height:auto;max-height:none;object-fit:contain}
+.metro-bottom-nav{display:flex;justify-content:space-between;gap:25px;padding:35px 0 73px;font-size:12px;font-weight:700;letter-spacing:.055em}
+.metro-bottom-nav a:hover{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:650px){.metro-intro{padding:38px 0 30px}.metro-intro h1{font-size:42px}.metro-intro-subtitle{font-size:15px}.metro-ad{padding:36px 0 45px}.metro-caption{margin-bottom:22px}.metro-caption h2{font-size:30px;letter-spacing:-.035em}.metro-explanation{font-size:14px;line-height:1.55}.metro-bottom-nav{flex-direction:column;padding:30px 0 50px}.header-links{flex-wrap:wrap}}
