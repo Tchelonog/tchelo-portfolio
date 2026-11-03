@@ -4,10 +4,10 @@
 .metro-ad{max-width:1000px;margin:0 auto 34px}
 .metro-copy{margin:24px 0 14px}
 .metro-copy h2{font-family:Arial,Helvetica,sans-serif;font-size:19px;font-weight:700;line-height:1.4;letter-spacing:0;margin:0 0 5px;color:#171717}
-.metro-copy p{font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:400;line-height:1.5;color:#777;margin:0;max-width:950px}
+.metro-copy p{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:400;line-height:1.5;color:#777;margin:0;max-width:950px}
 .metro-media{display:flex;align-items:center;justify-content:center;background:#e6e5e0;min-height:0}
 .metro-media a{display:block;width:100%;text-align:center;line-height:0;cursor:zoom-in}
 .metro-media img{display:block;max-width:100%;height:auto;margin:0 auto}
 .metro-bottom-nav{display:flex;justify-content:space-between;gap:20px;font-size:13px;letter-spacing:0;padding:24px 0 65px;max-width:1000px;margin:0 auto}
 .metro-bottom-nav a:hover{text-decoration:underline}
-@media(max-width:530px){.metro-intro{padding-top:18px}.metro-copy{margin-top:21px;margin-bottom:12px}.metro-copy h2{font-size:18px}.metro-copy p{font-size:14px}.metro-ad{margin-bottom:29px}.metro-bottom-nav{font-size:12px;flex-wrap:wrap}}
+@media(max-width:530px){.metro-intro{padding-top:18px}.metro-copy{margin-top:21px;margin-bottom:12px}.metro-copy h2{font-size:18px}.metro-copy p{font-size:12px}.metro-ad{margin-bottom:29px}.metro-bottom-nav{font-size:12px;flex-wrap:wrap}}
