@@ -233,3 +233,8 @@ body.lightbox-open{overflow:hidden}
 .contemporary-art-links{font-size:14px;margin-top:24px}
 .contemporary-art-gallery{gap:28px;margin-top:32px}
 }
+
+/* Link discreto para solicitar currículo na página Sobre */
+.about-content .about-resume-cta{margin-top:24px}
+.about-resume-cta a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.about-resume-cta a:hover{text-decoration-thickness:2px}
