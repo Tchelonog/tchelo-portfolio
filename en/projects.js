@@ -419,8 +419,8 @@ if(project){
  const escaped=s=>String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
  const prefix='<p class="metro-intro">'+escaped(p.description)+'</p>';
  const sections=p.items.map((item,i)=>{
- const media=item.kind==="image"?'<div class="metro-media"><a target="_blank" rel="noopener noreferrer" href="'+encodeURI(item.src)+'" aria-label="Open original artwork"><img loading="lazy" alt="'+escaped(p.name+" — original print advertisement")+'" src="'+encodeURI(item.src)+'"></a></div>':
- '<div class="metro-media"><video controls playsinline preload="metadata" aria-label="'+escaped(p.name+" campaign film")+'" src="'+encodeURI(item.src)+'">Your browser does not support video playback.</video></div>';
+ const media=item.kind==="image"?'<div class="metro-media"><a target="_blank" rel="noopener noreferrer" href="'+item.src.replaceAll(" ","%20")+'" aria-label="Open original artwork"><img loading="lazy" alt="'+escaped(p.name+" — original print advertisement")+'" src="'+item.src.replaceAll(" ","%20")+'"></a></div>':
+ '<div class="metro-media"><video controls playsinline preload="metadata" aria-label="'+escaped(p.name+" campaign film")+'" src="'+item.src.replaceAll(" ","%20")+'">Your browser does not support video playback.</video></div>';
  return '<section class="metro-ad"><div class="metro-copy"><h2>'+escaped(item.headline)+'</h2><p>'+escaped(item.explanation)+'</p></div>'+media+'</section>';
  }).join("");
  project.innerHTML=prefix+sections+'<nav class="metro-bottom-nav"><a href="index.html">← HOMEPAGE</a><a href="projeto.html?id='+encodeURIComponent(next.slug)+'">NEXT PROJECT →</a></nav>';
