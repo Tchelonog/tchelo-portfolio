@@ -1,0 +1,429 @@
+// English case catalogue, using the original images and films from the Portuguese site.
+// The current copy is a first editorial draft; final translations will be reviewed case by case.
+const PROJECTS=[
+  {
+    "slug": "mercedes-sprinter",
+    "name": "Mercedes-Benz Sprinter",
+    "description": "Concept advertisement for the Mercedes-Benz Sprinter, positioning the vehicle as a premium choice in the van and light commercial vehicle segment.",
+    "items": [
+      {
+        "kind": "image",
+        "src": "../assets/an%20sprinter(1).jpg",
+        "headline": "Print advertisement",
+        "explanation": "Concept advertisement for the Mercedes-Benz Sprinter, positioning the vehicle as a premium choice in the van and light commercial vehicle segment."
+      }
+    ]
+  },
+  {
+    "slug": "sony-microsystem",
+    "name": "Sony Microsystem",
+    "description": "A newspaper classified advertisement promoting a Sony microsystem.",
+    "items": [
+      {
+        "kind": "image",
+        "src": "../assets/nota%20esclarecimento%20ok%20copy.jpg",
+        "headline": "Clarification notice",
+        "explanation": "The concept borrows the familiar format of a notice in a newspaper's classified section."
+      }
+    ]
+  },
+  {
+    "slug": "monkey-cyber-cafe",
+    "name": "Monkey Cyber Café",
+    "description": "Integrated disarmament awareness campaign for Monkey Cyber Café, featuring a film and print advertisements.",
+    "items": [
+      {
+        "kind": "image",
+        "src": "../assets/Young%20man%20copy.jpg",
+        "headline": "Print execution 1",
+        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/Woman%20copy.jpg",
+        "headline": "Print execution 2",
+        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/Man%20copy.jpg",
+        "headline": "Print execution 3",
+        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/FAVELA%20FINAL%20copy.jpg",
+        "headline": "Print execution 4",
+        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+      },
+      {
+        "kind": "video",
+        "src": "../assets/Monkey%20Game.mp4",
+        "headline": "Campaign film",
+        "explanation": "Film from an integrated public-awareness campaign about disarmament."
+      }
+    ]
+  },
+  {
+    "slug": "sony-bravia",
+    "name": "Sony Bravia",
+    "description": "An alternative-media magazine execution highlighting the ultra-slim design of the Sony Bravia TV.",
+    "items": [
+      {
+        "kind": "image",
+        "src": "../assets/puxe%20tv%20port%20pasta%20novo%20copy.jpg",
+        "headline": "The ultra-thin Sony Bravia",
+        "explanation": "An alternative-media magazine execution that demonstrates the TV's slim profile."
+      }
+    ]
+  },
+  {
+    "slug": "ciam",
+    "name": "CIAM",
+    "description": "Commercial and street activation created to encourage donations to CIAM (Centro Israelita de Apoio Multidisciplinar).",
+    "items": [
+      {
+        "kind": "video",
+        "src": "../assets/Ciam%20Portugue%CC%82s%20com%20efeito.mp4",
+        "headline": "Campaign film",
+        "explanation": "A commercial created to support donations to CIAM."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/pranchabalinha52X36%20copy.jpg",
+        "headline": "Print advertisement",
+        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+      }
+    ]
+  },
+  {
+    "slug": "salompas",
+    "name": "Salompas",
+    "description": "Commercial focusing on relief from muscle and neck pain.",
+    "items": [
+      {
+        "kind": "video",
+        "src": "../assets/Salompas%20Pescoc%CC%A7o.mp4",
+        "headline": "Campaign film",
+        "explanation": "A commercial focusing on muscle and neck pain relief."
+      }
+    ]
+  },
+  {
+    "slug": "sony-walkman",
+    "name": "Sony Walkman",
+    "description": "A double-page Sony Walkman newspaper ad. The apparently blank right-hand page reveals copy through ink transfer from the facing page.",
+    "items": [
+      {
+        "kind": "image",
+        "src": "../assets/an%20walkman%20pasta%20ok%20copy.jpg",
+        "headline": "A copy is never the same as the original.",
+        "explanation": "The newspaper format itself supports the message: an impression transferred from one page cannot truly replace the original."
+      }
+    ]
+  },
+  {
+    "slug": "centro-cultura-judaica",
+    "name": "Centro da Cultura Judaica",
+    "description": "Print advertisement for a film program celebrating Jewish culture in Brazil.",
+    "items": [
+      {
+        "kind": "image",
+        "src": "../assets/ccj%20gratuita%20copy.jpg",
+        "headline": "Admission is free.",
+        "explanation": "A print ad promoting the Jewish culture film program."
+      }
+    ]
+  },
+  {
+    "slug": "hopi-hari-brinquedos",
+    "name": "Hopi Hari — Rides",
+    "description": "A series of print ads inviting people to experience the rides at Hopi Hari.",
+    "items": [
+      {
+        "kind": "image",
+        "src": "../assets/hopi%20pasta%20brinquedos%203.jpg",
+        "headline": "Roller Coaster",
+        "explanation": "Print campaign inviting visitors to experience Hopi Hari's attractions."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/hopi%20pasta%20brinquedos%201.jpg",
+        "headline": "Ekatomb",
+        "explanation": "An execution from the same amusement-park campaign."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/hopi%20pasta%20brinquedos%202.jpg",
+        "headline": "La Tour Eiffel",
+        "explanation": "An execution from the same amusement-park campaign."
+      }
+    ]
+  },
+  {
+    "slug": "metro",
+    "name": "São Paulo Metro",
+    "description": "A print campaign for São Paulo's Metro system.",
+    "items": [
+      {
+        "kind": "image",
+        "src": "../assets/lay%20metro%20copy1.jpg",
+        "headline": "Print execution 1",
+        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/lay%20metro%20copy2.jpg",
+        "headline": "Print execution 2",
+        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/lay%20metro%20copy3.jpg",
+        "headline": "Print execution 3",
+        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+      }
+    ]
+  },
+  {
+    "slug": "derdic",
+    "name": "Derdic",
+    "description": "A commercial selected for the Clube de Criação de São Paulo (CCSP) annual. Created for Derdic, an institution specializing in bilingual deaf education, Brazilian Sign Language (Libras) and professional inclusion.",
+    "items": [
+      {
+        "kind": "video",
+        "src": "../assets/derdic.mp4",
+        "headline": "Campaign film",
+        "explanation": "An institutional commercial for Derdic, an organization working in deaf education and inclusion."
+      }
+    ]
+  },
+  {
+    "slug": "onu",
+    "name": "United Nations",
+    "description": "An international United Nations awareness campaign addressing violence in armed conflicts.",
+    "items": [
+      {
+        "kind": "video",
+        "src": "../assets/UN%202009.mp4",
+        "headline": "Campaign film",
+        "explanation": "A United Nations awareness film addressing violence in armed conflicts."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/UNARM%20copy.jpg",
+        "headline": "Print execution 1",
+        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/UNDO%20copy.jpg",
+        "headline": "Print execution 2",
+        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/UNLOAD%20copy.jpg",
+        "headline": "Print execution 3",
+        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/UNTIE%20copy.jpg",
+        "headline": "Print execution 4",
+        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+      }
+    ]
+  },
+  {
+    "slug": "gm-oleo",
+    "name": "General Motors — Engine Oil",
+    "description": "Cannes Media finalist and ANJ Award winner. A double-page newspaper execution simulates a sheet placed beneath a car to catch leaking engine oil.",
+    "items": [
+      {
+        "kind": "image",
+        "src": "../assets/jornal-GM%20copy.jpg",
+        "headline": "Genuine GM Parts",
+        "explanation": "The newspaper spread itself becomes the surface supposedly used to absorb an engine-oil leak."
+      }
+    ]
+  },
+  {
+    "slug": "hilux",
+    "name": "Toyota Hilux",
+    "description": "Integrated launch campaign for the new Toyota Hilux, including a film and print ads.",
+    "items": [
+      {
+        "kind": "video",
+        "src": "../assets/hilux.mp4",
+        "headline": "Campaign film",
+        "explanation": "Launch commercial for the new Toyota Hilux."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/ans hilux pasta new port copy2.jpg",
+        "headline": "Print execution 1",
+        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/ans hilux pasta new port copy1.jpg",
+        "headline": "Print execution 2",
+        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/ans hilux pasta new port copy3.jpg",
+        "headline": "Print execution 3",
+        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+      }
+    ]
+  },
+  {
+    "slug": "hopi-hari",
+    "name": "Hopi Hari — Escalator",
+    "description": "A CCSP annual selection. Stickers on escalators advertise a new Hopi Hari roller coaster.",
+    "items": [
+      {
+        "kind": "image",
+        "src": "../assets/HopiHari%20escada%20copy.jpg",
+        "headline": "A roller coaster on the escalator",
+        "explanation": "Escalator stickers transform an everyday journey into an advertisement for Hopi Hari's new ride."
+      },
+      {
+        "kind": "video",
+        "src": "../assets/hopy%20escada.mp4",
+        "headline": "Campaign film",
+        "explanation": "A short video documenting the escalator advertising activation."
+      }
+    ]
+  },
+  {
+    "slug": "corolla",
+    "name": "Toyota Corolla",
+    "description": "Integrated launch campaign for the new Toyota Corolla, including a film and print ads.",
+    "items": [
+      {
+        "kind": "video",
+        "src": "../assets/Corolla2010.mp4",
+        "headline": "Campaign film",
+        "explanation": "Launch commercial for the new Toyota Corolla."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/an%20corolla%20copy1.jpg",
+        "headline": "Print execution 1",
+        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/an%20corolla%20copy2.jpg",
+        "headline": "Print execution 2",
+        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+      }
+    ]
+  },
+  {
+    "slug": "droga-raia",
+    "name": "Droga Raia",
+    "description": "Alternative-media activation for Droga Raia, featured in the Clube de Criação de São Paulo (CCSP) annual.",
+    "items": [
+      {
+        "kind": "image",
+        "src": "../assets/Montagem%20Disfunc%CC%A7a%CC%83o.jpg",
+        "headline": "Print advertisement",
+        "explanation": "Alternative-media activation for Droga Raia, featured in the Clube de Criação de São Paulo (CCSP) annual."
+      }
+    ]
+  },
+  {
+    "slug": "sw4",
+    "name": "Toyota SW4",
+    "description": "Integrated launch campaign for the new Toyota SW4, including a film and print ads.",
+    "items": [
+      {
+        "kind": "video",
+        "src": "../assets/SW4%20Ladrao.mp4",
+        "headline": "Campaign film",
+        "explanation": "Launch commercial for the new Toyota SW4."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/ans%20sw4%20pasta%20port%20copy3.jpg",
+        "headline": "Keep the family together. Give them room.",
+        "explanation": "A play on the space and seating offered by the Toyota SW4."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/ans%20sw4%20pasta%20port%20copy2.jpg",
+        "headline": "Seven lucky passengers. One roomy SUV.",
+        "explanation": "Working adaptation of the Brazilian expression “cabem até 7 rabudos”; the idiomatic humor is still to be reviewed."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/ans%20sw4%20pasta%20port%20copy1.jpg",
+        "headline": "You've never made people jealous so comfortably.",
+        "explanation": "A lighthearted line connecting driving comfort with admiration."
+      }
+    ]
+  },
+  {
+    "slug": "coco-de-passarinho",
+    "name": "Bird Droppings",
+    "description": "Cannes Media finalist and CCSP annual selection. An electrostatic bird-dropping sticker was applied to parked cars near a car wash.",
+    "items": [
+      {
+        "kind": "image",
+        "src": "../assets/coco%20de%20passarinho%20ok%20new%20copy.jpg",
+        "headline": "Bird droppings",
+        "explanation": "An electrostatic sticker placed on parked car windows near a car wash."
+      }
+    ]
+  },
+  {
+    "slug": "3m",
+    "name": "3M — Surround Sound",
+    "description": "Poster campaign for 3M Surround Sound headphones.",
+    "items": [
+      {
+        "kind": "image",
+        "src": "../assets/cartaz.jpg",
+        "headline": "Surround Sound — poster 1",
+        "explanation": "3M headphone print series."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/cartaz2.jpg",
+        "headline": "Surround Sound — poster 2",
+        "explanation": "3M headphone print series."
+      },
+      {
+        "kind": "image",
+        "src": "../assets/cartaz3.jpg",
+        "headline": "Surround Sound — poster 3",
+        "explanation": "3M headphone print series."
+      }
+    ]
+  }
+];
+const project=document.getElementById("project");
+if(project){
+ const slug=new URLSearchParams(location.search).get("id");
+ if(slug==="metro"){location.replace("metro.html");}
+ else {
+ const ix=PROJECTS.findIndex(p=>p.slug===slug);
+ if(ix<0)project.innerHTML='<p>Project not found. <a href="index.html">Return to portfolio</a>.</p>';
+ else {
+ const p=PROJECTS[ix];document.title=p.name+" — Tchelo Nogueira";
+ const next=PROJECTS[(ix+1)%PROJECTS.length];
+ const escaped=s=>String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
+ const prefix='<p class="metro-intro">'+escaped(p.description)+'</p>';
+ const sections=p.items.map((item,i)=>{
+ const media=item.kind==="image"?'<div class="metro-media"><a target="_blank" rel="noopener noreferrer" href="'+encodeURI(item.src)+'" aria-label="Open original artwork"><img loading="lazy" alt="'+escaped(p.name+" — original print advertisement")+'" src="'+encodeURI(item.src)+'"></a></div>':
+ '<div class="metro-media"><video controls playsinline preload="metadata" aria-label="'+escaped(p.name+" campaign film")+'" src="'+encodeURI(item.src)+'">Your browser does not support video playback.</video></div>';
+ return '<section class="metro-ad"><div class="metro-copy"><h2>'+escaped(item.headline)+'</h2><p>'+escaped(item.explanation)+'</p></div>'+media+'</section>';
+ }).join("");
+ project.innerHTML=prefix+sections+'<nav class="metro-bottom-nav"><a href="index.html">← HOMEPAGE</a><a href="projeto.html?id='+encodeURIComponent(next.slug)+'">NEXT PROJECT →</a></nav>';
+ }
+ }
+}

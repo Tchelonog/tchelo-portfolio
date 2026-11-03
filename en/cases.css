@@ -1,0 +1,6 @@
+/* Case-specific adjustments; all follow the already approved Metro layout. */
+.metro-media video{display:block;width:100%;height:auto;background:#151515}
+.metro-ad + .metro-ad{padding-top:18px}
+.metro-copy h2{font-size:19px}
+.metro-copy p{font-size:13px}
+.metro-intro{text-transform:uppercase}
