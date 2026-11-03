@@ -238,3 +238,6 @@ body.lightbox-open{overflow:hidden}
 .about-content .about-resume-cta{margin-top:24px}
 .about-resume-cta a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
 .about-resume-cta a:hover{text-decoration-thickness:2px}
+
+/* Marca o idioma da página atual em negrito, mantendo ambos os links ativos. */
+.language-switch a[aria-current="page"]{font-weight:800}
