@@ -30,11 +30,11 @@
 
 
 /* Padronização das descrições em todas as páginas de projeto */
-.project-head{max-width:1000px!important;padding:18px 0 0!important;margin-left:auto!important;margin-right:auto!important;border:0!important}
+.project-head{max-width:1000px!important;padding:28px 0 0!important;margin-left:auto!important;margin-right:auto!important;border:0!important}
 .project-head p{font-family:Arial,Helvetica,sans-serif!important;font-size:19px!important;font-weight:400!important;line-height:1.45!important;color:#777!important;margin:0!important;padding:0!important}
 .project-media{margin-top:20px!important}
 .contact-details{font-size:18px}
-@media(max-width:530px){.project-head{padding-top:18px!important}.project-head p{font-size:19px!important}.project-media{margin-top:18px!important}.contact-details{font-size:18px}}
+@media(max-width:530px){.project-head{padding-top:28px!important}.project-head p{font-size:19px!important}.project-media{margin-top:18px!important}.contact-details{font-size:18px}}
 
 /* Ajustes finos de tipografia */
 .project-head p{font-size:12px!important;text-transform:uppercase!important}
