@@ -368,7 +368,7 @@ if (project) {
 
     project.innerHTML = `
       <section class="project-head">
-        <p style="font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:400;line-height:1.5;margin:0;padding:0;">
+        <p style="font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:400;line-height:1.5;margin:0;padding:0;">
           ${description}
         </p>
       </section>
