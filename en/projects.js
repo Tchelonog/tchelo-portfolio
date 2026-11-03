@@ -406,6 +406,7 @@ const PROJECTS=[
     ]
   }
 ];
+const HOMEPAGE_ORDER=["hilux","gm-oleo","derdic","onu","coco-de-passarinho","corolla","mercedes-sprinter","hopi-hari","metro","3m","sw4","hopi-hari-brinquedos","centro-cultura-judaica","droga-raia","sony-walkman","salompas","ciam","sony-microsystem","sony-bravia","monkey-cyber-cafe"];
 const project=document.getElementById("project");
 if(project){
  const slug=new URLSearchParams(location.search).get("id");
@@ -415,7 +416,8 @@ if(project){
  if(ix<0)project.innerHTML='<p>Project not found. <a href="index.html">Return to portfolio</a>.</p>';
  else {
  const p=PROJECTS[ix];document.title=p.name+" — Tchelo Nogueira";
- const next=PROJECTS[(ix+1)%PROJECTS.length];
+ const nextSlug=HOMEPAGE_ORDER[(HOMEPAGE_ORDER.indexOf(slug)+1)%HOMEPAGE_ORDER.length];
+ const nextUrl=nextSlug==="metro"?"metro.html":"projeto.html?id="+encodeURIComponent(nextSlug);
  const escaped=s=>String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
  const prefix='<p class="metro-intro">'+escaped(p.description)+'</p>';
  const sections=p.items.map((item,i)=>{
@@ -423,7 +425,7 @@ if(project){
  '<div class="metro-media"><video controls playsinline preload="metadata" aria-label="'+escaped(p.name+" campaign film")+'" src="'+item.src.replaceAll(" ","%20")+'">Your browser does not support video playback.</video></div>';
  return '<section class="metro-ad"><div class="metro-copy"><h2>'+escaped(item.headline)+'</h2><p>'+escaped(item.explanation)+'</p></div>'+media+'</section>';
  }).join("");
- project.innerHTML=prefix+sections+'<nav class="metro-bottom-nav"><a href="index.html">← HOMEPAGE</a><a href="projeto.html?id='+encodeURIComponent(next.slug)+'">NEXT PROJECT →</a></nav>';
+ project.innerHTML=prefix+sections+'<nav class="metro-bottom-nav"><a href="index.html">← HOMEPAGE</a><a href="'+nextUrl+'">NEXT PROJECT →</a></nav>';
  }
  }
 }
