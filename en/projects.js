@@ -238,7 +238,7 @@ const PROJECTS=[
   {
     "slug": "gm-oleo",
     "name": "General Motors — Engine Oil",
-    "description": "Cannes Media finalist and ANJ Award winner. A double-page newspaper execution simulates a sheet placed beneath a car to catch leaking engine oil.",
+    "description": "Silver Medal at the Clube de Criação de São Paulo (CCSP), Cannes Media finalist and ANJ Award winner. A double-page newspaper execution simulates a sheet placed beneath a car to catch leaking engine oil.",
     "items": [
       {
         "kind": "image",
