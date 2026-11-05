@@ -261,19 +261,19 @@ const PROJECTS=[
       },
       {
         "kind": "image",
-        "src": "../assets/ans hilux pasta new port copy2.jpg",
+        "src": "../assets/ans%20hilux%20pasta%20new%20port%20copy2.jpg",
         "headline": "Print execution 1",
         "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
       },
       {
         "kind": "image",
-        "src": "../assets/ans hilux pasta new port copy1.jpg",
+        "src": "../assets/ans%20hilux%20pasta%20new%20port%20copy1.jpg",
         "headline": "Print execution 2",
         "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
       },
       {
         "kind": "image",
-        "src": "../assets/ans hilux pasta new port copy3.jpg",
+        "src": "../assets/ans%20hilux%20pasta%20new%20port%20copy3.jpg",
         "headline": "Print execution 3",
         "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
       }
