@@ -9,7 +9,7 @@ const PROJECTS=[
       {
         "kind": "image",
         "src": "../assets/an%20sprinter(1).jpg",
-        "headline": "Print advertisement",
+        "headline": "Sprinter. Either you have one or you want one.",
         "explanation": "Concept advertisement for the Mercedes-Benz Sprinter, positioning the vehicle as a premium choice in the van and light commercial vehicle segment."
       }
     ]
@@ -430,5 +430,6 @@ if(project){
  }
  }
 }
+
 
 
