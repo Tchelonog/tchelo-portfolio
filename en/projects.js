@@ -263,18 +263,21 @@ const PROJECTS=[
         "kind": "image",
         "src": "../assets/ans hilux pasta new port copy2.jpg",
         "headline": "Sorry about that. All this smart technology, and the engine is still a beast.",
+        "tagline": "Hilux. The journey is the destination.",
         "explanation": ""
       },
       {
         "kind": "image",
         "src": "../assets/ans hilux pasta new port copy1.jpg",
         "headline": "Go places you can't imagine even in your dreams. Maybe in your nightmares.",
+        "tagline": "Hilux. The journey is the destination.",
         "explanation": ""
       },
       {
         "kind": "image",
         "src": "../assets/ans hilux pasta new port copy3.jpg",
         "headline": "Never stare down a wild animal. Unless you keep your distance.",
+        "tagline": "Hilux. The journey is the destination.",
         "explanation": ""
       }
     ]
@@ -529,6 +532,7 @@ if(project){
  }
  }
 }
+
 
 
 
