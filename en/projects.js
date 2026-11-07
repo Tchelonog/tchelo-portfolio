@@ -318,8 +318,8 @@ const PROJECTS=[
       {
         "kind": "image",
         "src": "../assets/an%20corolla%20copy2.jpg",
-        "headline": "Print execution 2",
-        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+        "headline": "The fastest acceleration in its class. You better talk to your cardiologist.",
+        "explanation": "Original Portuguese artwork with English headline adaptation."
       }
     ]
   },
@@ -430,4 +430,5 @@ if(project){
  }
  }
 }
+
 
