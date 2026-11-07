@@ -524,7 +524,7 @@ if(project){
   });
 
  }
- if(slug==="sw4"){const st=document.createElement("style");st.textContent="video::cue{font-size:75%}";document.head.appendChild(st);}
+ if(slug==="sw4"||slug==="hilux"){const st=document.createElement("style");st.textContent="video::cue{font-size:75%}";document.head.appendChild(st);}
  if(slug==="derdic"){const v=project.querySelector("video");const c=project.querySelector(".derdic-captions");if(v&&c){const t=v.textTracks&&v.textTracks[0];if(t){const up=()=>{c.textContent=t.activeCues&&t.activeCues.length?t.activeCues[0].text:"";};t.mode="hidden";t.addEventListener("cuechange",up);const fs=()=>{t.mode=document.fullscreenElement||document.webkitFullscreenElement?"showing":"hidden";up();};document.addEventListener("fullscreenchange",fs);document.addEventListener("webkitfullscreenchange",fs);}}}
  }
  }
