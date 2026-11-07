@@ -352,14 +352,16 @@ const PROJECTS=[
       {
         "kind": "image",
         "src": "../assets/ans%20sw4%20pasta%20port%20copy3.jpg",
-        "headline": "A smart way to keep the family together.\nGive them room.",
-        "explanation": "A play on the space and seating offered by the Toyota SW4."
+        "headline": "A smart way to keep the family together. Give them room.",
+        "tagline": "SW4. The masterpiece you desire most.",
+        "explanation": ""
       },
       {
         "kind": "image",
         "src": "../assets/ans%20sw4%20pasta%20port%20copy2.jpg",
         "headline": "Fits up to seven lucky bums.",
-        "explanation": "Working adaptation of the Brazilian expression “cabem até 7 rabudos”; the idiomatic humor is still to be reviewed."
+        "tagline": "SW4. The masterpiece you desire most.",
+        "explanation": ""
       },
       {
         "kind": "image",
@@ -526,6 +528,7 @@ if(project){
  }
  }
 }
+
 
 
 
