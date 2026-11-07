@@ -243,8 +243,8 @@ const PROJECTS=[
       {
         "kind": "image",
         "src": "../assets/jornal-GM%20copy.jpg",
-        "headline": "Genuine GM Parts",
-        "explanation": "The newspaper spread itself becomes the surface supposedly used to absorb an engine-oil leak."
+        "headline": "Next time, use Genuine GM Parts.",
+        "explanation": "A double-page newspaper ad that looks like a sheet of newspaper placed under a car to catch an oil leak."
       }
     ]
   },
