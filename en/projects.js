@@ -312,8 +312,8 @@ const PROJECTS=[
       {
         "kind": "image",
         "src": "../assets/an%20corolla%20copy1.jpg",
-        "headline": "Print execution 1",
-        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+        "headline": "Don't let life overtake you.",
+        "explanation": "Original Portuguese artwork with English headline adaptation."
       },
       {
         "kind": "image",
@@ -430,6 +430,7 @@ if(project){
  }
  }
 }
+
 
 
 
