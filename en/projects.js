@@ -212,25 +212,25 @@ const PROJECTS=[
       {
         "kind": "image",
         "src": "../assets/UNARM%20copy.jpg",
-        "headline": "UNARM",
+        "headline": "",
         "explanation": ""
       },
       {
         "kind": "image",
         "src": "../assets/UNDO%20copy.jpg",
-        "headline": "UNDO",
+        "headline": "",
         "explanation": ""
       },
       {
         "kind": "image",
         "src": "../assets/UNLOAD%20copy.jpg",
-        "headline": "UNLOAD",
+        "headline": "",
         "explanation": ""
       },
       {
         "kind": "image",
         "src": "../assets/UNTIE%20copy.jpg",
-        "headline": "UNTIE",
+        "headline": "",
         "explanation": ""
       }
     ]
@@ -430,6 +430,7 @@ if(project){
  }
  }
 }
+
 
 
 
