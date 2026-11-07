@@ -352,7 +352,7 @@ const PROJECTS=[
       {
         "kind": "image",
         "src": "../assets/ans%20sw4%20pasta%20port%20copy3.jpg",
-        "headline": "Keep the family together. Give them room.",
+        "headline": "A smart way to keep the family together.\nGive them room.",
         "explanation": "A play on the space and seating offered by the Toyota SW4."
       },
       {
@@ -425,7 +425,7 @@ if(project){
  const sections=p.items.map((item,i)=>{
  const media=item.kind==="image"?'<div class="metro-media"><a target="_blank" rel="noopener noreferrer" href="'+item.src.replaceAll(" ","%20")+'" aria-label="Open original artwork"><img loading="lazy" alt="'+escaped(p.name+" — original print advertisement")+'" src="'+item.src.replaceAll(" ","%20")+'"></a></div>':
  '<div class="metro-media"'+(slug==="derdic"?' style="flex-direction:column"':'')+'><video controls playsinline preload="metadata" aria-label="'+escaped(p.name+" campaign film")+'" src="'+item.src.replaceAll(" ","%20")+'">'+(slug==="hilux"?'<track kind="subtitles" srclang="en" label="English" src="../assets/hilux-en.vtt" default>':'')+(slug==="derdic"?'<track kind="subtitles" srclang="en" label="English" src="../assets/derdic-en.vtt">':'')+(slug==="sw4"?'<track kind="subtitles" srclang="en" label="English" src="../assets/sw4-en.vtt" default>':'')+'Your browser does not support video playback.</video>'+(slug==="derdic"?'<div class="derdic-captions" style="background:#000;color:#fff;text-align:center;padding:10px 12px;font-size:15px;line-height:1.4;min-height:2.8em;width:100%;box-sizing:border-box" aria-live="polite"></div>':'')+'</div>';
- return '<section class="metro-ad"><div class="metro-copy"><h2'+(item.tagline?' style="margin-bottom:2px"':'')+'>'+escaped(item.headline)+'</h2>'+(item.tagline?'<p style="font-size:14px;font-weight:700;color:#171717;margin:0 0 10px">'+escaped(item.tagline)+'</p>':'')+'<p>'+escaped(item.explanation)+'</p></div>'+media+'</section>';
+ return '<section class="metro-ad"><div class="metro-copy"><h2 style="white-space:pre-line'+(item.tagline?';margin-bottom:2px':'')+'">'+escaped(item.headline)+'</h2>'+(item.tagline?'<p style="font-size:14px;font-weight:700;color:#171717;margin:0 0 10px">'+escaped(item.tagline)+'</p>':'')+'<p>'+escaped(item.explanation)+'</p></div>'+media+'</section>';
  }).join("");
  const navHtml='<nav class="metro-bottom-nav"><a href="index.html">← HOMEPAGE</a><a href="'+nextUrl+'">NEXT PROJECT →</a></nav>';
  if(slug==="3m"){
@@ -526,6 +526,7 @@ if(project){
  }
  }
 }
+
 
 
 
