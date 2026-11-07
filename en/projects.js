@@ -313,13 +313,13 @@ const PROJECTS=[
         "kind": "image",
         "src": "../assets/an%20corolla%20copy1.jpg",
         "headline": "Don't let life overtake you.",
-        "explanation": "Original Portuguese artwork with English headline adaptation."
+        "explanation": ""
       },
       {
         "kind": "image",
         "src": "../assets/an%20corolla%20copy2.jpg",
-        "headline": "The fastest acceleration in its class. You better talk to your cardiologist.",
-        "explanation": "Original Portuguese artwork with English headline adaptation."
+        "headline": "The fastest acceleration in its class. For more information, see your cardiologist.",
+        "explanation": ""
       }
     ]
   },
@@ -430,6 +430,7 @@ if(project){
  }
  }
 }
+
 
 
 
