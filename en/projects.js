@@ -144,19 +144,22 @@ const PROJECTS=[
         "kind": "image",
         "src": "../assets/hopi%20pasta%20brinquedos%203.jpg",
         "headline": "Roller Coaster",
-        "explanation": "Print campaign inviting visitors to experience Hopi Hari's attractions."
+        "tagline": "Hopi Hari attractions. The gift every child wants to play with.",
+        "explanation": ""
       },
       {
         "kind": "image",
         "src": "../assets/hopi%20pasta%20brinquedos%201.jpg",
         "headline": "Ekatomb",
-        "explanation": "An execution from the same amusement-park campaign."
+        "tagline": "Hopi Hari attractions. The gift every child wants to play with.",
+        "explanation": ""
       },
       {
         "kind": "image",
         "src": "../assets/hopi%20pasta%20brinquedos%202.jpg",
         "headline": "La Tour Eiffel",
-        "explanation": "An execution from the same amusement-park campaign."
+        "tagline": "Hopi Hari attractions. The gift every child wants to play with.",
+        "explanation": ""
       }
     ]
   },
@@ -532,6 +535,7 @@ if(project){
  }
  }
 }
+
 
 
 
