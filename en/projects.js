@@ -424,7 +424,7 @@ if(project){
  const prefix='<p class="metro-intro">'+escaped(p.description)+'</p>';
  const sections=p.items.map((item,i)=>{
  const media=item.kind==="image"?'<div class="metro-media"><a target="_blank" rel="noopener noreferrer" href="'+item.src.replaceAll(" ","%20")+'" aria-label="Open original artwork"><img loading="lazy" alt="'+escaped(p.name+" — original print advertisement")+'" src="'+item.src.replaceAll(" ","%20")+'"></a></div>':
- '<div class="metro-media"'+(slug==="derdic"?' style="flex-direction:column"':'')+'><video controls playsinline preload="metadata" aria-label="'+escaped(p.name+" campaign film")+'" src="'+item.src.replaceAll(" ","%20")+'">'+(slug==="hilux"?'<track kind="subtitles" srclang="en" label="English" src="../assets/hilux-en.vtt" default>':'')+(slug==="derdic"?'<track kind="subtitles" srclang="en" label="English" src="../assets/derdic-en.vtt">':'')+'Your browser does not support video playback.</video>'+(slug==="derdic"?'<div class="derdic-captions" style="background:#000;color:#fff;text-align:center;padding:10px 12px;font-size:15px;line-height:1.4;min-height:2.8em;width:100%;box-sizing:border-box" aria-live="polite"></div>':'')+'</div>';
+ '<div class="metro-media"'+(slug==="derdic"?' style="flex-direction:column"':'')+'><video controls playsinline preload="metadata" aria-label="'+escaped(p.name+" campaign film")+'" src="'+item.src.replaceAll(" ","%20")+'">'+(slug==="hilux"?'<track kind="subtitles" srclang="en" label="English" src="../assets/hilux-en.vtt" default>':'')+(slug==="derdic"?'<track kind="subtitles" srclang="en" label="English" src="../assets/derdic-en.vtt">':'')+(slug==="sw4"?'<track kind="subtitles" srclang="en" label="English" src="../assets/sw4-en.vtt" default>':'')+'Your browser does not support video playback.</video>'+(slug==="derdic"?'<div class="derdic-captions" style="background:#000;color:#fff;text-align:center;padding:10px 12px;font-size:15px;line-height:1.4;min-height:2.8em;width:100%;box-sizing:border-box" aria-live="polite"></div>':'')+'</div>';
  return '<section class="metro-ad"><div class="metro-copy"><h2'+(item.tagline?' style="margin-bottom:2px"':'')+'>'+escaped(item.headline)+'</h2>'+(item.tagline?'<p style="font-size:14px;font-weight:700;color:#171717;margin:0 0 10px">'+escaped(item.tagline)+'</p>':'')+'<p>'+escaped(item.explanation)+'</p></div>'+media+'</section>';
  }).join("");
  const navHtml='<nav class="metro-bottom-nav"><a href="index.html">← HOMEPAGE</a><a href="'+nextUrl+'">NEXT PROJECT →</a></nav>';
@@ -521,10 +521,12 @@ if(project){
   });
 
  }
+ if(slug==="sw4"){const v=project.querySelector("video");if(v){const m=v.closest(".metro-media");const sig=document.createElement("p");sig.textContent="The masterpiece you desire most.";sig.style.cssText="font-size:14px;font-weight:700;color:#171717;margin:8px 0 30px";if(m)m.after(sig);}}
  if(slug==="derdic"){const v=project.querySelector("video");const c=project.querySelector(".derdic-captions");if(v&&c){const t=v.textTracks&&v.textTracks[0];if(t){const up=()=>{c.textContent=t.activeCues&&t.activeCues.length?t.activeCues[0].text:"";};t.mode="hidden";t.addEventListener("cuechange",up);const fs=()=>{t.mode=document.fullscreenElement||document.webkitFullscreenElement?"showing":"hidden";up();};document.addEventListener("fullscreenchange",fs);document.addEventListener("webkitfullscreenchange",fs);}}}
  }
  }
 }
+
 
 
 
