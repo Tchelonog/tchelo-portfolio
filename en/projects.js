@@ -521,11 +521,12 @@ if(project){
   });
 
  }
- if(slug==="sw4"){const v=project.querySelector("video");if(v){const m=v.closest(".metro-media");const sig=document.createElement("p");sig.textContent="The masterpiece you desire most.";sig.style.cssText="font-size:14px;font-weight:700;color:#171717;margin:8px 0 30px";if(m)m.after(sig);}}
+ if(slug==="sw4"){const st=document.createElement("style");st.textContent="video::cue{font-size:75%}";document.head.appendChild(st);}
  if(slug==="derdic"){const v=project.querySelector("video");const c=project.querySelector(".derdic-captions");if(v&&c){const t=v.textTracks&&v.textTracks[0];if(t){const up=()=>{c.textContent=t.activeCues&&t.activeCues.length?t.activeCues[0].text:"";};t.mode="hidden";t.addEventListener("cuechange",up);const fs=()=>{t.mode=document.fullscreenElement||document.webkitFullscreenElement?"showing":"hidden";up();};document.addEventListener("fullscreenchange",fs);document.addEventListener("webkitfullscreenchange",fs);}}}
  }
  }
 }
+
 
 
 
