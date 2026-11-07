@@ -262,20 +262,20 @@ const PROJECTS=[
       {
         "kind": "image",
         "src": "../assets/ans hilux pasta new port copy2.jpg",
-        "headline": "Print execution 1",
-        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+        "headline": "Sorry about that. All this smart technology, and the engine is still a beast.",
+        "explanation": ""
       },
       {
         "kind": "image",
         "src": "../assets/ans hilux pasta new port copy1.jpg",
-        "headline": "Print execution 2",
-        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+        "headline": "Go places you can't imagine even in your dreams. Maybe in your nightmares.",
+        "explanation": ""
       },
       {
         "kind": "image",
         "src": "../assets/ans hilux pasta new port copy3.jpg",
-        "headline": "Print execution 3",
-        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+        "headline": "Never stare down a wild animal. Unless you keep your distance.",
+        "explanation": ""
       }
     ]
   },
@@ -422,7 +422,7 @@ if(project){
  const prefix='<p class="metro-intro">'+escaped(p.description)+'</p>';
  const sections=p.items.map((item,i)=>{
  const media=item.kind==="image"?'<div class="metro-media"><a target="_blank" rel="noopener noreferrer" href="'+item.src.replaceAll(" ","%20")+'" aria-label="Open original artwork"><img loading="lazy" alt="'+escaped(p.name+" — original print advertisement")+'" src="'+item.src.replaceAll(" ","%20")+'"></a></div>':
- '<div class="metro-media"><video controls playsinline preload="metadata" aria-label="'+escaped(p.name+" campaign film")+'" src="'+item.src.replaceAll(" ","%20")+'">Your browser does not support video playback.</video></div>';
+ '<div class="metro-media"><video controls playsinline preload="metadata" aria-label="'+escaped(p.name+" campaign film")+'" src="'+item.src.replaceAll(" ","%20")+'">'+(slug==="hilux"?'<track kind="subtitles" srclang="en" label="English" src="../assets/hilux-en.vtt" default>':'')+'Your browser does not support video playback.</video></div>';
  return '<section class="metro-ad"><div class="metro-copy"><h2>'+escaped(item.headline)+'</h2><p>'+escaped(item.explanation)+'</p></div>'+media+'</section>';
  }).join("");
  project.innerHTML=prefix+sections+'<nav class="metro-bottom-nav"><a href="index.html">← HOMEPAGE</a><a href="'+nextUrl+'">NEXT PROJECT →</a></nav>';
