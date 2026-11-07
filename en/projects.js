@@ -201,7 +201,7 @@ const PROJECTS=[
   {
     "slug": "onu",
     "name": "United Nations",
-    "description": "An international United Nations awareness campaign addressing violence in armed conflicts.",
+    "description": "An international United Nations awareness campaign against violence in armed conflicts.",
     "items": [
       {
         "kind": "video",
@@ -212,26 +212,26 @@ const PROJECTS=[
       {
         "kind": "image",
         "src": "../assets/UNARM%20copy.jpg",
-        "headline": "Print execution 1",
-        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+        "headline": "UNARM",
+        "explanation": ""
       },
       {
         "kind": "image",
         "src": "../assets/UNDO%20copy.jpg",
-        "headline": "Print execution 2",
-        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+        "headline": "UNDO",
+        "explanation": ""
       },
       {
         "kind": "image",
         "src": "../assets/UNLOAD%20copy.jpg",
-        "headline": "Print execution 3",
-        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+        "headline": "UNLOAD",
+        "explanation": ""
       },
       {
         "kind": "image",
         "src": "../assets/UNTIE%20copy.jpg",
-        "headline": "Print execution 4",
-        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+        "headline": "UNTIE",
+        "explanation": ""
       }
     ]
   },
@@ -430,3 +430,4 @@ if(project){
  }
  }
 }
+
