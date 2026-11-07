@@ -358,7 +358,7 @@ const PROJECTS=[
       {
         "kind": "image",
         "src": "../assets/ans%20sw4%20pasta%20port%20copy2.jpg",
-        "headline": "Seven lucky passengers. One roomy SUV.",
+        "headline": "Fits up to seven lucky bums.",
         "explanation": "Working adaptation of the Brazilian expression “cabem até 7 rabudos”; the idiomatic humor is still to be reviewed."
       },
       {
@@ -526,6 +526,7 @@ if(project){
  }
  }
 }
+
 
 
 
