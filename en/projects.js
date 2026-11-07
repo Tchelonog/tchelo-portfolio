@@ -366,8 +366,9 @@ const PROJECTS=[
       {
         "kind": "image",
         "src": "../assets/ans%20sw4%20pasta%20port%20copy1.jpg",
-        "headline": "You've never made people jealous so comfortably.",
-        "explanation": "A lighthearted line connecting driving comfort with admiration."
+        "headline": "You've never been so comfortable making people jealous.",
+        "tagline": "SW4. The masterpiece you desire most.",
+        "explanation": ""
       }
     ]
   },
@@ -528,6 +529,7 @@ if(project){
  }
  }
 }
+
 
 
 
