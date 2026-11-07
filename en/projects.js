@@ -427,11 +427,105 @@ if(project){
  '<div class="metro-media"'+(slug==="derdic"?' style="flex-direction:column"':'')+'><video controls playsinline preload="metadata" aria-label="'+escaped(p.name+" campaign film")+'" src="'+item.src.replaceAll(" ","%20")+'">'+(slug==="hilux"?'<track kind="subtitles" srclang="en" label="English" src="../assets/hilux-en.vtt" default>':'')+(slug==="derdic"?'<track kind="subtitles" srclang="en" label="English" src="../assets/derdic-en.vtt">':'')+'Your browser does not support video playback.</video>'+(slug==="derdic"?'<div class="derdic-captions" style="background:#000;color:#fff;text-align:center;padding:10px 12px;font-size:15px;line-height:1.4;min-height:2.8em;width:100%;box-sizing:border-box" aria-live="polite"></div>':'')+'</div>';
  return '<section class="metro-ad"><div class="metro-copy"><h2'+(item.tagline?' style="margin-bottom:2px"':'')+'>'+escaped(item.headline)+'</h2>'+(item.tagline?'<p style="font-size:14px;font-weight:700;color:#171717;margin:0 0 10px">'+escaped(item.tagline)+'</p>':'')+'<p>'+escaped(item.explanation)+'</p></div>'+media+'</section>';
  }).join("");
- project.innerHTML=prefix+sections+'<nav class="metro-bottom-nav"><a href="index.html">← HOMEPAGE</a><a href="'+nextUrl+'">NEXT PROJECT →</a></nav>';
+ const navHtml='<nav class="metro-bottom-nav"><a href="index.html">← HOMEPAGE</a><a href="'+nextUrl+'">NEXT PROJECT →</a></nav>';
+ if(slug==="3m"){
+  const alts=["pink poster","yellow poster","blue poster"];
+  project.innerHTML=prefix+'<div class="project-media"><div class="three-m-grid">'+p.items.map((item,i)=>'<div class="media"><img loading="lazy" alt="'+escaped("3M Surround Sound Headphones — "+(alts[i]||"poster"))+'" src="'+item.src.replaceAll(" ","%20")+'"></div>').join("")+'</div></div>'+navHtml;
+ } else {
+ project.innerHTML=prefix+sections+navHtml;
+ }
+ if(slug==="3m"){
+
+  const lightbox = document.createElement('div');
+  lightbox.className = 'project-lightbox';
+  lightbox.setAttribute('role', 'dialog');
+  lightbox.setAttribute('aria-modal', 'true');
+  lightbox.setAttribute('aria-label', 'Enlarged image');
+  lightbox.hidden = true;
+  lightbox.innerHTML = '<button type="button" class="lightbox-close" aria-label="Close enlarged image">×</button><div class="lightbox-viewport"><img alt="" draggable="false"></div><div class="lightbox-tools"><button type="button" class="zoom-out" aria-label="Zoom out">−</button><span class="zoom-value">200%</span><button type="button" class="zoom-in" aria-label="Zoom in">+</button><button type="button" class="zoom-reset">Reset</button></div>';
+  document.body.appendChild(lightbox);
+  const viewport = lightbox.querySelector('.lightbox-viewport');
+  const enlarged = lightbox.querySelector('img');
+  const zoomValue = lightbox.querySelector('.zoom-value');
+  let previousFocus = null, scale = 2, x = 0, y = 0, drag = null;
+  const render = () => {
+    enlarged.style.transform = 'translate(' + x + 'px,' + y + 'px) scale(' + scale + ')';
+    zoomValue.textContent = Math.round(scale * 100) + '%';
+    viewport.classList.toggle('can-drag', scale > 1);
+  };
+  const setZoom = (next, clientX, clientY) => {
+    const old = scale;
+    scale = Math.max(1, Math.min(6, next));
+    if (clientX !== undefined && clientY !== undefined) {
+      const rect = viewport.getBoundingClientRect();
+      const px = clientX - rect.left - rect.width / 2;
+      const py = clientY - rect.top - rect.height / 2;
+      x = px - (px - x) * scale / old;
+      y = py - (py - y) * scale / old;
+    }
+    if (scale === 1) { x = 0; y = 0; }
+    render();
+  };
+  const close = () => {
+    lightbox.hidden = true;
+    document.body.classList.remove('lightbox-open');
+    drag = null;
+    if (previousFocus) previousFocus.focus();
+  };
+  project.querySelectorAll('.project-media .media img').forEach(img => {
+    img.classList.add('zoomable-image');
+    img.tabIndex = 0;
+    img.setAttribute('role', 'button');
+    img.setAttribute('aria-label', 'Enlarge details: ' + (img.alt || 'poster'));
+    const open = () => {
+      previousFocus = document.activeElement;
+      enlarged.src = img.currentSrc || img.src;
+      enlarged.alt = img.alt;
+      scale = 2; x = 0; y = 0;
+      lightbox.hidden = false;
+      document.body.classList.add('lightbox-open');
+      render();
+      lightbox.querySelector('.lightbox-close').focus();
+    };
+    img.addEventListener('click', open);
+    img.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); open(); }
+    });
+  });
+  viewport.addEventListener('wheel', event => {
+    event.preventDefault();
+    setZoom(scale * (event.deltaY < 0 ? 1.2 : 1 / 1.2), event.clientX, event.clientY);
+  }, { passive: false });
+  viewport.addEventListener('pointerdown', event => {
+    if (event.button !== 0) return;
+    drag = { px: event.clientX, py: event.clientY, x, y };
+    viewport.setPointerCapture(event.pointerId);
+    viewport.classList.add('dragging');
+  });
+  viewport.addEventListener('pointermove', event => {
+    if (!drag) return;
+    x = drag.x + event.clientX - drag.px;
+    y = drag.y + event.clientY - drag.py;
+    render();
+  });
+  const stopDrag = () => { drag = null; viewport.classList.remove('dragging'); };
+  viewport.addEventListener('pointerup', stopDrag);
+  viewport.addEventListener('pointercancel', stopDrag);
+  lightbox.querySelector('.zoom-in').addEventListener('click', () => setZoom(scale * 1.5));
+  lightbox.querySelector('.zoom-out').addEventListener('click', () => setZoom(scale / 1.5));
+  lightbox.querySelector('.zoom-reset').addEventListener('click', () => { scale = 1; x = 0; y = 0; render(); });
+  lightbox.querySelector('.lightbox-close').addEventListener('click', close);
+  lightbox.addEventListener('click', event => { if (event.target === lightbox) close(); });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && !lightbox.hidden) close();
+  });
+
+ }
  if(slug==="derdic"){const v=project.querySelector("video");const c=project.querySelector(".derdic-captions");if(v&&c){const t=v.textTracks&&v.textTracks[0];if(t){const up=()=>{c.textContent=t.activeCues&&t.activeCues.length?t.activeCues[0].text:"";};t.mode="hidden";t.addEventListener("cuechange",up);const fs=()=>{t.mode=document.fullscreenElement||document.webkitFullscreenElement?"showing":"hidden";up();};document.addEventListener("fullscreenchange",fs);document.addEventListener("webkitfullscreenchange",fs);}}}
  }
  }
 }
+
 
 
 
