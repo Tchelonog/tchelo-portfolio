@@ -370,13 +370,13 @@ const PROJECTS=[
   {
     "slug": "coco-de-passarinho",
     "name": "Bird Droppings",
-    "description": "Cannes Media finalist and CCSP annual selection. An electrostatic bird-dropping sticker was applied to parked cars near a car wash.",
+    "description": "Finalist in the Media category at the Cannes Festival and published in the Clube de Criação de São Paulo (CCSP) annual. An electrostatic bird-dropping sticker was applied to the windows of cars parked near a car wash.",
     "items": [
       {
         "kind": "image",
         "src": "../assets/coco%20de%20passarinho%20ok%20new%20copy.jpg",
         "headline": "Bird droppings",
-        "explanation": "An electrostatic sticker placed on parked car windows near a car wash."
+        "explanation": "An electrostatic sticker shaped like a bird dropping, placed on the windows of cars parked near the Metálico car wash."
       }
     ]
   },
