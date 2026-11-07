@@ -282,13 +282,13 @@ const PROJECTS=[
   {
     "slug": "hopi-hari",
     "name": "Hopi Hari — Escalator",
-    "description": "A CCSP annual selection. Stickers on escalators advertise a new Hopi Hari roller coaster.",
+    "description": "Published in the Clube de Criação de São Paulo (CCSP) annual. Stickers applied to escalators advertise Hopi Hari's new roller coaster.",
     "items": [
       {
         "kind": "image",
         "src": "../assets/HopiHari%20escada%20copy.jpg",
-        "headline": "A roller coaster on the escalator",
-        "explanation": "Escalator stickers transform an everyday journey into an advertisement for Hopi Hari's new ride."
+        "headline": "Have fun on Hopi Hari's roller coaster.",
+        "explanation": "Escalator step stickers turn the ride up into a preview of Hopi Hari's new roller coaster."
       },
       {
         "kind": "video",
@@ -430,6 +430,7 @@ if(project){
  }
  }
 }
+
 
 
 
