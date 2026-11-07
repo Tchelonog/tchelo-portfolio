@@ -194,7 +194,7 @@ const PROJECTS=[
         "kind": "video",
         "src": "../assets/derdic.mp4",
         "headline": "Campaign film",
-        "explanation": "An institutional commercial for Derdic, an organization working in deaf education and inclusion."
+        "explanation": "The film reverses the usual screen layout: the man signing in Libras fills the screen, while the speaker appears in a small corner window. At the end, they switch places."
       }
     ]
   },
@@ -422,10 +422,11 @@ if(project){
  const prefix='<p class="metro-intro">'+escaped(p.description)+'</p>';
  const sections=p.items.map((item,i)=>{
  const media=item.kind==="image"?'<div class="metro-media"><a target="_blank" rel="noopener noreferrer" href="'+item.src.replaceAll(" ","%20")+'" aria-label="Open original artwork"><img loading="lazy" alt="'+escaped(p.name+" — original print advertisement")+'" src="'+item.src.replaceAll(" ","%20")+'"></a></div>':
- '<div class="metro-media"><video controls playsinline preload="metadata" aria-label="'+escaped(p.name+" campaign film")+'" src="'+item.src.replaceAll(" ","%20")+'">'+(slug==="hilux"?'<track kind="subtitles" srclang="en" label="English" src="../assets/hilux-en.vtt" default>':'')+'Your browser does not support video playback.</video></div>';
+ '<div class="metro-media"><video controls playsinline preload="metadata" aria-label="'+escaped(p.name+" campaign film")+'" src="'+item.src.replaceAll(" ","%20")+'">'+(slug==="hilux"?'<track kind="subtitles" srclang="en" label="English" src="../assets/hilux-en.vtt" default>':'')+(slug==="derdic"?'<track kind="subtitles" srclang="en" label="English" src="../assets/derdic-en.vtt">':'')+'Your browser does not support video playback.</video>'+(slug==="derdic"?'<div class="derdic-captions" style="background:#000;color:#fff;text-align:center;padding:10px 12px;font-size:15px;line-height:1.4;min-height:2.8em" aria-live="polite"></div>':'')+'</div>';
  return '<section class="metro-ad"><div class="metro-copy"><h2>'+escaped(item.headline)+'</h2><p>'+escaped(item.explanation)+'</p></div>'+media+'</section>';
  }).join("");
  project.innerHTML=prefix+sections+'<nav class="metro-bottom-nav"><a href="index.html">← HOMEPAGE</a><a href="'+nextUrl+'">NEXT PROJECT →</a></nav>';
+ if(slug==="derdic"){const v=project.querySelector("video");const c=project.querySelector(".derdic-captions");if(v&&c){const t=v.textTracks&&v.textTracks[0];if(t){const up=()=>{c.textContent=t.activeCues&&t.activeCues.length?t.activeCues[0].text:"";};t.mode="hidden";t.addEventListener("cuechange",up);const fs=()=>{t.mode=document.fullscreenElement||document.webkitFullscreenElement?"showing":"hidden";up();};document.addEventListener("fullscreenchange",fs);document.addEventListener("webkitfullscreenchange",fs);}}}
  }
  }
 }
