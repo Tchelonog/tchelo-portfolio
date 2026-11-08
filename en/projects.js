@@ -112,13 +112,13 @@ const PROJECTS=[
   {
     "slug": "sony-walkman",
     "name": "Sony Walkman",
-    "description": "A double-page Sony Walkman newspaper ad. The apparently blank right-hand page reveals copy through ink transfer from the facing page.",
+    "description": "A double-page Sony Walkman newspaper ad built around a simple idea: ink transferring from one page to the other.",
     "items": [
       {
         "kind": "image",
         "src": "../assets/an%20walkman%20pasta%20ok%20copy.jpg",
         "headline": "A copy is never the same as the original.",
-        "explanation": "The newspaper format itself supports the message: an impression transferred from one page cannot truly replace the original."
+        "explanation": "The idea was that, when the newspaper was closed, ink from the facing page could transfer onto it, creating a faded copy of the original ad."
       }
     ]
   },
@@ -535,6 +535,7 @@ if(project){
  }
  }
 }
+
 
 
 
