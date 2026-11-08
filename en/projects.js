@@ -72,8 +72,8 @@ const PROJECTS=[
       {
         "kind": "image",
         "src": "../assets/puxe%20tv%20port%20pasta%20novo%20copy.jpg",
-        "headline": "The ultra-thin Sony Bravia",
-        "explanation": "An alternative-media magazine execution that demonstrates the TV's slim profile."
+        "headline": "Bravia. Thin like never before.",
+        "explanation": "An insert in a magazine's TV-listings page. Pulling the tab slides out a paper-thin card shaped like the TV, demonstrating just how thin the Bravia is."
       }
     ]
   },
