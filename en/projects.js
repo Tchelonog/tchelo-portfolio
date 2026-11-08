@@ -35,26 +35,26 @@ const PROJECTS=[
       {
         "kind": "image",
         "src": "../assets/Young%20man%20copy.jpg",
-        "headline": "Print execution 1",
-        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+        "headline": "Load games, not guns.",
+        "explanation": "A first-person game imitates reality. These prints invert it: real hands, a real gun, real streets, real people - all subtly manipulated to look like a video game."
       },
       {
         "kind": "image",
         "src": "../assets/Woman%20copy.jpg",
-        "headline": "Print execution 2",
-        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+        "headline": "",
+        "explanation": ""
       },
       {
         "kind": "image",
         "src": "../assets/Man%20copy.jpg",
-        "headline": "Print execution 3",
-        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+        "headline": "",
+        "explanation": ""
       },
       {
         "kind": "image",
         "src": "../assets/FAVELA%20FINAL%20copy.jpg",
-        "headline": "Print execution 4",
-        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+        "headline": "",
+        "explanation": ""
       },
       {
         "kind": "video",
