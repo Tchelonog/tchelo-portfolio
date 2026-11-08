@@ -21,7 +21,7 @@ const PROJECTS=[
     "items": [
       {
         "kind": "image",
-        "src": "../assets/nota%20esclarecimento%20ok%20copy.jpg",
+        "src": "../assets/microsystem-en-artwork.jpg",
         "headline": "Clarification notice",
         "explanation": "The concept borrows the familiar format of a notice in a newspaper's classified section."
       }
