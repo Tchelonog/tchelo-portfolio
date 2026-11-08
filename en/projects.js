@@ -339,8 +339,8 @@ const PROJECTS=[
       {
         "kind": "image",
         "src": "../assets/Montagem%20Disfunc%CC%A7a%CC%83o.jpg",
-        "headline": "Print advertisement",
-        "explanation": "Alternative-media activation for Droga Raia, featured in the Clube de Criação de São Paulo (CCSP) annual."
+        "headline": "Erectile dysfunction? 30% off.",
+        "explanation": "Outdoor inflatable advertising for Droga Raia, a Brazilian pharmacy chain."
       }
     ]
   },
@@ -535,6 +535,7 @@ if(project){
  }
  }
 }
+
 
 
 
