@@ -130,7 +130,7 @@ const PROJECTS=[
       {
         "kind": "image",
         "src": "../assets/ccj%20gratuita%20copy.jpg",
-        "headline": "Admission is free.",
+        "headline": "The Brazilian influence at the Jewish Culture Center starts at the entrance. Admission is free.",
         "explanation": "A print ad promoting the Jewish culture film program."
       }
     ]
@@ -535,6 +535,7 @@ if(project){
  }
  }
 }
+
 
 
 
