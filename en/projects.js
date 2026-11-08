@@ -91,8 +91,8 @@ const PROJECTS=[
       {
         "kind": "image",
         "src": "../assets/pranchabalinha52X36%20copy.jpg",
-        "headline": "Print advertisement",
-        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+        "headline": "See how easy giving is. It doesn't take much.",
+        "explanation": "In Brazil, people out of work often hang small bags of candy from car mirrors at red lights - offering something in return instead of simply asking for money. The vendor then comes back to collect payment or take the candy back.\n\nThis time, the note read:\n\n\"I'm not unemployed. I volunteer for CIAM, an organization working to include people with disabilities in society. The candy is yours to keep. If you'd like to give something in return, visit www.ciam.org.br and make a donation. Any amount. It means a lot to us.\""
       }
     ]
   },
@@ -434,7 +434,7 @@ if(project){
  const sections=p.items.map((item,i)=>{
  const media=item.kind==="image"?'<div class="metro-media"><a target="_blank" rel="noopener noreferrer" href="'+item.src.replaceAll(" ","%20")+'" aria-label="Open original artwork"><img loading="lazy" alt="'+escaped(p.name+" — original print advertisement")+'" src="'+item.src.replaceAll(" ","%20")+'"></a></div>':
  '<div class="metro-media"'+(slug==="derdic"?' style="flex-direction:column"':'')+'><video controls playsinline preload="metadata" aria-label="'+escaped(p.name+" campaign film")+'" src="'+item.src.replaceAll(" ","%20")+'">'+(slug==="hilux"?'<track kind="subtitles" srclang="en" label="English" src="../assets/hilux-en.vtt" default>':'')+(slug==="derdic"?'<track kind="subtitles" srclang="en" label="English" src="../assets/derdic-en.vtt">':'')+(slug==="sw4"?'<track kind="subtitles" srclang="en" label="English" src="../assets/sw4-en.vtt" default>':'')+(slug==="corolla"?'<track kind="subtitles" srclang="en" label="English" src="../assets/corolla-en.vtt" default>':'')+(slug==="salompas"?'<track kind="subtitles" srclang="en" label="English" src="../assets/salompas-en.vtt" default>':'')+(slug==="ciam"?'<track kind="subtitles" srclang="en" label="English" src="../assets/ciam-en.vtt" default>':'')+'Your browser does not support video playback.</video>'+(slug==="derdic"?'<div class="derdic-captions" style="background:#000;color:#fff;text-align:center;padding:10px 12px;font-size:15px;line-height:1.4;min-height:2.8em;width:100%;box-sizing:border-box" aria-live="polite"></div>':'')+'</div>';
- return '<section class="metro-ad"><div class="metro-copy"><h2 style="white-space:pre-line'+(item.tagline?';margin-bottom:2px':'')+'">'+escaped(item.headline)+'</h2>'+(item.tagline?'<p style="font-size:14px;font-weight:700;color:#171717;margin:0 0 10px">'+escaped(item.tagline)+'</p>':'')+'<p>'+escaped(item.explanation)+'</p></div>'+media+'</section>';
+ return '<section class="metro-ad"><div class="metro-copy"><h2 style="white-space:pre-line'+(item.tagline?';margin-bottom:2px':'')+'">'+escaped(item.headline)+'</h2>'+(item.tagline?'<p style="font-size:14px;font-weight:700;color:#171717;margin:0 0 10px">'+escaped(item.tagline)+'</p>':'')+'<p\'+(slug==="ciam"?\' style="white-space:pre-line"\':\'\')+\'>'+escaped(item.explanation)+'</p></div>'+media+'</section>';
  }).join("");
  const navHtml='<nav class="metro-bottom-nav"><a href="index.html">← HOMEPAGE</a><a href="'+nextUrl+'">NEXT PROJECT →</a></nav>';
  if(slug==="3m"){
@@ -535,6 +535,7 @@ if(project){
  }
  }
 }
+
 
 
 
