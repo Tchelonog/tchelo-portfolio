@@ -103,7 +103,7 @@ const thumbnails = [
     "slug": "ciam"
   },
   {
-    "image": "assets/23%20nota%20escla%20thumb%20copy.jpg",
+    "image": "assets/microsystem-en-thumb.jpg",
     "title": "Nota de esclarecimento",
     "advertiser": "Microsystem Sony",
     "slug": "sony-microsystem"
