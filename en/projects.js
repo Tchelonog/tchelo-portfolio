@@ -86,7 +86,7 @@ const PROJECTS=[
         "kind": "video",
         "src": "../assets/Ciam%20Portugue%CC%82s%20com%20efeito.mp4",
         "headline": "Campaign film",
-        "explanation": "A commercial created to support donations to CIAM."
+        "explanation": "A commercial encouraging donations to CIAM (Centro Israelita de Apoio Multidisciplinar), a nonprofit organization working to promote the inclusion of people with disabilities in society."
       },
       {
         "kind": "image",
