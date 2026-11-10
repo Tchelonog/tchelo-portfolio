@@ -37,7 +37,7 @@ const descriptions = {
   'derdic': 'Comercial publicado no Anuário do Clube de Criação de São Paulo (CCSP). Criado para a Derdic, instituição dedicada à educação bilíngue de Surdos, ao ensino em Libras e à inclusão profissional de pessoas com deficiência auditiva.',
   'onu': 'Campanha internacional da ONU de conscientização contra a violência em conflitos armados.',
   'gm-oleo': 'Anúncio premiado com medalha de prata no Clube de Criação de São Paulo (CCSP), finalista na categoria Mídia do Festival de Cannes e vencedor do Prêmio ANJ (Associação Nacional de Jornais). Publicada em página dupla de jornal, a peça simula uma folha colocada sob um carro para absorver um vazamento de óleo do motor.',
-  'hilux': 'Campanha integrada de lançamento da nova Toyota Hilux, composta por filme e anúncios.',
+  'hilux': '<span style="text-transform:none !important">Toyota Hilux - "Faça seu destino"<br>Campanha de lançamento da nova Hilux 2009: filme e anúncios.<br><br>Uma vida sem obstáculos pode parecer ideal. Mas quem escolhe uma picape dessas quer barro, buraco, desafio. Quer encrenca, não moleza. Foi dessa contradição que nasceu "Faça seu destino".<br><br>Conceito, direção de arte e títulos dos anúncios impressos: Tchelo Nogueira. Acompanhamento da pesquisa com o público, das filmagens e da entrega final.</span>',
   'hopi-hari': 'Peça publicada no Anuário do Clube de Criação de São Paulo (CCSP). Adesivos aplicados em escadas rolantes anunciam a nova montanha-russa do Hopi Hari.',
   'corolla': 'Campanha integrada de lançamento do novo Toyota Corolla, composta por filme e anúncios.',
   'droga-raia': 'Peça de mídia alternativa para a Droga Raia, publicada no Anuário do Clube de Criação de São Paulo (CCSP).',
