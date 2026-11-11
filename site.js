@@ -1,6 +1,3 @@
-Current URL: https://raw.githubusercontent.com/Tchelonog/tchelo-portfolio/main/site.js
-
-
 const projects = [
   ['mercedes-sprinter', 'Mercedes-Benz Sprinter', 'Anúncio'],
   ['sony-microsystem', 'Sony Microsystem', 'Anúncio'],
