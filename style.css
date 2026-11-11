@@ -260,5 +260,5 @@ body.lightbox-open{overflow:hidden}
 @media(min-width:531px){.project-gm-oleo .ph-br-m{display:none !important}}
 @media(max-width:530px){.project-gm-oleo .ph-awards{text-align:left !important}}
 .project-derdic .ph-awards{color:rgba(23,23,23,.5) !important;font-weight:400 !important}
-@media(min-width:531px){.project-derdic .ph-awards{top:calc(100px + 2.44*clamp(14px,3.2vw,42px)) !important;font-size:13px !important}}
+@media(min-width:531px){.project-derdic .ph-awards{top:calc(100px + 3.44*clamp(14px,3.2vw,42px)) !important;font-size:13px !important}}
 @media(max-width:530px){.project-derdic .ph-awards{font-size:10px !important;text-align:left !important}}
