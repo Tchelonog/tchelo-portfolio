@@ -251,6 +251,6 @@ body.lightbox-open{overflow:hidden}
 
 /* Reducao tipografica pedida pelo Tchelo em 11/11/2026 - SOMENTE Hilux: titulo -6, texto -4, credito 2 abaixo do corpo */
 .project-head.project-hilux .ph-title{font-size:clamp(14px,3.2vw,42px) !important}
-.project-head.project-hilux .ph-open{font-size:16px !important;max-width:calc(582px - max(0px, (min(1300px,100vw) - 1076px)/2)) !important}
-.project-head.project-hilux .ph-credit{font-size:14px !important;font-style:italic !important}
-@media(max-width:530px){.project-head.project-hilux .ph-title{font-size:12px !important}.project-head.project-hilux .ph-open{font-size:13px !important}.project-head.project-hilux .ph-credit{font-size:11px !important;font-style:italic !important}}
+.project-head.project-hilux .ph-open{font-size:17px !important;max-width:calc((min(1300px,100vw) + 263px)/2 - max(0px, (min(1300px,100vw) - 1076px)/2)) !important}
+.project-head.project-hilux .ph-credit{font-size:15px !important;font-style:italic !important}
+@media(max-width:530px){.project-head.project-hilux .ph-title{font-size:12px !important}.project-head.project-hilux .ph-open{font-size:14px !important}.project-head.project-hilux .ph-credit{font-size:12px !important;font-style:italic !important}}
