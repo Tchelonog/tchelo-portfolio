@@ -255,3 +255,4 @@ body.lightbox-open{overflow:hidden}
 @media(max-width:530px){.project-head .ph-title{font-size:20px !important}.project-head .ph-open{font-size:14px !important}.project-head .ph-credit{font-size:12px !important;font-style:italic !important}.project-head .ph-awards{font-size:12px !important}}
 @media(max-width:530px){.project-gm-oleo .ph-awards{font-size:11px !important}}
 @media(max-width:530px){.project-gm-oleo .ph-dot{font-size:9px !important}}
+@media(max-width:530px){.project-gm-oleo .ph-br-d{display:none !important}}
