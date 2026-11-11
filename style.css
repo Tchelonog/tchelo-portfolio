@@ -256,3 +256,4 @@ body.lightbox-open{overflow:hidden}
 @media(max-width:530px){.project-gm-oleo .ph-awards{font-size:11px !important}}
 @media(max-width:530px){.project-gm-oleo .ph-dot{font-size:9px !important}}
 @media(max-width:530px){.project-gm-oleo .ph-br-d{display:none !important}}
+.project-gm-oleo .ph-awards{font-weight:400 !important}
