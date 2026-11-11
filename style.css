@@ -253,4 +253,4 @@ body.lightbox-open{overflow:hidden}
 .project-head.project-hilux .ph-title{font-size:clamp(14px,3.2vw,42px) !important}
 .project-head.project-hilux .ph-open{font-size:17px !important;max-width:calc((min(1300px,100vw) + 263px)/2 - max(0px, (min(1300px,100vw) - 1076px)/2)) !important}
 .project-head.project-hilux .ph-credit{font-size:15px !important;font-style:italic !important}
-@media(max-width:530px){.project-head.project-hilux .ph-title{font-size:12px !important}.project-head.project-hilux .ph-open{font-size:14px !important}.project-head.project-hilux .ph-credit{font-size:12px !important;font-style:italic !important}}
+@media(max-width:530px){.project-head.project-hilux .ph-title{font-size:18px !important}.project-head.project-hilux .ph-open{font-size:14px !important}.project-head.project-hilux .ph-credit{font-size:12px !important;font-style:italic !important}}
