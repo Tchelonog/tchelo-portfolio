@@ -255,7 +255,7 @@ body.lightbox-open{overflow:hidden}
 @media(max-width:530px){.project-head .ph-title{font-size:20px !important}.project-head .ph-open{font-size:14px !important}.project-head .ph-credit{font-size:12px !important;font-style:italic !important}.project-head .ph-awards{font-size:12px !important}}
 @media(max-width:530px){.project-gm-oleo .ph-awards{font-size:10px !important}}
 @media(max-width:530px){.project-gm-oleo .ph-dot{font-size:8px !important}}
-@media(max-width:530px){.project-gm-oleo .ph-br-d{display:none !important}}
+@media(max-width:530px){.project-gm-oleo .ph-br-d,.project-derdic .ph-br-d{display:none !important}}
 .project-gm-oleo .ph-awards{font-weight:400 !important}
 @media(min-width:531px){.project-gm-oleo .ph-br-m{display:none !important}}
 @media(max-width:530px){.project-gm-oleo .ph-awards{text-align:left !important}}
