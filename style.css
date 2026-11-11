@@ -263,8 +263,8 @@ body.lightbox-open{overflow:hidden}
 @media(min-width:531px){.project-derdic .ph-awards{top:calc(100px + 2.44*clamp(14px,3.2vw,33px)) !important;font-size:13px !important}}
 @media(max-width:530px){.project-derdic .ph-awards{font-size:10px !important;text-align:left !important}}
 @media(min-width:531px){.project-hilux .ph-title,.project-gm-oleo .ph-title,.project-derdic .ph-title{font-size:clamp(14px,3.2vw,33px) !important}}
-@media(max-width:530px){.project-hilux .ph-title,.project-gm-oleo .ph-title,.project-derdic .ph-title{font-size:11px !important}}
+@media(max-width:530px){.project-hilux .ph-title,.project-gm-oleo .ph-title,.project-derdic .ph-title{font-size:17px !important}}
 @media(min-width:531px){.project-hilux .ph-sub,.project-gm-oleo .ph-sub,.project-derdic .ph-sub{font-size:clamp(14px,3.2vw,33px) !important}}
-@media(max-width:530px){.project-hilux .ph-sub,.project-gm-oleo .ph-sub,.project-derdic .ph-sub{font-size:11px !important}}
+@media(max-width:530px){.project-hilux .ph-sub,.project-gm-oleo .ph-sub,.project-derdic .ph-sub{font-size:17px !important}}
 @media(min-width:531px){.project-hilux .ph-open,.project-gm-oleo .ph-open,.project-derdic .ph-open{font-size:15px !important}}
 @media(max-width:530px){.project-hilux .ph-open,.project-gm-oleo .ph-open,.project-derdic .ph-open{font-size:12px !important}}
