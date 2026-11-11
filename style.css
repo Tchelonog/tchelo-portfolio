@@ -242,15 +242,9 @@ body.lightbox-open{overflow:hidden}
 /* Marca o idioma da página atual em negrito, mantendo ambos os links ativos. */
 .language-switch a[aria-current="page"]{font-weight:800}
 
-/* Layout do case Hilux: capa com título grande, texto corrido e linha de atuação */
+/* Padrão dos cases em PT (definido e aprovado pelo Tchelo em 11/11/2026 na página da Hilux): título, texto corrido com limite direito no meio do vão entre o fim de DIRETOR DE ARTE e o início de Sobre no cabeçalho, e linha de atuação em itálico onde documentada */
 .project-head:has(.ph-title){padding:70px 0 60px !important}
-.project-head .ph-title{display:block;font-size:clamp(34px,4.8vw,62px) !important;line-height:1.22 !important;letter-spacing:-0.03em !important;font-weight:800 !important;text-transform:none !important;color:#171717}
-.project-head .ph-open{display:block;font-size:25px !important;line-height:1.5 !important;color:#171717 !important;margin:30px 0 0 !important;max-width:900px;text-transform:none !important}
-.project-head .ph-credit{display:block;font-size:23px !important;line-height:1.4 !important;color:#171717 !important;margin:26px 0 0 !important;text-transform:none !important}
-@media(max-width:530px){.project-head .ph-title{font-size:32px !important}.project-head .ph-open{font-size:22px !important}.project-head .ph-credit{font-size:20px !important}}
-
-/* Reducao tipografica pedida pelo Tchelo em 11/11/2026 - SOMENTE Hilux: titulo -6, texto -4, credito 2 abaixo do corpo */
-.project-head.project-hilux .ph-title{font-size:clamp(14px,3.2vw,42px) !important}
-.project-head.project-hilux .ph-open{font-size:17px !important;max-width:calc((min(1300px,100vw) + 263px)/2 - max(0px, (min(1300px,100vw) - 1076px)/2)) !important}
-.project-head.project-hilux .ph-credit{font-size:15px !important;font-style:italic !important}
-@media(max-width:530px){.project-head.project-hilux .ph-title{font-size:18px !important}.project-head.project-hilux .ph-open{font-size:14px !important}.project-head.project-hilux .ph-credit{font-size:12px !important;font-style:italic !important}}
+.project-head .ph-title{display:block;font-size:clamp(14px,3.2vw,42px) !important;line-height:1.22 !important;letter-spacing:-0.03em !important;font-weight:800 !important;text-transform:none !important;color:#171717}
+.project-head .ph-open{display:block;font-size:17px !important;line-height:1.5 !important;color:#171717 !important;margin:30px 0 0 !important;max-width:calc((min(1300px,100vw) + 263px)/2 - max(0px, (min(1300px,100vw) - 1076px)/2)) !important;text-transform:none !important}
+.project-head .ph-credit{display:block;font-size:15px !important;font-style:italic !important;line-height:1.4 !important;color:#171717 !important;margin:26px 0 0 !important;text-transform:none !important}
+@media(max-width:530px){.project-head .ph-title{font-size:20px !important}.project-head .ph-open{font-size:14px !important}.project-head .ph-credit{font-size:12px !important;font-style:italic !important}}
