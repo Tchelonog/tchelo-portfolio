@@ -250,7 +250,7 @@ body.lightbox-open{overflow:hidden}
 @media(max-width:530px){.project-head .ph-title{font-size:32px !important}.project-head .ph-open{font-size:22px !important}.project-head .ph-credit{font-size:20px !important}}
 
 /* Reducao tipografica pedida pelo Tchelo em 11/11/2026 - SOMENTE Hilux: titulo -6, texto -4, credito 2 abaixo do corpo */
-.project-head.project-hilux .ph-title{font-size:clamp(28px,4.4vw,56px) !important}
-.project-head.project-hilux .ph-open{font-size:21px !important}
-.project-head.project-hilux .ph-credit{font-size:19px !important}
-@media(max-width:530px){.project-head.project-hilux .ph-title{font-size:26px !important}.project-head.project-hilux .ph-open{font-size:18px !important}.project-head.project-hilux .ph-credit{font-size:16px !important}}
+.project-head.project-hilux .ph-title{font-size:clamp(22px,4.0vw,50px) !important}
+.project-head.project-hilux .ph-open{font-size:17px !important}
+.project-head.project-hilux .ph-credit{font-size:15px !important}
+@media(max-width:530px){.project-head.project-hilux .ph-title{font-size:20px !important}.project-head.project-hilux .ph-open{font-size:14px !important}.project-head.project-hilux .ph-credit{font-size:12px !important}}
