@@ -506,7 +506,7 @@ const PROJECTS=[
   "head": {
    "title": "Metálico Car Wash",
    "sub": "Bird shit happens",
-   "paragraph": "Picture this: you park the car and run in for a coffee. Not even five minutes later, you're back, and a giant bird shit is sliding down your window. The day instantly sours. Then you get closer and realize it's an electrostatic sticker with the name, address and phone number of the Metálico Car Wash. The stickers went up on car windows around the car wash.",
+   "paragraph": "Picture this: you park the car and run in for a coffee. Not even five minutes later, you're back, and a huge splat of bird shit is sliding down your window. The day instantly sours. Then you get closer and realize it's an electrostatic sticker with the name, address and phone number of the Metálico Car Wash. The stickers went up on car windows around the car wash.",
    "role": "concept",
    "awards": [
     "Media shortlist at the <br class=\"ph-br-d\">Cannes Lions Festival",
