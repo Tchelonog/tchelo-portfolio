@@ -107,7 +107,7 @@ const PROJECTS=[
   "head": {
    "title": "CIAM",
    "sub": "Lead By Giving",
-   "paragraph": "Every commercial costs money, however little. The CIAM - Centro Israelita de Apoio Multidisciplinar - film cut every cost it could: no editing, no supers, no logo end card. An employee writes the message on a sheet of paper and holds it up to the camera. For the institution, every cent has to go further for the people it cares for. In the print pieces, CIAM goes first: it makes a donation and invites whoever received it to donate as well, passing the responsibility on.",
+   "paragraph": "Every commercial costs money, however little. The CIAM - Centro Israelita de Apoio Multidisciplinar - film cut every cost it could: no editing, no supers, no logo end card. An employee writes the message on a sheet of paper and holds it up to the camera. For the institution, every cent has to go further for the people it cares for. In the print pieces, CIAM goes first: volunteers hand out small bags of candy as a gift and invite whoever receives one to give something back with a donation, passing the responsibility on.",
    "role": "concept / copywriting / art direction"
   },
   "description": "Commercial and street activation created to encourage donations to CIAM (Centro Israelita de Apoio Multidisciplinar).",
@@ -466,7 +466,7 @@ const PROJECTS=[
   "head": {
    "title": "Toyota SW4",
    "sub": "The Masterpiece You Desire Most",
-   "paragraph": "In a heist-movie mood, the thief admires a rare jewel. But desire shifts the target, and comfort becomes the trap. The perfect crime ends caught red-handed. The masterpiece, after all, had four wheels.",
+   "paragraph": "In a heist-movie mood, the thief admires a rare jewel. But desire shifts the target, and comfort becomes the trap. The perfect crime ends with the thief caught red-handed. The masterpiece, after all, had four wheels.",
    "role": "concept / copywriting / art direction"
   },
   "description": "Integrated launch campaign for the new Toyota SW4, including a film and print ads.",
