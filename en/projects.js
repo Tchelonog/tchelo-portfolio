@@ -1,421 +1,559 @@
 // English case catalogue, using the original images and films from the Portuguese site.
 // The current copy is a first editorial draft; final translations will be reviewed case by case.
 const PROJECTS=[
-  {
-    "slug": "mercedes-sprinter",
-    "name": "Mercedes-Benz Sprinter",
-    "description": "Concept advertisement for the Mercedes-Benz Sprinter, positioning the vehicle as a premium choice in the van and light commercial vehicle segment.",
-    "items": [
-      {
-        "kind": "image",
-        "src": "../assets/an%20sprinter(1).jpg",
-        "headline": "Sprinter. Either you have one or you want one.",
-        "explanation": "Concept advertisement for the Mercedes-Benz Sprinter, positioning the vehicle as a premium choice in the van and light commercial vehicle segment."
-      }
-    ]
+ {
+  "slug": "mercedes-sprinter",
+  "name": "Mercedes-Benz Sprinter",
+  "head": {
+   "title": "Mercedes-Benz Sprinter",
+   "sub": "Either You Have One Or You Want One",
+   "paragraph": "Not everyone dreams of a van in the garage. But put a Mercedes-Benz star on the front and the conversation changes. The idea was to treat the Sprinter for what it is: a premium vehicle in the utility-vehicle segment, with the status of an object of desire. For those who already have one, a reason to be proud. For those who don't, a reason to want one.",
+   "role": "concept / copywriting"
   },
-  {
-    "slug": "sony-microsystem",
-    "name": "Sony Microsystem",
-    "description": "A newspaper classified advertisement promoting a Sony microsystem.",
-    "items": [
-      {
-        "kind": "image",
-        "src": "../assets/microsystem-en-artwork.jpg",
-        "headline": "Clarification notice",
-        "explanation": "The concept borrows the familiar format of a notice in a newspaper's classified section."
-      }
-    ]
+  "description": "Concept advertisement for the Mercedes-Benz Sprinter, positioning the vehicle as a premium choice in the van and light commercial vehicle segment.",
+  "items": [
+   {
+    "kind": "image",
+    "src": "../assets/an%20sprinter(1).jpg",
+    "headline": "Sprinter. Either you have one or you want one.",
+    "explanation": "Concept advertisement for the Mercedes-Benz Sprinter, positioning the vehicle as a premium choice in the van and light commercial vehicle segment."
+   }
+  ]
+ },
+ {
+  "slug": "sony-microsystem",
+  "name": "Sony Microsystem",
+  "head": {
+   "title": "Sony Microsystem",
+   "sub": "Clarification Notice",
+   "paragraph": "Some creative ideas need a colorful double-page spread to sell the product. This one only needed a small square on the classifieds page. To introduce the MHC-GTX88 microsystem, Sony publishes a clarification notice, one of the very formal kind. What looks like a serious statement is the most humorous way to prove the machine's power.",
+   "role": "concept / copywriting"
   },
-  {
-    "slug": "monkey-cyber-cafe",
-    "name": "Monkey Cyber Café",
-    "description": "Integrated disarmament awareness campaign for Monkey Cyber Café, featuring a film and print advertisements.",
-    "items": [
-      {
-        "kind": "image",
-        "src": "../assets/Young%20man%20copy.jpg",
-        "headline": "Load games, not guns.",
-        "explanation": "A first-person game imitates reality. These prints invert it: real hands, a real gun, real streets, real people - all subtly manipulated to look like a video game."
-      },
-      {
-        "kind": "image",
-        "src": "../assets/Woman%20copy.jpg",
-        "headline": "",
-        "explanation": ""
-      },
-      {
-        "kind": "image",
-        "src": "../assets/Man%20copy.jpg",
-        "headline": "",
-        "explanation": ""
-      },
-      {
-        "kind": "image",
-        "src": "../assets/FAVELA%20FINAL%20copy.jpg",
-        "headline": "",
-        "explanation": ""
-      },
-      {
-        "kind": "video",
-        "src": "../assets/Monkey%20Game.mp4",
-        "headline": "Campaign film",
-        "explanation": "Film from an integrated public-awareness campaign about disarmament."
-      }
-    ]
+  "description": "A newspaper classified advertisement promoting a Sony microsystem.",
+  "items": [
+   {
+    "kind": "image",
+    "src": "../assets/microsystem-en-artwork.jpg",
+    "headline": "Clarification notice",
+    "explanation": "The concept borrows the familiar format of a notice in a newspaper's classified section."
+   }
+  ]
+ },
+ {
+  "slug": "monkey-cyber-cafe",
+  "name": "Monkey Cyber Café",
+  "head": {
+   "title": "Monkey Cyber Cafe",
+   "sub": "Load games, not guns",
+   "paragraph": "In a disarmament awareness campaign promoted by the cyber cafe, the ads invert the order: instead of the virtual world imitating reality, reality imitates the virtual world. In the graphic style of games, real people on real streets. The scare is real. The gun is real.",
+   "role": "concept / copywriting / art direction"
   },
-  {
-    "slug": "sony-bravia",
-    "name": "Sony Bravia",
-    "description": "An alternative-media magazine execution highlighting the ultra-slim design of the Sony Bravia TV.",
-    "items": [
-      {
-        "kind": "image",
-        "src": "../assets/puxe%20tv%20port%20pasta%20novo%20copy.jpg",
-        "headline": "Bravia. Thin like never before.",
-        "explanation": "An insert in a magazine's TV-listings page. Pulling the tab slides out a paper-thin card shaped like the TV, demonstrating just how thin the Bravia is."
-      }
-    ]
+  "description": "Integrated disarmament awareness campaign for Monkey Cyber Café, featuring a film and print advertisements.",
+  "items": [
+   {
+    "kind": "image",
+    "src": "../assets/Young%20man%20copy.jpg",
+    "headline": "Load games, not guns.",
+    "explanation": "A first-person game imitates reality. These prints invert it: real hands, a real gun, real streets, real people - all subtly manipulated to look like a video game."
+   },
+   {
+    "kind": "image",
+    "src": "../assets/Woman%20copy.jpg",
+    "headline": "",
+    "explanation": ""
+   },
+   {
+    "kind": "image",
+    "src": "../assets/Man%20copy.jpg",
+    "headline": "",
+    "explanation": ""
+   },
+   {
+    "kind": "image",
+    "src": "../assets/FAVELA%20FINAL%20copy.jpg",
+    "headline": "",
+    "explanation": ""
+   },
+   {
+    "kind": "video",
+    "src": "../assets/Monkey%20Game.mp4",
+    "headline": "Campaign film",
+    "explanation": "Film from an integrated public-awareness campaign about disarmament."
+   }
+  ]
+ },
+ {
+  "slug": "sony-bravia",
+  "name": "Sony Bravia",
+  "head": {
+   "title": "Sony Bravia",
+   "sub": "Thin Like Never Before",
+   "paragraph": "How do you show that a TV is ultra-thin using a magazine? With an insert the reader pulls: instead of a card, a Bravia. Straight from the magazine into the hands of whoever is reading.",
+   "role": "concept / copywriting / art direction"
   },
-  {
-    "slug": "ciam",
-    "name": "CIAM",
-    "description": "Commercial and street activation created to encourage donations to CIAM (Centro Israelita de Apoio Multidisciplinar).",
-    "items": [
-      {
-        "kind": "video",
-        "src": "../assets/Ciam%20Portugue%CC%82s%20com%20efeito.mp4",
-        "headline": "Campaign film",
-        "explanation": "A commercial encouraging donations to CIAM (Centro Israelita de Apoio Multidisciplinar), a nonprofit organization working to promote the inclusion of people with disabilities in society."
-      },
-      {
-        "kind": "image",
-        "src": "../assets/pranchabalinha52X36%20copy.jpg",
-        "headline": "See how easy giving is. It doesn't take much.",
-        "explanation": "In Brazil, people out of work often hang small bags of candy from car mirrors at red lights - offering something in return instead of simply asking for money. The vendor then comes back to collect payment or take the candy back.\n\nThis time, the note read:\n\n\"I'm not unemployed. I volunteer for CIAM, an organization working to include people with disabilities in society. The candy is yours to keep. If you'd like to give something in return, visit www.ciam.org.br and make a donation. Any amount. It means a lot to us.\""
-      }
-    ]
+  "description": "An alternative-media magazine execution highlighting the ultra-slim design of the Sony Bravia TV.",
+  "items": [
+   {
+    "kind": "image",
+    "src": "../assets/puxe%20tv%20port%20pasta%20novo%20copy.jpg",
+    "headline": "Bravia. Thin like never before.",
+    "explanation": "An insert in a magazine's TV-listings page. Pulling the tab slides out a paper-thin card shaped like the TV, demonstrating just how thin the Bravia is."
+   }
+  ]
+ },
+ {
+  "slug": "ciam",
+  "name": "CIAM",
+  "head": {
+   "title": "CIAM",
+   "sub": "Give The Example",
+   "paragraph": "Every commercial has a cost, however small. The CIAM - Centro Israelita de Apoio Multidisciplinar - film cut every cost it could: no editing, no supers, no logo end card. An employee writes the message on a piece of paper and holds it up to the camera. For the institution, every cent has to go to the people it cares for. In the print pieces, CIAM sets the example: it donates first and invites whoever received the donation to give too, passing the responsibility on.",
+   "role": "concept / copywriting / art direction"
   },
-  {
-    "slug": "salompas",
-    "name": "Salompas",
-    "description": "Commercial focusing on relief from muscle and neck pain.",
-    "items": [
-      {
-        "kind": "video",
-        "src": "../assets/Salompas%20Pescoc%CC%A7o.mp4",
-        "headline": "Campaign film",
-        "explanation": "A commercial focusing on muscle and neck pain relief."
-      }
-    ]
+  "description": "Commercial and street activation created to encourage donations to CIAM (Centro Israelita de Apoio Multidisciplinar).",
+  "items": [
+   {
+    "kind": "video",
+    "src": "../assets/Ciam%20Portugue%CC%82s%20com%20efeito.mp4",
+    "headline": "Campaign film",
+    "explanation": "A commercial encouraging donations to CIAM (Centro Israelita de Apoio Multidisciplinar), a nonprofit organization working to promote the inclusion of people with disabilities in society."
+   },
+   {
+    "kind": "image",
+    "src": "../assets/pranchabalinha52X36%20copy.jpg",
+    "headline": "See how easy giving is. It doesn't take much.",
+    "explanation": "In Brazil, people out of work often hang small bags of candy from car mirrors at red lights - offering something in return instead of simply asking for money. The vendor then comes back to collect payment or take the candy back.\n\nThis time, the note read:\n\n\"I'm not unemployed. I volunteer for CIAM, an organization working to include people with disabilities in society. The candy is yours to keep. If you'd like to give something in return, visit www.ciam.org.br and make a donation. Any amount. It means a lot to us.\""
+   }
+  ]
+ },
+ {
+  "slug": "salompas",
+  "name": "Salompas",
+  "head": {
+   "title": "Salompas",
+   "sub": "Stiff Neck",
+   "paragraph": "Living with pain is more work than treating it. Every gesture becomes a maneuver. The film does that math and closes with the simple answer: straight to the pain.",
+   "role": "co-creation / art direction"
   },
-  {
-    "slug": "sony-walkman",
-    "name": "Sony Walkman",
-    "description": "A double-page Sony Walkman newspaper ad built around a simple idea: ink transferring from one page to the other.",
-    "items": [
-      {
-        "kind": "image",
-        "src": "../assets/an%20walkman%20pasta%20ok%20copy.jpg",
-        "headline": "A copy is never the same as the original.",
-        "explanation": "The idea was that, when the newspaper was closed, ink from the facing page could transfer onto it, creating a faded copy of the original ad."
-      }
-    ]
+  "description": "Commercial focusing on relief from muscle and neck pain.",
+  "items": [
+   {
+    "kind": "video",
+    "src": "../assets/Salompas%20Pescoc%CC%A7o.mp4",
+    "headline": "Campaign film",
+    "explanation": "A commercial focusing on muscle and neck pain relief."
+   }
+  ]
+ },
+ {
+  "slug": "sony-walkman",
+  "name": "Sony Walkman",
+  "head": {
+   "title": "Sony Walkman",
+   "sub": "A Copy Is Never The Same As The Original",
+   "paragraph": "A newspaper double page against counterfeit MP3 players. The left page carried the ad; the right one was blank. With the newspaper closed, ink from one page transferred to the other and revealed the message, mirrored and smudged. A copy is never the same as the original. The proof was in the newspaper's own printing.",
+   "role": "concept / copywriting / art direction"
   },
-  {
-    "slug": "centro-cultura-judaica",
-    "name": "Centro da Cultura Judaica",
-    "description": "Print advertisement for a film program celebrating Jewish culture in Brazil.",
-    "items": [
-      {
-        "kind": "image",
-        "src": "../assets/ccj%20gratuita%20copy.jpg",
-        "headline": "The Brazilian influence at the Jewish Culture Center starts at the entrance. Admission is free.",
-        "explanation": "A print ad promoting the Jewish culture film program."
-      }
-    ]
+  "description": "A double-page Sony Walkman newspaper ad built around a simple idea: ink transferring from one page to the other.",
+  "items": [
+   {
+    "kind": "image",
+    "src": "../assets/an%20walkman%20pasta%20ok%20copy.jpg",
+    "headline": "A copy is never the same as the original.",
+    "explanation": "The idea was that, when the newspaper was closed, ink from the facing page could transfer onto it, creating a faded copy of the original ad."
+   }
+  ]
+ },
+ {
+  "slug": "centro-cultura-judaica",
+  "name": "Centro da Cultura Judaica",
+  "head": {
+   "title": "'Jewish Culture in Brazil' Exhibition",
+   "sub": "The Brazilian Influence Starts At The Entrance",
+   "paragraph": "To promote the 'Jewish Culture in Brazil' exhibition and its free admission at the Jewish Culture Center, I played with the cliché that associates Jews with money. The joke opened the doors. And didn't charge admission.",
+   "role": "copywriting / art direction"
   },
-  {
-    "slug": "hopi-hari-brinquedos",
-    "name": "Hopi Hari — Rides",
-    "description": "A series of print ads inviting people to experience the rides at Hopi Hari.",
-    "items": [
-      {
-        "kind": "image",
-        "src": "../assets/hopi%20pasta%20brinquedos%203.jpg",
-        "headline": "Roller Coaster",
-        "tagline": "Hopi Hari attractions. The gift every child wants to play with.",
-        "explanation": ""
-      },
-      {
-        "kind": "image",
-        "src": "../assets/hopi%20pasta%20brinquedos%201.jpg",
-        "headline": "Ekatomb",
-        "tagline": "Hopi Hari attractions. The gift every child wants to play with.",
-        "explanation": ""
-      },
-      {
-        "kind": "image",
-        "src": "../assets/hopi%20pasta%20brinquedos%202.jpg",
-        "headline": "La Tour Eiffel",
-        "tagline": "Hopi Hari attractions. The gift every child wants to play with.",
-        "explanation": ""
-      }
-    ]
+  "description": "Print advertisement for a film program celebrating Jewish culture in Brazil.",
+  "items": [
+   {
+    "kind": "image",
+    "src": "../assets/ccj%20gratuita%20copy.jpg",
+    "headline": "The Brazilian influence at the Jewish Culture Center starts at the entrance. Admission is free.",
+    "explanation": "A print ad promoting the Jewish culture film program."
+   }
+  ]
+ },
+ {
+  "slug": "hopi-hari-brinquedos",
+  "name": "Hopi Hari — Rides",
+  "head": {
+   "title": "Hopi Hari",
+   "sub": "The Toys Everyone Wants",
+   "paragraph": "Children's Day gifts are bought at the toy store. That's why Hopi Hari ended up on the shelf.",
+   "role": "concept / copywriting / art direction"
   },
-  {
-    "slug": "metro",
-    "name": "São Paulo Metro",
-    "description": "A print campaign for São Paulo's Metro system.",
-    "items": [
-      {
-        "kind": "image",
-        "src": "../assets/lay%20metro%20copy1.jpg",
-        "headline": "Print execution 1",
-        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
-      },
-      {
-        "kind": "image",
-        "src": "../assets/lay%20metro%20copy2.jpg",
-        "headline": "Print execution 2",
-        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
-      },
-      {
-        "kind": "image",
-        "src": "../assets/lay%20metro%20copy3.jpg",
-        "headline": "Print execution 3",
-        "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
-      }
-    ]
+  "description": "A series of print ads inviting people to experience the rides at Hopi Hari.",
+  "items": [
+   {
+    "kind": "image",
+    "src": "../assets/hopi%20pasta%20brinquedos%203.jpg",
+    "headline": "Roller Coaster",
+    "tagline": "Hopi Hari attractions. The gift every child wants to play with.",
+    "explanation": ""
+   },
+   {
+    "kind": "image",
+    "src": "../assets/hopi%20pasta%20brinquedos%201.jpg",
+    "headline": "Ekatomb",
+    "tagline": "Hopi Hari attractions. The gift every child wants to play with.",
+    "explanation": ""
+   },
+   {
+    "kind": "image",
+    "src": "../assets/hopi%20pasta%20brinquedos%202.jpg",
+    "headline": "La Tour Eiffel",
+    "tagline": "Hopi Hari attractions. The gift every child wants to play with.",
+    "explanation": ""
+   }
+  ]
+ },
+ {
+  "slug": "metro",
+  "name": "São Paulo Metro",
+  "head": {
+   "title": "São Paulo Metro",
+   "sub": "In A Hurry? Go Under It",
+   "paragraph": "São Paulo jams up above, the Metro runs below. While everyone outside looks for a way out, the campaign points in another direction, with humor. And the Metro joins the conversation of those who have no time to lose. After all, to get ahead of the traffic, you don't always have to overtake it. Sometimes you just go underneath.",
+   "role": "copywriting / art direction"
   },
-  {
-    "slug": "derdic",
-    "name": "Derdic",
-    "description": "A commercial selected for the Clube de Criação de São Paulo (CCSP) annual. Created for Derdic, an institution specializing in bilingual deaf education, Brazilian Sign Language (Libras) and professional inclusion.",
-    "items": [
-      {
-        "kind": "video",
-        "src": "../assets/derdic.mp4",
-        "headline": "Campaign film",
-        "explanation": "The film reverses the usual screen layout: the man signing in Libras fills the screen, while the speaker appears in a small corner window. At the end, they switch places."
-      }
-    ]
+  "description": "A print campaign for São Paulo's Metro system.",
+  "items": [
+   {
+    "kind": "image",
+    "src": "../assets/lay%20metro%20copy1.jpg",
+    "headline": "Print execution 1",
+    "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+   },
+   {
+    "kind": "image",
+    "src": "../assets/lay%20metro%20copy2.jpg",
+    "headline": "Print execution 2",
+    "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+   },
+   {
+    "kind": "image",
+    "src": "../assets/lay%20metro%20copy3.jpg",
+    "headline": "Print execution 3",
+    "explanation": "Original Portuguese artwork; English headline adaptation to be reviewed."
+   }
+  ]
+ },
+ {
+  "slug": "derdic",
+  "name": "Derdic",
+  "head": {
+   "title": "Derdic",
+   "sub": "More Visibility For Deaf People",
+   "paragraph": "Derdic, the Division of Education and Rehabilitation of Communication Disorders, is an institution dedicated to accessibility. At a time when so many talk about inclusion, this commercial did its part inside the screen itself: the person who communicates through signs became the protagonist, and speech went to the little window. A film that was a great joy to make, especially when it was shown inside Derdic to the deaf people served by the institution, who reacted with deep emotion.",
+   "role": "concept",
+   "awards": [
+    "Clube de Criação de <br class=\"ph-br-d\">São Paulo Annual"
+   ]
   },
-  {
-    "slug": "onu",
-    "name": "United Nations",
-    "description": "An international United Nations awareness campaign against violence in armed conflicts.",
-    "items": [
-      {
-        "kind": "video",
-        "src": "../assets/UN%202009.mp4",
-        "headline": "Campaign film",
-        "explanation": "A United Nations awareness film addressing violence in armed conflicts."
-      },
-      {
-        "kind": "image",
-        "src": "../assets/UNARM%20copy.jpg",
-        "headline": "",
-        "explanation": ""
-      },
-      {
-        "kind": "image",
-        "src": "../assets/UNDO%20copy.jpg",
-        "headline": "",
-        "explanation": ""
-      },
-      {
-        "kind": "image",
-        "src": "../assets/UNLOAD%20copy.jpg",
-        "headline": "",
-        "explanation": ""
-      },
-      {
-        "kind": "image",
-        "src": "../assets/UNTIE%20copy.jpg",
-        "headline": "",
-        "explanation": ""
-      }
-    ]
+  "description": "A commercial selected for the Clube de Criação de São Paulo (CCSP) annual. Created for Derdic, an institution specializing in bilingual deaf education, Brazilian Sign Language (Libras) and professional inclusion.",
+  "items": [
+   {
+    "kind": "video",
+    "src": "../assets/derdic.mp4",
+    "headline": "Campaign film",
+    "explanation": "The film reverses the usual screen layout: the man signing in Libras fills the screen, while the speaker appears in a small corner window. At the end, they switch places."
+   }
+  ]
+ },
+ {
+  "slug": "onu",
+  "name": "United Nations",
+  "head": {
+   "title": "UN",
+   "sub": "Undo War",
+   "paragraph": "The world lives at war, one after another. That is what the UN exists for: to work for peace. The idea of this campaign is in the name itself. UN, from United Nations, gains the power of a prefix that undoes. In each piece, a verb that starts with the initials and ends with the violence undone. International campaign, never run.",
+   "role": "concept / copywriting / art direction"
   },
-  {
-    "slug": "gm-oleo",
-    "name": "General Motors — Engine Oil",
-    "description": "Silver Medal at the Clube de Criação de São Paulo (CCSP), Cannes Media finalist and ANJ Award winner. A double-page newspaper execution simulates a sheet placed beneath a car to catch leaking engine oil.",
-    "items": [
-      {
-        "kind": "image",
-        "src": "../assets/jornal-GM%20copy.jpg",
-        "headline": "Next time, use Genuine GM Parts.",
-        "explanation": "A double-page newspaper ad that looks like a sheet of newspaper placed under a car to catch an oil leak."
-      }
-    ]
+  "description": "An international United Nations awareness campaign against violence in armed conflicts.",
+  "items": [
+   {
+    "kind": "video",
+    "src": "../assets/UN%202009.mp4",
+    "headline": "Campaign film",
+    "explanation": "A United Nations awareness film addressing violence in armed conflicts."
+   },
+   {
+    "kind": "image",
+    "src": "../assets/UNARM%20copy.jpg",
+    "headline": "",
+    "explanation": ""
+   },
+   {
+    "kind": "image",
+    "src": "../assets/UNDO%20copy.jpg",
+    "headline": "",
+    "explanation": ""
+   },
+   {
+    "kind": "image",
+    "src": "../assets/UNLOAD%20copy.jpg",
+    "headline": "",
+    "explanation": ""
+   },
+   {
+    "kind": "image",
+    "src": "../assets/UNTIE%20copy.jpg",
+    "headline": "",
+    "explanation": ""
+   }
+  ]
+ },
+ {
+  "slug": "gm-oleo",
+  "name": "General Motors — Engine Oil",
+  "head": {
+   "title": "General Motors",
+   "sub": "Oil Leak",
+   "paragraph": "You know that sheet of newspaper spread under the car to catch the oil leak? One Sunday, it was on the newspaper's center spread. GM's double page simulated the newspaper stained by engine oil, exactly like the one on the garage floor. Well, better use genuine parts.",
+   "role": "concept / art direction",
+   "awards": [
+    "Silver medal at the CCSP",
+    "Media shortlist at the <br class=\"ph-br-d\">Cannes Lions Festival",
+    "Winner of the ANJ Award for <br class=\"ph-br-d\">Advertising Creation, <br class=\"ph-br-m\">granted by the <br class=\"ph-br-d\">National Newspaper Association"
+   ]
   },
-  {
-    "slug": "hilux",
-    "name": "Toyota Hilux",
-    "description": "Integrated launch campaign for the new Toyota Hilux, including a film and print ads.",
-    "items": [
-      {
-        "kind": "video",
-        "src": "../assets/hilux.mp4",
-        "headline": "Campaign film",
-        "explanation": "Launch commercial for the new Toyota Hilux."
-      },
-      {
-        "kind": "image",
-        "src": "../assets/ans hilux pasta new port copy2.jpg",
-        "headline": "Sorry about that. All this smart technology, and the engine is still a beast.",
-        "tagline": "Hilux. The journey is the destination.",
-        "explanation": ""
-      },
-      {
-        "kind": "image",
-        "src": "../assets/ans hilux pasta new port copy1.jpg",
-        "headline": "Go places you can't imagine even in your dreams. Maybe in your nightmares.",
-        "tagline": "Hilux. The journey is the destination.",
-        "explanation": ""
-      },
-      {
-        "kind": "image",
-        "src": "../assets/ans hilux pasta new port copy3.jpg",
-        "headline": "Never stare down a wild animal. Unless you keep your distance.",
-        "tagline": "Hilux. The journey is the destination.",
-        "explanation": ""
-      }
-    ]
+  "description": "Silver Medal at the Clube de Criação de São Paulo (CCSP), Cannes Media finalist and ANJ Award winner. A double-page newspaper execution simulates a sheet placed beneath a car to catch leaking engine oil.",
+  "items": [
+   {
+    "kind": "image",
+    "src": "../assets/jornal-GM%20copy.jpg",
+    "headline": "Next time, use Genuine GM Parts.",
+    "explanation": "A double-page newspaper ad that looks like a sheet of newspaper placed under a car to catch an oil leak."
+   }
+  ]
+ },
+ {
+  "slug": "hilux",
+  "name": "Toyota Hilux",
+  "head": {
+   "title": "Toyota Hilux",
+   "sub": "The Journey Is The Destination",
+   "paragraph": "A life without obstacles would be much better, right? Not for pickup drivers, according to the research I took part in. The launch campaign of the new Hilux bet exactly on that: mud, potholes and challenge as invitation and desire, not as a problem. Hence the concept 'The journey is the destination'. I followed the campaign's production: shoots, photos, finishing and delivery to the client.",
+   "role": "co-creation / concept / art direction / headline writing"
   },
-  {
-    "slug": "hopi-hari",
-    "name": "Hopi Hari — Escalator",
-    "description": "Published in the Clube de Criação de São Paulo (CCSP) annual. Stickers applied to escalators advertise Hopi Hari's new roller coaster.",
-    "items": [
-      {
-        "kind": "image",
-        "src": "../assets/HopiHari%20escada%20copy.jpg",
-        "headline": "Have fun on Hopi Hari's roller coaster.",
-        "explanation": "Escalator step stickers turn the ride up into a preview of Hopi Hari's new roller coaster."
-      },
-      {
-        "kind": "video",
-        "src": "../assets/hopy%20escada.mp4",
-        "headline": "Campaign film",
-        "explanation": "A short video documenting the escalator advertising activation."
-      }
-    ]
+  "description": "Integrated launch campaign for the new Toyota Hilux, including a film and print ads.",
+  "items": [
+   {
+    "kind": "video",
+    "src": "../assets/hilux.mp4",
+    "headline": "Campaign film",
+    "explanation": "Launch commercial for the new Toyota Hilux."
+   },
+   {
+    "kind": "image",
+    "src": "../assets/ans hilux pasta new port copy2.jpg",
+    "headline": "Sorry about that. All this smart technology, and the engine is still a beast.",
+    "tagline": "Hilux. The journey is the destination.",
+    "explanation": ""
+   },
+   {
+    "kind": "image",
+    "src": "../assets/ans hilux pasta new port copy1.jpg",
+    "headline": "Go places you can't imagine even in your dreams. Maybe in your nightmares.",
+    "tagline": "Hilux. The journey is the destination.",
+    "explanation": ""
+   },
+   {
+    "kind": "image",
+    "src": "../assets/ans hilux pasta new port copy3.jpg",
+    "headline": "Never stare down a wild animal. Unless you keep your distance.",
+    "tagline": "Hilux. The journey is the destination.",
+    "explanation": ""
+   }
+  ]
+ },
+ {
+  "slug": "hopi-hari",
+  "name": "Hopi Hari — Escalator",
+  "head": {
+   "title": "Hopi Hari",
+   "sub": "The Escalator That Became A Roller Coaster",
+   "paragraph": "An escalator is usually the least exciting part of the visit. Until Hopi Hari enters the story. With stickers on the steps, the downward escalator gained rows of passengers with their arms up and became a roller coaster. An invitation to trade that calm descent for a not-so-calm one.",
+   "role": "concept / copywriting / art direction",
+   "awards": [
+    "Clube de Criação de <br class=\"ph-br-d\">São Paulo Annual"
+   ]
   },
-  {
-    "slug": "corolla",
-    "name": "Toyota Corolla",
-    "description": "Integrated launch campaign for the new Toyota Corolla, including a film and print ads.",
-    "items": [
-      {
-        "kind": "video",
-        "src": "../assets/Corolla2010.mp4",
-        "headline": "Campaign film",
-        "explanation": "Launch commercial for the new Toyota Corolla."
-      },
-      {
-        "kind": "image",
-        "src": "../assets/an%20corolla%20copy1.jpg",
-        "headline": "Don't let life overtake you.",
-        "tagline": "Corolla. Driving is amazing.",
-        "explanation": ""
-      },
-      {
-        "kind": "image",
-        "src": "../assets/an%20corolla%20copy2.jpg",
-        "headline": "The fastest acceleration in its class. For more information, see your cardiologist.",
-        "tagline": "Corolla. Driving is amazing.",
-        "explanation": ""
-      }
-    ]
+  "description": "Published in the Clube de Criação de São Paulo (CCSP) annual. Stickers applied to escalators advertise Hopi Hari's new roller coaster.",
+  "items": [
+   {
+    "kind": "image",
+    "src": "../assets/HopiHari%20escada%20copy.jpg",
+    "headline": "Have fun on Hopi Hari's roller coaster.",
+    "explanation": "Escalator step stickers turn the ride up into a preview of Hopi Hari's new roller coaster."
+   },
+   {
+    "kind": "video",
+    "src": "../assets/hopy%20escada.mp4",
+    "headline": "Campaign film",
+    "explanation": "A short video documenting the escalator advertising activation."
+   }
+  ]
+ },
+ {
+  "slug": "corolla",
+  "name": "Toyota Corolla",
+  "head": {
+   "title": "Toyota Corolla",
+   "sub": "Motor City",
+   "paragraph": "How do you show that the Corolla arrived with a new, more powerful engine? By putting the car to run inside it. To introduce the new 2.0 Dual VVT-i, we turned the engine into a city. A metropolis built for the Corolla to show what moves it.",
+   "role": "concept / copywriting / art direction"
   },
-  {
-    "slug": "droga-raia",
-    "name": "Droga Raia",
-    "description": "Alternative-media activation for Droga Raia, featured in the Clube de Criação de São Paulo (CCSP) annual.",
-    "items": [
-      {
-        "kind": "image",
-        "src": "../assets/Montagem%20Disfunc%CC%A7a%CC%83o.jpg",
-        "headline": "Erectile dysfunction? 30% off.",
-        "explanation": "Outdoor inflatable advertising for Droga Raia, a Brazilian pharmacy chain."
-      }
-    ]
+  "description": "Integrated launch campaign for the new Toyota Corolla, including a film and print ads.",
+  "items": [
+   {
+    "kind": "video",
+    "src": "../assets/Corolla2010.mp4",
+    "headline": "Campaign film",
+    "explanation": "Launch commercial for the new Toyota Corolla."
+   },
+   {
+    "kind": "image",
+    "src": "../assets/an%20corolla%20copy1.jpg",
+    "headline": "Don't let life overtake you.",
+    "tagline": "Corolla. Driving is amazing.",
+    "explanation": ""
+   },
+   {
+    "kind": "image",
+    "src": "../assets/an%20corolla%20copy2.jpg",
+    "headline": "The fastest acceleration in its class. For more information, see your cardiologist.",
+    "tagline": "Corolla. Driving is amazing.",
+    "explanation": ""
+   }
+  ]
+ },
+ {
+  "slug": "droga-raia",
+  "name": "Droga Raia",
+  "head": {
+   "title": "Droga Raia",
+   "sub": "The Inflatable Tube Man",
+   "paragraph": "At the point of sale, the best message is the one that stands on its own. Droga Raia's stands precisely by not staying up.",
+   "role": "concept / copywriting / art direction",
+   "awards": [
+    "Clube de Criação de <br class=\"ph-br-d\">São Paulo Annual"
+   ]
   },
-  {
-    "slug": "sw4",
-    "name": "Toyota SW4",
-    "description": "Integrated launch campaign for the new Toyota SW4, including a film and print ads.",
-    "items": [
-      {
-        "kind": "video",
-        "src": "../assets/SW4%20Ladrao.mp4",
-        "headline": "Campaign film",
-        "explanation": "Launch commercial for the new Toyota SW4."
-      },
-      {
-        "kind": "image",
-        "src": "../assets/ans%20sw4%20pasta%20port%20copy3.jpg",
-        "headline": "A smart way to keep the family together. Give them room.",
-        "tagline": "SW4. The masterpiece you desire most.",
-        "explanation": ""
-      },
-      {
-        "kind": "image",
-        "src": "../assets/ans%20sw4%20pasta%20port%20copy2.jpg",
-        "headline": "Fits up to seven lucky bums.",
-        "tagline": "SW4. The masterpiece you desire most.",
-        "explanation": ""
-      },
-      {
-        "kind": "image",
-        "src": "../assets/ans%20sw4%20pasta%20port%20copy1.jpg",
-        "headline": "You've never been so comfortable making people jealous.",
-        "tagline": "SW4. The masterpiece you desire most.",
-        "explanation": ""
-      }
-    ]
+  "description": "Alternative-media activation for Droga Raia, featured in the Clube de Criação de São Paulo (CCSP) annual.",
+  "items": [
+   {
+    "kind": "image",
+    "src": "../assets/Montagem%20Disfunc%CC%A7a%CC%83o.jpg",
+    "headline": "Erectile dysfunction? 30% off.",
+    "explanation": "Outdoor inflatable advertising for Droga Raia, a Brazilian pharmacy chain."
+   }
+  ]
+ },
+ {
+  "slug": "sw4",
+  "name": "Toyota SW4",
+  "head": {
+   "title": "Toyota SW4",
+   "sub": "The Masterpiece You Desire Most",
+   "paragraph": "In a heist-movie mood, the thief admires a rare jewel. But desire shifts the target and comfort becomes a trap. The perfect crime ends caught in the act. The masterpiece, after all, had four wheels.",
+   "role": "concept / copywriting / art direction"
   },
-  {
-    "slug": "coco-de-passarinho",
-    "name": "Bird Droppings",
-    "description": "Finalist in the Media category at the Cannes Festival and published in the Clube de Criação de São Paulo (CCSP) annual. An electrostatic bird-dropping sticker was applied to the windows of cars parked near a car wash.",
-    "items": [
-      {
-        "kind": "image",
-        "src": "../assets/coco%20de%20passarinho%20ok%20new%20copy.jpg",
-        "headline": "Bird droppings",
-        "explanation": "An electrostatic sticker shaped like a bird dropping, placed on the windows of cars parked near the Metálico car wash."
-      }
-    ]
+  "description": "Integrated launch campaign for the new Toyota SW4, including a film and print ads.",
+  "items": [
+   {
+    "kind": "video",
+    "src": "../assets/SW4%20Ladrao.mp4",
+    "headline": "Campaign film",
+    "explanation": "Launch commercial for the new Toyota SW4."
+   },
+   {
+    "kind": "image",
+    "src": "../assets/ans%20sw4%20pasta%20port%20copy3.jpg",
+    "headline": "A smart way to keep the family together. Give them room.",
+    "tagline": "SW4. The masterpiece you desire most.",
+    "explanation": ""
+   },
+   {
+    "kind": "image",
+    "src": "../assets/ans%20sw4%20pasta%20port%20copy2.jpg",
+    "headline": "Fits up to seven lucky bums.",
+    "tagline": "SW4. The masterpiece you desire most.",
+    "explanation": ""
+   },
+   {
+    "kind": "image",
+    "src": "../assets/ans%20sw4%20pasta%20port%20copy1.jpg",
+    "headline": "You've never been so comfortable making people jealous.",
+    "tagline": "SW4. The masterpiece you desire most.",
+    "explanation": ""
+   }
+  ]
+ },
+ {
+  "slug": "coco-de-passarinho",
+  "name": "Bird Droppings",
+  "head": {
+   "title": "Metálico Car Wash",
+   "sub": "Bird shit happens",
+   "paragraph": "Imagine you parked to grab a coffee. Not even five minutes later, you come back to a giant bird shit sliding down your car window. That instant discouragement. Until you get closer and find out it's an electrostatic sticker with the name, address and phone number of the Metálico Car Wash. The stickers were placed on the windows of cars parked near the car wash.",
+   "role": "concept",
+   "awards": [
+    "Media shortlist at the <br class=\"ph-br-d\">Cannes Lions Festival",
+    "Clube de Criação de <br class=\"ph-br-d\">São Paulo Annual"
+   ]
   },
-  {
-    "slug": "3m",
-    "name": "3M — Surround Sound",
-    "description": "Poster campaign for 3M Surround Sound headphones.",
-    "items": [
-      {
-        "kind": "image",
-        "src": "../assets/cartaz.jpg",
-        "headline": "Surround Sound — poster 1",
-        "explanation": "3M headphone print series."
-      },
-      {
-        "kind": "image",
-        "src": "../assets/cartaz2.jpg",
-        "headline": "Surround Sound — poster 2",
-        "explanation": "3M headphone print series."
-      },
-      {
-        "kind": "image",
-        "src": "../assets/cartaz3.jpg",
-        "headline": "Surround Sound — poster 3",
-        "explanation": "3M headphone print series."
-      }
-    ]
-  }
+  "description": "Finalist in the Media category at the Cannes Festival and published in the Clube de Criação de São Paulo (CCSP) annual. An electrostatic bird-dropping sticker was applied to the windows of cars parked near a car wash.",
+  "items": [
+   {
+    "kind": "image",
+    "src": "../assets/coco%20de%20passarinho%20ok%20new%20copy.jpg",
+    "headline": "Bird droppings",
+    "explanation": "An electrostatic sticker shaped like a bird dropping, placed on the windows of cars parked near the Metálico car wash."
+   }
+  ]
+ },
+ {
+  "slug": "3m",
+  "name": "3M — Surround Sound",
+  "head": {
+   "title": "3M Surround Sound Headphones",
+   "sub": "An Explosion Of Sound Waves",
+   "paragraph": "Music and image stop being separate things. Sound waves spring from where the sound is born and build the figure of the one producing it. An explosion that takes shape and expands across the page: the graphic expression of the headphones' power and of the idea of surround, in which music occupies everything around.",
+   "role": "concept / copywriting / art direction"
+  },
+  "description": "Poster campaign for 3M Surround Sound headphones.",
+  "items": [
+   {
+    "kind": "image",
+    "src": "../assets/cartaz.jpg",
+    "headline": "Surround Sound — poster 1",
+    "explanation": "3M headphone print series."
+   },
+   {
+    "kind": "image",
+    "src": "../assets/cartaz2.jpg",
+    "headline": "Surround Sound — poster 2",
+    "explanation": "3M headphone print series."
+   },
+   {
+    "kind": "image",
+    "src": "../assets/cartaz3.jpg",
+    "headline": "Surround Sound — poster 3",
+    "explanation": "3M headphone print series."
+   }
+  ]
+ }
 ];
 const HOMEPAGE_ORDER=["hilux","gm-oleo","derdic","onu","coco-de-passarinho","corolla","mercedes-sprinter","hopi-hari","metro","3m","sw4","hopi-hari-brinquedos","centro-cultura-judaica","droga-raia","sony-walkman","salompas","ciam","sony-microsystem","sony-bravia","monkey-cyber-cafe"];
 const project=document.getElementById("project");
@@ -430,7 +568,10 @@ if(project){
  const nextSlug=HOMEPAGE_ORDER[(HOMEPAGE_ORDER.indexOf(slug)+1)%HOMEPAGE_ORDER.length];
  const nextUrl=nextSlug==="metro"?"metro.html":"projeto.html?id="+encodeURIComponent(nextSlug);
  const escaped=s=>String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
- const prefix='<p class="metro-intro">'+escaped(p.description)+'</p>';
+ const head=p.head;
+ let headHtml='<span class="ph-title">'+escaped(head.title)+'<br><span class="ph-sub">'+escaped(head.sub)+'</span></span><span class="ph-open">'+escaped(head.paragraph)+'</span><span class="ph-credit">Role: '+escaped(head.role)+'</span>';
+ if(head.awards&&head.awards.length){const multi=head.awards.length>1;headHtml+='<span class="ph-awards">'+(multi?'Awards:':'Award:')+'<br>'+head.awards.map(a=>(multi?'<span class="ph-dot">•</span> ':'')+a).join('<br>')+'</span>';}
+ const prefix='<section class="project-head project-'+slug+'"><p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:400;line-height:1.5;margin:0;padding:0;">'+headHtml+'</p></section>';
  const sections=p.items.map((item,i)=>{
  const media=item.kind==="image"?'<div class="metro-media"'+(slug==="sony-microsystem"?' style="background:transparent"':'')+'><a target="_blank" rel="noopener noreferrer" href="'+item.src.replaceAll(" ","%20")+'" aria-label="Open original artwork"><img loading="lazy" alt="'+escaped(p.name+" — original print advertisement")+'" src="'+item.src.replaceAll(" ","%20")+'"'+(slug==="sony-microsystem"?' style="width:min(430px,100%)"':'')+'></a></div>':
  '<div class="metro-media"'+(slug==="derdic"?' style="flex-direction:column"':'')+'><video controls playsinline preload="metadata" aria-label="'+escaped(p.name+" campaign film")+'" src="'+item.src.replaceAll(" ","%20")+'">'+(slug==="hilux"?'<track kind="subtitles" srclang="en" label="English" src="../assets/hilux-en.vtt" default>':'')+(slug==="derdic"?'<track kind="subtitles" srclang="en" label="English" src="../assets/derdic-en.vtt">':'')+(slug==="sw4"?'<track kind="subtitles" srclang="en" label="English" src="../assets/sw4-en.vtt" default>':'')+(slug==="corolla"?'<track kind="subtitles" srclang="en" label="English" src="../assets/corolla-en.vtt" default>':'')+(slug==="salompas"?'<track kind="subtitles" srclang="en" label="English" src="../assets/salompas-en.vtt" default>':'')+(slug==="ciam"?'<track kind="subtitles" srclang="en" label="English" src="../assets/ciam-en.vtt" default>':'')+'Your browser does not support video playback.</video>'+(slug==="derdic"?'<div class="derdic-captions" style="background:#000;color:#fff;text-align:center;padding:10px 12px;font-size:15px;line-height:1.4;min-height:2.8em;width:100%;box-sizing:border-box" aria-live="polite"></div>':'')+'</div>';
