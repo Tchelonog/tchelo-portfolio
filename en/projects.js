@@ -7,7 +7,7 @@ const PROJECTS=[
   "head": {
    "title": "Mercedes-Benz Sprinter",
    "sub": "Either You Have One Or You Want One",
-   "paragraph": "Not everyone dreams of a van in the garage. But put a Mercedes-Benz star on the front and the conversation changes. The idea was to treat the Sprinter for what it is: a premium vehicle in the utility-vehicle segment, with the status of an object of desire. For those who already have one, a reason to be proud. For those who don't, a reason to want one.",
+   "paragraph": "Not everyone dreams of a van in the driveway. But put a Mercedes-Benz star on the hood and the conversation changes. The idea was to treat the Sprinter for what it is: a premium vehicle in the utility segment, with the status of an object of desire. For those who already have one, a source of pride. For everyone else, a reason to want one.",
    "role": "concept / copywriting"
   },
   "description": "Concept advertisement for the Mercedes-Benz Sprinter, positioning the vehicle as a premium choice in the van and light commercial vehicle segment.",
@@ -26,7 +26,7 @@ const PROJECTS=[
   "head": {
    "title": "Sony Microsystem",
    "sub": "Clarification Notice",
-   "paragraph": "Some creative ideas need a colorful double-page spread to sell the product. This one only needed a small square on the classifieds page. To introduce the MHC-GTX88 microsystem, Sony publishes a clarification notice, one of the very formal kind. What looks like a serious statement is the most humorous way to prove the machine's power.",
+   "paragraph": "Some ideas need a full-color double-page spread to sell the product. This one needed only a small square on the classifieds page. To introduce the MHC-GTX88 microsystem, Sony runs a clarification notice, the very formal kind. What reads like a serious statement turns out to be the most playful way to prove the machine's power.",
    "role": "concept / copywriting"
   },
   "description": "A newspaper classified advertisement promoting a Sony microsystem.",
@@ -45,7 +45,7 @@ const PROJECTS=[
   "head": {
    "title": "Monkey Cyber Cafe",
    "sub": "Load games, not guns",
-   "paragraph": "In a disarmament awareness campaign promoted by the cyber cafe, the ads invert the order: instead of the virtual world imitating reality, reality imitates the virtual world. In the graphic style of games, real people on real streets. The scare is real. The gun is real.",
+   "paragraph": "In a disarmament awareness campaign run by the cyber cafe, the ads flip the usual order: instead of the virtual world imitating reality, reality imitates the virtual world. Real people, real streets, in the graphic style of a video game. The shock is real. The gun is real.",
    "role": "concept / copywriting / art direction"
   },
   "description": "Integrated disarmament awareness campaign for Monkey Cyber Café, featuring a film and print advertisements.",
@@ -88,7 +88,7 @@ const PROJECTS=[
   "head": {
    "title": "Sony Bravia",
    "sub": "Thin Like Never Before",
-   "paragraph": "How do you show that a TV is ultra-thin using a magazine? With an insert the reader pulls: instead of a card, a Bravia. Straight from the magazine into the hands of whoever is reading.",
+   "paragraph": "How do you show that a TV is ultra-thin using a magazine? With an insert the reader pulls: where a card would be, a Bravia. Out of the magazine, straight into the reader's hands.",
    "role": "concept / copywriting / art direction"
   },
   "description": "An alternative-media magazine execution highlighting the ultra-slim design of the Sony Bravia TV.",
@@ -106,8 +106,8 @@ const PROJECTS=[
   "name": "CIAM",
   "head": {
    "title": "CIAM",
-   "sub": "Give The Example",
-   "paragraph": "Every commercial has a cost, however small. The CIAM - Centro Israelita de Apoio Multidisciplinar - film cut every cost it could: no editing, no supers, no logo end card. An employee writes the message on a piece of paper and holds it up to the camera. For the institution, every cent has to go to the people it cares for. In the print pieces, CIAM sets the example: it donates first and invites whoever received the donation to give too, passing the responsibility on.",
+   "sub": "Lead By Giving",
+   "paragraph": "Every commercial costs money, however little. The CIAM - Centro Israelita de Apoio Multidisciplinar - film cut every cost it could: no editing, no supers, no logo end card. An employee writes the message on a sheet of paper and holds it up to the camera. For the institution, every cent has to go further for the people it cares for. In the print pieces, CIAM goes first: it makes a donation and invites whoever received it to donate as well, passing the responsibility on.",
    "role": "concept / copywriting / art direction"
   },
   "description": "Commercial and street activation created to encourage donations to CIAM (Centro Israelita de Apoio Multidisciplinar).",
@@ -132,7 +132,7 @@ const PROJECTS=[
   "head": {
    "title": "Salompas",
    "sub": "Stiff Neck",
-   "paragraph": "Living with pain is more work than treating it. Every gesture becomes a maneuver. The film does that math and closes with the simple answer: straight to the pain.",
+   "paragraph": "Living with pain is harder work than treating it. Every gesture becomes a maneuver. The film does the math and closes with the simple answer: straight to the pain.",
    "role": "co-creation / art direction"
   },
   "description": "Commercial focusing on relief from muscle and neck pain.",
@@ -151,7 +151,7 @@ const PROJECTS=[
   "head": {
    "title": "Sony Walkman",
    "sub": "A Copy Is Never The Same As The Original",
-   "paragraph": "A newspaper double page against counterfeit MP3 players. The left page carried the ad; the right one was blank. With the newspaper closed, ink from one page transferred to the other and revealed the message, mirrored and smudged. A copy is never the same as the original. The proof was in the newspaper's own printing.",
+   "paragraph": "A newspaper double page against counterfeit MP3 players. The left page carried the ad; the right one ran blank. Close the newspaper and the ink transferred from one page to the other, revealing the message, mirrored and smudged. A copy is never the same as the original. The proof was in the paper itself.",
    "role": "concept / copywriting / art direction"
   },
   "description": "A double-page Sony Walkman newspaper ad built around a simple idea: ink transferring from one page to the other.",
@@ -170,7 +170,7 @@ const PROJECTS=[
   "head": {
    "title": "'Jewish Culture in Brazil' Exhibition",
    "sub": "The Brazilian Influence Starts At The Entrance",
-   "paragraph": "To promote the 'Jewish Culture in Brazil' exhibition and its free admission at the Jewish Culture Center, I played with the cliché that associates Jews with money. The joke opened the doors. And didn't charge admission.",
+   "paragraph": "To promote the 'Jewish Culture in Brazil' exhibition and its free admission at the Jewish Culture Center, I played with the cliché that links Jews to money. The joke opened the doors. And didn't charge admission.",
    "role": "copywriting / art direction"
   },
   "description": "Print advertisement for a film program celebrating Jewish culture in Brazil.",
@@ -189,7 +189,7 @@ const PROJECTS=[
   "head": {
    "title": "Hopi Hari",
    "sub": "The Toys Everyone Wants",
-   "paragraph": "Children's Day gifts are bought at the toy store. That's why Hopi Hari ended up on the shelf.",
+   "paragraph": "Children's Day presents are bought at the toy store. That's how Hopi Hari ended up on the shelf.",
    "role": "concept / copywriting / art direction"
   },
   "description": "A series of print ads inviting people to experience the rides at Hopi Hari.",
@@ -223,7 +223,7 @@ const PROJECTS=[
   "head": {
    "title": "São Paulo Metro",
    "sub": "In A Hurry? Go Under It",
-   "paragraph": "São Paulo jams up above, the Metro runs below. While everyone outside looks for a way out, the campaign points in another direction, with humor. And the Metro joins the conversation of those who have no time to lose. After all, to get ahead of the traffic, you don't always have to overtake it. Sometimes you just go underneath.",
+   "paragraph": "São Paulo grinds to a halt above ground; the Metro keeps running below it. While everyone outside looks for a way out, the campaign points the other way, with humor. And the Metro joins the conversation of people with no time to lose. After all, to get past the traffic, you don't always have to overtake it. Sometimes you just go under it.",
    "role": "copywriting / art direction"
   },
   "description": "A print campaign for São Paulo's Metro system.",
@@ -254,7 +254,7 @@ const PROJECTS=[
   "head": {
    "title": "Derdic",
    "sub": "More Visibility For Deaf People",
-   "paragraph": "Derdic, the Division of Education and Rehabilitation of Communication Disorders, is an institution dedicated to accessibility. At a time when so many talk about inclusion, this commercial did its part inside the screen itself: the person who communicates through signs became the protagonist, and speech went to the little window. A film that was a great joy to make, especially when it was shown inside Derdic to the deaf people served by the institution, who reacted with deep emotion.",
+   "paragraph": "Derdic, the Division of Education and Rehabilitation of Communication Disorders, is an institution dedicated to accessibility. At a time when so many people talk about inclusion, this commercial did its share inside the screen itself: the person who communicates through signs became the protagonist, and speech moved to the little window. A film that was a joy to make, above all when it was screened inside Derdic for the deaf people the institution serves, who reacted with deep emotion.",
    "role": "concept",
    "awards": [
     "Clube de Criação de <br class=\"ph-br-d\">São Paulo Annual"
@@ -276,7 +276,7 @@ const PROJECTS=[
   "head": {
    "title": "UN",
    "sub": "Undo War",
-   "paragraph": "The world lives at war, one after another. That is what the UN exists for: to work for peace. The idea of this campaign is in the name itself. UN, from United Nations, gains the power of a prefix that undoes. In each piece, a verb that starts with the initials and ends with the violence undone. International campaign, never run.",
+   "paragraph": "The world lives at war, one war after another. That is what the UN exists for: to work for peace. The idea of this campaign lives in the name itself. UN, from United Nations, becomes a prefix that undoes. In each piece, a verb that starts with the initials and ends with the violence undone. International campaign, never run.",
    "role": "concept / copywriting / art direction"
   },
   "description": "An international United Nations awareness campaign against violence in armed conflicts.",
@@ -319,7 +319,7 @@ const PROJECTS=[
   "head": {
    "title": "General Motors",
    "sub": "Oil Leak",
-   "paragraph": "You know that sheet of newspaper spread under the car to catch the oil leak? One Sunday, it was on the newspaper's center spread. GM's double page simulated the newspaper stained by engine oil, exactly like the one on the garage floor. Well, better use genuine parts.",
+   "paragraph": "You know that sheet of newspaper spread under the car to soak up the oil leak? One Sunday, it was the newspaper's own center spread. GM's double page recreated that oil-stained sheet, exactly like the one lying on the garage floor. Well, better use genuine parts.",
    "role": "concept / art direction",
    "awards": [
     "Silver medal at the CCSP",
@@ -343,7 +343,7 @@ const PROJECTS=[
   "head": {
    "title": "Toyota Hilux",
    "sub": "The Journey Is The Destination",
-   "paragraph": "A life without obstacles would be much better, right? Not for pickup drivers, according to the research I took part in. The launch campaign of the new Hilux bet exactly on that: mud, potholes and challenge as invitation and desire, not as a problem. Hence the concept 'The journey is the destination'. I followed the campaign's production: shoots, photos, finishing and delivery to the client.",
+   "paragraph": "A life without obstacles would be so much better, right? Not for pickup drivers, according to the research I took part in. The launch campaign for the new Hilux bet on exactly that: mud, potholes and challenge as an invitation, not a problem. Hence the concept 'The journey is the destination'. I followed the campaign through production: shoots, stills, finishing and delivery to the client.",
    "role": "co-creation / concept / art direction / headline writing"
   },
   "description": "Integrated launch campaign for the new Toyota Hilux, including a film and print ads.",
@@ -383,7 +383,7 @@ const PROJECTS=[
   "head": {
    "title": "Hopi Hari",
    "sub": "The Escalator That Became A Roller Coaster",
-   "paragraph": "An escalator is usually the least exciting part of the visit. Until Hopi Hari enters the story. With stickers on the steps, the downward escalator gained rows of passengers with their arms up and became a roller coaster. An invitation to trade that calm descent for a not-so-calm one.",
+   "paragraph": "An escalator is usually the least exciting part of the day out. Until Hopi Hari enters the story. With stickers on the steps, the way down gained rows of passengers with their arms in the air and turned into a roller coaster. An invitation to trade that calm ride down for one that is anything but.",
    "role": "concept / copywriting / art direction",
    "awards": [
     "Clube de Criação de <br class=\"ph-br-d\">São Paulo Annual"
@@ -411,7 +411,7 @@ const PROJECTS=[
   "head": {
    "title": "Toyota Corolla",
    "sub": "Motor City",
-   "paragraph": "How do you show that the Corolla arrived with a new, more powerful engine? By putting the car to run inside it. To introduce the new 2.0 Dual VVT-i, we turned the engine into a city. A metropolis built for the Corolla to show what moves it.",
+   "paragraph": "How do you show the Corolla has arrived with a new, more powerful engine? By putting the car on the road inside it. To introduce the new 2.0 Dual VVT-i, we turned the engine into a city. A metropolis built for the Corolla to show what drives it.",
    "role": "concept / copywriting / art direction"
   },
   "description": "Integrated launch campaign for the new Toyota Corolla, including a film and print ads.",
@@ -444,7 +444,7 @@ const PROJECTS=[
   "head": {
    "title": "Droga Raia",
    "sub": "The Inflatable Tube Man",
-   "paragraph": "At the point of sale, the best message is the one that stands on its own. Droga Raia's stands precisely by not staying up.",
+   "paragraph": "At the point of sale, the best message is the one that stands on its own. Droga Raia's stands out precisely by not standing up.",
    "role": "concept / copywriting / art direction",
    "awards": [
     "Clube de Criação de <br class=\"ph-br-d\">São Paulo Annual"
@@ -466,7 +466,7 @@ const PROJECTS=[
   "head": {
    "title": "Toyota SW4",
    "sub": "The Masterpiece You Desire Most",
-   "paragraph": "In a heist-movie mood, the thief admires a rare jewel. But desire shifts the target and comfort becomes a trap. The perfect crime ends caught in the act. The masterpiece, after all, had four wheels.",
+   "paragraph": "In a heist-movie mood, the thief admires a rare jewel. But desire shifts the target, and comfort becomes the trap. The perfect crime ends caught red-handed. The masterpiece, after all, had four wheels.",
    "role": "concept / copywriting / art direction"
   },
   "description": "Integrated launch campaign for the new Toyota SW4, including a film and print ads.",
@@ -506,7 +506,7 @@ const PROJECTS=[
   "head": {
    "title": "Metálico Car Wash",
    "sub": "Bird shit happens",
-   "paragraph": "Imagine you parked to grab a coffee. Not even five minutes later, you come back to a giant bird shit sliding down your car window. That instant discouragement. Until you get closer and find out it's an electrostatic sticker with the name, address and phone number of the Metálico Car Wash. The stickers were placed on the windows of cars parked near the car wash.",
+   "paragraph": "Picture this: you park the car and run in for a coffee. Not even five minutes later, you're back, and a giant bird shit is sliding down your window. The day instantly sours. Then you get closer and realize it's an electrostatic sticker with the name, address and phone number of the Metálico Car Wash. The stickers went up on car windows around the car wash.",
    "role": "concept",
    "awards": [
     "Media shortlist at the <br class=\"ph-br-d\">Cannes Lions Festival",
@@ -529,7 +529,7 @@ const PROJECTS=[
   "head": {
    "title": "3M Surround Sound Headphones",
    "sub": "An Explosion Of Sound Waves",
-   "paragraph": "Music and image stop being separate things. Sound waves spring from where the sound is born and build the figure of the one producing it. An explosion that takes shape and expands across the page: the graphic expression of the headphones' power and of the idea of surround, in which music occupies everything around.",
+   "paragraph": "Music and image stop being separate things. Sound waves spring from where the sound is born and build the figure of the person making it. An explosion that takes shape and spreads across the page: the graphic expression of the headphones' power and of the idea of surround sound, where music fills everything around you.",
    "role": "concept / copywriting / art direction"
   },
   "description": "Poster campaign for 3M Surround Sound headphones.",
