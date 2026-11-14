@@ -1,0 +1,25 @@
+
+/* Political campaign draft: only new scoped selectors */
+.political-slot{position:relative;background:#303030;color:#fff;text-align:left;align-items:flex-start;justify-content:flex-end;padding:18px;gap:5px;transition:background .2s}
+.political-slot:hover{background:#171717}
+.political-year{font-size:clamp(32px,4vw,48px);font-weight:800;letter-spacing:-.05em;line-height:1}
+.political-name{font-size:14px;font-weight:700;line-height:1.25}
+.political-slot:focus-visible{outline:3px solid #555;outline-offset:3px}
+.political-project .project-head{padding-bottom:34px!important}
+.political-project .project-head h1{font-size:inherit;letter-spacing:inherit;margin:0}
+.political-project .project-head .ph-sub{margin-top:0!important}
+.political-project .project-head .ph-open{max-width:730px!important}
+.political-project .project-media{margin-top:0!important}
+.political-media{margin:0 0 32px}
+.political-media h2{font-size:14px;font-weight:400;margin:0 0 10px;line-height:1.4}
+.political-media video{display:block;width:100%;aspect-ratio:16/9;background:#171717}
+.political-media audio{width:100%}
+.political-pending{aspect-ratio:16/9;background:#e6e5e0;display:flex;align-items:center;justify-content:center;color:#666;font-size:13px}
+.political-audio .political-pending{aspect-ratio:auto;min-height:80px}
+.political-draft{background:#eee3c9;color:#594a2c;font-size:12px;line-height:1.5;padding:12px 18px;margin:20px 0}
+.political-project .authorial-back{margin-top:28px;margin-bottom:0}
+@media(max-width:530px){.political-slot{padding:12px}.political-year{font-size:32px}.political-name{font-size:11px}.political-media h2{font-size:12px}.political-project .project-head{padding-bottom:25px!important}}
+
+/* Match live authorial cards: small uppercase candidate above larger year. */
+.political-slot{display:block;padding:0;background:#303030}
+.political-slot .authorial-slot-overlay{background:linear-gradient(180deg,rgba(0,0,0,.08) 32%,rgba(0,0,0,.80) 100%)}
