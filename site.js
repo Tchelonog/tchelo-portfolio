@@ -206,73 +206,88 @@ if (project) {
     let media = '';
 
     if (slug === 'mercedes-sprinter') {
-      media = `
+      media = `<p class="ci-label ci-label-after">Anúncio</p>
+        
         <div class="media"><img src="assets/an%20sprinter(1).jpg" alt="Anúncio Mercedes-Benz Sprinter"></div>
       `;
     } else if (slug === 'sony-microsystem') {
-      media = `
+      media = `<p class="ci-label ci-label-after">Anúncio</p>
+        
         <div class="media sony-microsystem-media"><img src="assets/nota%20esclarecimento%20ok%20copy.jpg" alt="Sony Microsystem — Nota de Esclarecimento"></div>
       `;
     } else if (slug === 'monkey-cyber-cafe') {
-      media = `
+      media = `<p class="ci-label">Campanha Integrada<br>Anúncios</p>
+        
         <div class="media"><img src="assets/Young%20man%20copy.jpg" alt="Monkey Cyber Cafe — Young man"></div>
         <div class="media"><img src="assets/Woman%20copy.jpg" alt="Monkey Cyber Cafe — Woman"></div>
         <div class="media"><img src="assets/Man%20copy.jpg" alt="Monkey Cyber Cafe — Man"></div>
         <div class="media"><img src="assets/FAVELA%20FINAL%20copy.jpg" alt="Monkey Cyber Cafe — Favela"></div>
+        <p class="ci-label ci-label-after">Filme</p>
         <div class="media video-with-play">
           <video preload="metadata" playsinline src="assets/Monkey%20Game.mp4"></video>
           <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
         </div>
       `;
     } else if (slug === 'sony-bravia') {
-      media = `
+      media = `<p class="ci-label ci-label-after">Anúncio</p>
+        
         <div class="media"><img src="assets/puxe%20tv%20port%20pasta%20novo%20copy.jpg" alt="Sony Bravia — anúncio com encarte e cartão destacável"></div>
       `;
     } else if (slug === 'ciam') {
-      media = `
+      media = `<p class="ci-label">Campanha Integrada<br>Filme</p>
+        
         <div class="media video-with-play">
           <video preload="metadata" playsinline src="assets/Ciam%20Portugue%CC%82s%20com%20efeito.mp4"></video>
           <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
         </div>
+        <p class="ci-label ci-label-after">Anúncio</p>
         <div class="media"><img src="assets/pranchabalinha52X36%20copy.jpg" alt="CIAM — ação com balinhas, composição de duas fotografias"></div>
       `;
     } else if (slug === 'salompas') {
-      media = `
+      media = `<p class="ci-label ci-label-after">Filme</p>
+        
         <div class="media video-with-play">
           <video preload="metadata" playsinline src="assets/Salompas%20Pescoc%CC%A7o.mp4"></video>
           <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
         </div>
       `;
     } else if (slug === 'sony-walkman') {
-      media = `
+      media = `<p class="ci-label ci-label-after">Anúncio página dupla de jornal</p>
+        
         <div class="media"><img src="assets/an%20walkman%20pasta%20ok%20copy.jpg" alt="Sony Walkman — A cópia nunca é igual ao original"></div>
       `;
     } else if (slug === 'droga-raia') {
-      media = `
+      media = `<p class="ci-label ci-label-after">Anúncio</p>
+        
         <div class="media"><img src="assets/Montagem%20Disfunc%CC%A7a%CC%83o.jpg" alt="Droga Raia — intervenção Disfunção Erétil"></div>
       `;
     } else if (slug === 'centro-cultura-judaica') {
-      media = `
+      media = `<p class="ci-label ci-label-after">Anúncio</p>
+        
         <div class="media"><img src="assets/ccj%20gratuita%20copy.jpg" alt="Centro da Cultura Judaica — A entrada é gratuita"></div>
       `;
     } else if (slug === 'hopi-hari-brinquedos') {
-      media = `
+      media = `<p class="ci-label ci-label-after">Anúncios</p>
+        
         <div class="media"><img src="assets/hopi%20pasta%20brinquedos%203.jpg" alt="Hopi Hari Brinquedos — Montanha-russa"></div>
         <div class="media"><img src="assets/hopi%20pasta%20brinquedos%201.jpg" alt="Hopi Hari Brinquedos — Ekatomb"></div>
         <div class="media"><img src="assets/hopi%20pasta%20brinquedos%202.jpg" alt="Hopi Hari Brinquedos — La Tour Eiffel"></div>
       `;
     } else if (slug === 'sw4') {
-      media = `
+      media = `<p class="ci-label">Campanha Integrada<br>Filme</p>
+        
         <div class="media video-with-play">
           <video preload="metadata" playsinline src="assets/SW4%20Ladrao.mp4"></video>
           <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
         </div>
+        <p class="ci-label ci-label-after">Anúncios</p>
         <div class="media"><img src="assets/ans%20sw4%20pasta%20port%20copy3.jpg" alt="Toyota SW4 — Um jeito esperto de manter a família unida. Dê espaço."></div>
         <div class="media"><img src="assets/ans%20sw4%20pasta%20port%20copy2.jpg" alt="Toyota SW4 — Cabem até 7 rabudos."></div>
         <div class="media"><img src="assets/ans%20sw4%20pasta%20port%20copy1.jpg" alt="Toyota SW4 — Você nunca ficou tão confortável causando inveja."></div>
       `;
     } else if (slug === '3m') {
-      media = `
+      media = `<p class="ci-label ci-label-after">Anúncios</p>
+        
         <div class="three-m-grid">
           <div class="media"><img src="assets/cartaz.jpg" alt="3M Surround Sound Headphones — anúncio rosa"></div>
           <div class="media"><img src="assets/cartaz2.jpg" alt="3M Surround Sound Headphones — anúncio amarelo"></div>
@@ -280,24 +295,28 @@ if (project) {
         </div>
       `;
     } else if (slug === 'metro') {
-      media = `
+      media = `<p class="ci-label ci-label-after">Anúncios</p>
+        
         <div class="media"><img src="assets/lay%20metro%20copy1.jpg" alt="Metrô de São Paulo — Do Carandiru à Liberdade em 5 minutos"></div>
         <div class="media"><img src="assets/lay%20metro%20copy2.jpg" alt="Metrô de São Paulo — Tá com pressa? Passa por baixo"></div>
         <div class="media"><img src="assets/lay%20metro%20copy3.jpg" alt="Metrô de São Paulo — Toda vez que aparece um buraco na cidade a gente comemora"></div>
       `;
     } else if (slug === 'derdic') {
-      media = `
+      media = `<p class="ci-label ci-label-after">Filme</p>
+        
         <div class="media video-with-play">
           <video preload="metadata" playsinline src="assets/derdic.mp4"></video>
           <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
         </div>
       `;
     } else if (slug === 'onu') {
-      media = `
+      media = `<p class="ci-label">Campanha Integrada<br>Filme</p>
+        
         <div class="media video-with-play">
           <video preload="metadata" playsinline src="assets/UN%202009.mp4"></video>
           <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
         </div>
+        <p class="ci-label ci-label-after">Anúncios</p>
         <div class="media">
           <img src="assets/UNARM%20copy.jpg" alt="ONU — UNARM">
         </div>
@@ -312,7 +331,8 @@ if (project) {
         </div>
       `;
     } else if (slug === 'hopi-hari') {
-      media = `
+      media = `<p class="ci-label ci-label-after">Mídia Alternativa</p>
+        
         <div class="media"><img src="assets/HopiHari%20escada%20copy.jpg" alt="Hopi Hari — intervenção em escada rolante"></div>
         <div class="media video-with-play">
           <video preload="metadata" playsinline src="assets/hopy%20escada.mp4"></video>
@@ -320,16 +340,19 @@ if (project) {
         </div>
       `;
     } else if (slug === 'corolla') {
-      media = `
+      media = `<p class="ci-label">Campanha Integrada<br>Filme</p>
+        
         <div class="media video-with-play">
           <video preload="metadata" playsinline src="assets/Corolla2010.mp4"></video>
           <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
         </div>
+        <p class="ci-label ci-label-after">Anúncios</p>
         <div class="media"><img src="assets/an%20corolla%20copy1.jpg" alt="Toyota Corolla — anúncio 1"></div>
         <div class="media"><img src="assets/an%20corolla%20copy2.jpg" alt="Toyota Corolla — anúncio 2"></div>
       `;
     } else if (slug === 'coco-de-passarinho') {
-      media = `
+      media = `<p class="ci-label ci-label-after">Mídia Alternativa</p>
+        
         <div class="media"><img src="assets/coco%20de%20passarinho%20ok%20new%20copy.jpg" alt="Cocô de passarinho — ação para lava-rápido"></div>
       `;
     } else if (slug === 'gm-oleo') {
