@@ -334,6 +334,7 @@ if (project) {
       `;
     } else if (slug === 'gm-oleo') {
       media = `
+        <p class="ci-label ci-label-after">Anúncio página dupla de jornal</p>
         <div class="media"><img src="assets/jornal-GM%20copy.jpg" alt="General Motors — Peças Genuínas GM"></div>
       `;
     } else if (slug === 'hilux') {
