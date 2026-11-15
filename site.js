@@ -211,7 +211,7 @@ if (project) {
         <div class="media"><img src="assets/an%20sprinter(1).jpg" alt="Anúncio Mercedes-Benz Sprinter"></div>
       `;
     } else if (slug === 'sony-microsystem') {
-      media = `<p class="ci-label ci-label-after">Anúncio</p>
+      media = `<p class="ci-label ci-label-after">Anúncio na seção de classificados</p>
         
         <div class="media sony-microsystem-media"><img src="assets/nota%20esclarecimento%20ok%20copy.jpg" alt="Sony Microsystem — Nota de Esclarecimento"></div>
       `;
@@ -229,7 +229,7 @@ if (project) {
         </div>
       `;
     } else if (slug === 'sony-bravia') {
-      media = `<p class="ci-label ci-label-after">Anúncio</p>
+      media = `<p class="ci-label ci-label-after">Encarte em revista</p>
         
         <div class="media"><img src="assets/puxe%20tv%20port%20pasta%20novo%20copy.jpg" alt="Sony Bravia — anúncio com encarte e cartão destacável"></div>
       `;
@@ -240,7 +240,7 @@ if (project) {
           <video preload="metadata" playsinline src="assets/Ciam%20Portugue%CC%82s%20com%20efeito.mp4"></video>
           <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
         </div>
-        <p class="ci-label ci-label-after">Anúncio</p>
+        <p class="ci-label ci-label-after">Ação</p>
         <div class="media"><img src="assets/pranchabalinha52X36%20copy.jpg" alt="CIAM — ação com balinhas, composição de duas fotografias"></div>
       `;
     } else if (slug === 'salompas') {
@@ -257,7 +257,7 @@ if (project) {
         <div class="media"><img src="assets/an%20walkman%20pasta%20ok%20copy.jpg" alt="Sony Walkman — A cópia nunca é igual ao original"></div>
       `;
     } else if (slug === 'droga-raia') {
-      media = `<p class="ci-label ci-label-after">Anúncio</p>
+      media = `<p class="ci-label ci-label-after">Mídia Alternativa</p>
         
         <div class="media"><img src="assets/Montagem%20Disfunc%CC%A7a%CC%83o.jpg" alt="Droga Raia — intervenção Disfunção Erétil"></div>
       `;
