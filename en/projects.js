@@ -518,7 +518,7 @@ const PROJECTS=[
    {
     "kind": "image",
     "src": "../assets/coco%20de%20passarinho%20ok%20new%20copy.jpg",
-    "headline": "Bird droppings",
+    "headline": "Bird shit happens",
     "explanation": "An electrostatic sticker shaped like a bird dropping, placed on the windows of cars parked near the Metálico car wash."
    }
   ]
@@ -581,7 +581,7 @@ if(project){
  else if(slug!=="hopi-hari"&&item.kind!==p.items[i-1].kind)heading=label(slug==="ciam"?'Activation':item.kind==="video"?'Film':'Print',true);
  const media=item.kind==="image"?'<div class="metro-media"'+(slug==="sony-microsystem"?' style="background:transparent"':'')+'><a target="_blank" rel="noopener noreferrer" href="'+item.src.replaceAll(" ","%20")+'" aria-label="Open original artwork"><img loading="lazy" alt="'+escaped(p.name+" — original print advertisement")+'" src="'+item.src.replaceAll(" ","%20")+'"'+(slug==="sony-microsystem"?' style="width:min(430px,100%)"':'')+'></a></div>':
  '<div class="metro-media"'+(slug==="derdic"?' style="flex-direction:column"':'')+'><video controls playsinline preload="metadata" aria-label="'+escaped(p.name+" campaign film")+'" src="'+item.src.replaceAll(" ","%20")+'">'+(slug==="hilux"?'<track kind="subtitles" srclang="en" label="English" src="../assets/hilux-en.vtt" default>':'')+(slug==="derdic"?'<track kind="subtitles" srclang="en" label="English" src="../assets/derdic-en.vtt">':'')+(slug==="sw4"?'<track kind="subtitles" srclang="en" label="English" src="../assets/sw4-en.vtt" default>':'')+(slug==="corolla"?'<track kind="subtitles" srclang="en" label="English" src="../assets/corolla-en.vtt" default>':'')+(slug==="salompas"?'<track kind="subtitles" srclang="en" label="English" src="../assets/salompas-en.vtt" default>':'')+(slug==="ciam"?'<track kind="subtitles" srclang="en" label="English" src="../assets/ciam-en.vtt" default>':'')+'Your browser does not support video playback.</video>'+(slug==="derdic"?'<div class="derdic-captions" style="background:#000;color:#fff;text-align:center;padding:10px 12px;font-size:15px;line-height:1.4;min-height:2.8em;width:100%;box-sizing:border-box" aria-live="polite"></div>':'')+'</div>';
- const translatedSlugs=["hilux","corolla","sw4","mercedes-sprinter","sony-bravia","ciam","sony-walkman","centro-cultura-judaica","hopi-hari-brinquedos","hopi-hari","droga-raia","gm-oleo"];
+ const translatedSlugs=["hilux","corolla","sw4","mercedes-sprinter","sony-bravia","ciam","sony-walkman","centro-cultura-judaica","hopi-hari-brinquedos","hopi-hari","droga-raia","gm-oleo","coco-de-passarinho"];
  let translation="";
  if(item.kind==="image"&&translatedSlugs.includes(slug)){
   const note=slug==="ciam"?item.explanation.split("This time, the note read:\n\n")[1]:"";
