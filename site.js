@@ -76,7 +76,7 @@ const thumbnails = [
     "slug": "derdic"
   },
   {
-    "image": "assets/4-123milhas-thumb.jpg",
+    "image": "assets/7-123milhas-thumb.jpg",
     "title": "123 milhas",
     "advertiser": "123 milhas",
     "slug": "123milhas"
