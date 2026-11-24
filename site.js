@@ -1,4 +1,5 @@
 const projects = [
+  ['123milhas', '123 milhas', 'Campanha'],
   ['mercedes-sprinter', 'Mercedes-Benz Sprinter', 'Anúncio'],
   ['sony-microsystem', 'Sony Microsystem', 'Anúncio'],
   ['monkey-cyber-cafe', 'Monkey Cyber Cafe', 'Campanha'],
@@ -23,6 +24,7 @@ const projects = [
 
 // Escreva entre as aspas a linha de apresentação de cada projeto.
 const descriptions = {
+  '123milhas': '<span class="ph-title">123 milhas.<br><span class="ph-sub">Um, dois, três e já.</span></span><span class="ph-credit">Atuação: redação / direção de arte / conceito</span>',
   'mercedes-sprinter': '<span class="ph-title">Mercedes-Benz Sprinter<br><span class="ph-sub">Ou Você Tem Ou Você Quer</span></span><span class="ph-open">Nem todo mundo sonha com um furgão na garagem. Mas coloque uma estrela da Mercedes-Benz na frente e a conversa muda. A ideia foi tratar a Sprinter como o que ela é: um veículo premium no segmento de veículos utilitários, com status de objeto de desejo. Para quem já tem, motivo de orgulho. Para quem não tem, motivo para desejar.</span><span class="ph-credit">Atuação: conceito / redação</span>',
   'sony-microsystem': '<span class="ph-title">Sony Microsystem<br><span class="ph-sub">Nota De Esclarecimento</span></span><span class="ph-open">Tem ideia criativa que precisa de uma página dupla colorida para vender o produto. Essa precisou só de um quadradinho na página dos classificados. Para apresentar o microsystem MHC-GTX88, a Sony publica uma nota de esclarecimento, daquelas bem formais. O que parece um comunicado sério é o jeito mais bem-humorado de provar a potência do aparelho.</span><span class="ph-credit">Atuação: criação / redação</span>',
   'monkey-cyber-cafe': '<span class="ph-title">Monkey Cyber Cafe<br><span class="ph-sub">Load games, not guns</span></span><span class="ph-open">Numa campanha de conscientização sobre o desarmamento promovida pelo cyber cafe, os anúncios invertem a ordem: em vez do mundo virtual imitar a realidade, a realidade imita o mundo virtual. No estilo gráfico dos games, pessoas reais em ruas reais. O susto é real. A arma é real.</span><span class="ph-credit">Atuação: criação / redação / direção de arte</span>',
@@ -72,6 +74,12 @@ const thumbnails = [
     "title": "Derdic",
     "advertiser": "Derdic",
     "slug": "derdic"
+  },
+  {
+    "image": "assets/4-123milhas-thumb.jpg",
+    "title": "123 milhas",
+    "advertiser": "123 milhas",
+    "slug": "123milhas"
   },
   {
     "image": "assets/04%20un%20thumb%20copy.jpg",
@@ -205,7 +213,15 @@ if (project) {
 
     let media = '';
 
-    if (slug === 'mercedes-sprinter') {
+    if (slug === '123milhas') {
+      media = `<p class="ci-label ci-label-after">Mood boards</p>
+
+        <div class="media"><img src="assets/1-123milhas-anuncio-1.jpg" alt="123milhas — Fim de semana inteiro pela metade do preço."></div>
+        <div class="media"><img src="assets/2-123milhas-anuncio-2.jpg" alt="123milhas — Feriado prolongado. Parcelas idem."></div>
+        <div class="media"><img src="assets/3-123milhas-anuncio-3.jpg" alt="123milhas — A viagem dos seus sonhos, de um jeito que nem Freud explica."></div>
+        <p style="font-size:12px;color:#777;margin-top:24px">Fotos: Wikimedia Commons (CC BY-SA) e Pexels.</p>
+      `;
+    } else if (slug === 'mercedes-sprinter') {
       media = `<p class="ci-label ci-label-after">Anúncio</p>
         
         <div class="media"><img src="assets/an%20sprinter(1).jpg" alt="Anúncio Mercedes-Benz Sprinter"></div>
@@ -514,3 +530,4 @@ if (project) {
     if (event.key === 'Escape' && !lightbox.hidden) close();
   });
 }
+
