@@ -622,7 +622,7 @@ if(project){
  else if(slug!=="hopi-hari"&&item.kind!==p.items[i-1].kind)heading=label(slug==="ciam"?'Activation':item.kind==="video"?'Film':'Print',true);
  const media=item.kind==="image"?'<div class="metro-media"'+(slug==="sony-microsystem"?' style="background:transparent"':'')+'><a target="_blank" rel="noopener noreferrer" href="'+item.src.replaceAll(" ","%20")+'" aria-label="Open original artwork"><img loading="lazy" alt="'+escaped(p.name+(slug==="123milhas"?" — campaign concept artwork":" — original print advertisement"))+'" src="'+item.src.replaceAll(" ","%20")+'"'+(slug==="sony-microsystem"?' style="width:min(430px,100%)"':'')+'></a></div>':
  '<div class="metro-media"'+(slug==="derdic"?' style="flex-direction:column"':'')+'><video controls playsinline preload="metadata" aria-label="'+escaped(p.name+" campaign film")+'" src="'+item.src.replaceAll(" ","%20")+'">'+(slug==="hilux"?'<track kind="subtitles" srclang="en" label="English" src="../assets/hilux-en.vtt" default>':'')+(slug==="derdic"?'<track kind="subtitles" srclang="en" label="English" src="../assets/derdic-en.vtt">':'')+(slug==="sw4"?'<track kind="subtitles" srclang="en" label="English" src="../assets/sw4-en.vtt" default>':'')+(slug==="corolla"?'<track kind="subtitles" srclang="en" label="English" src="../assets/corolla-en.vtt" default>':'')+(slug==="salompas"?'<track kind="subtitles" srclang="en" label="English" src="../assets/salompas-en.vtt" default>':'')+(slug==="ciam"?'<track kind="subtitles" srclang="en" label="English" src="../assets/ciam-en.vtt" default>':'')+'Your browser does not support video playback.</video>'+(slug==="derdic"?'<div class="derdic-captions" style="background:#000;color:#fff;text-align:center;padding:10px 12px;font-size:15px;line-height:1.4;min-height:2.8em;width:100%;box-sizing:border-box" aria-live="polite"></div>':'')+'</div>';
- const translatedSlugs=["123milhas","hilux","corolla","sw4","mercedes-sprinter","sony-bravia","ciam","sony-walkman","centro-cultura-judaica","hopi-hari-brinquedos","hopi-hari","droga-raia","gm-oleo"];
+ const translatedSlugs=["hilux","corolla","sw4","mercedes-sprinter","sony-bravia","ciam","sony-walkman","centro-cultura-judaica","hopi-hari-brinquedos","hopi-hari","droga-raia","gm-oleo"];
  let translation="";
  if(item.kind==="image"&&translatedSlugs.includes(slug)){
   const note=slug==="ciam"?item.explanation.split("This time, the note read:\n\n")[1]:"";
@@ -630,7 +630,7 @@ if(project){
  }
  return heading+translation+media;
  }).join("");
- const footNote=slug==="123milhas"?'<p style="font-size:12px;color:#777;margin-top:24px">Some of these headlines adapt Brazilian idioms and wordplay into equivalent English expressions rather than translating them literally. Pix is the instant payment system used in Brazil.<br>Photos: Wikimedia Commons (CC BY-SA) and Pexels.</p>':'';
+ const footNote=slug==="123milhas"?'<p style="font-size:12px;color:#777;margin-top:24px">Photos: Wikimedia Commons (CC BY-SA) and Pexels.</p>':'';
  const navHtml='<nav class="metro-bottom-nav"><a href="index.html">← HOMEPAGE</a><a href="'+nextUrl+'">NEXT PROJECT →</a></nav>';
  if(slug==="3m"){
   const alts=["pink poster","yellow poster","blue poster"];
