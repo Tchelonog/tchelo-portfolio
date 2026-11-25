@@ -214,7 +214,7 @@ if (project) {
     let media = '';
 
     if (slug === '123milhas') {
-      media = `<p class="ci-label ci-label-after">Mood boards</p>
+      media = `<p class="ci-label ci-label-after">Conceito de campanha</p>
 
         <div class="media"><img src="assets/2-10-123milhas-anuncio-2-v3.jpg" alt="123milhas — Feriado prolongado. Parcelas idem."></div>
         <div class="media"><img src="assets/4-123milhas-anuncio-4-passagem-v2.jpg" alt="123milhas — É verdade esse bilhete. São Paulo - Fortaleza com 15% de desconto no Pix."></div>
