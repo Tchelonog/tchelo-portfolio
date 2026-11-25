@@ -271,6 +271,47 @@ const PROJECTS=[
   ]
  },
  {
+  "slug": "123milhas",
+  "name": "123 milhas",
+  "head": {
+   "title": "123 milhas.",
+   "sub": "One, two, three. And you're off.",
+   "paragraph": "The challenge was to reposition 123milhas as the best and most affordable online platform for flights and travel packages. The idea combined brand positioning with sales-driven advertising in an integrated online and offline campaign, using stock imagery to keep production costs low. One, two, three. And you're off.",
+   "role": "copywriting / art direction / concept"
+  },
+  "description": "Campaign concept for 123milhas: repositioning the online travel platform through an integrated, low-cost campaign built from stock imagery.",
+  "items": [
+   {
+    "kind": "image",
+    "src": "../assets/123milhas-en-1-extra-days.jpg",
+    "headline": "Extra days off. Extra months to pay.",
+    "tagline": "Travel packages in up to 12 interest-free installments on your card.",
+    "explanation": ""
+   },
+   {
+    "kind": "image",
+    "src": "../assets/123milhas-en-2-this-fare.jpg",
+    "headline": "This fare is for real.",
+    "tagline": "São Paulo–Fortaleza. Get 15% off when you pay with Pix.",
+    "explanation": ""
+   },
+   {
+    "kind": "image",
+    "src": "../assets/123milhas-en-3-daydreams.jpg",
+    "headline": "The trip of your daydreams.",
+    "tagline": "The destination on your mind now fits your budget. Flights in 12 interest-free installments.",
+    "explanation": ""
+   },
+   {
+    "kind": "image",
+    "src": "../assets/123milhas-en-4-half-price.jpg",
+    "headline": "A whole weekend at half price.",
+    "tagline": "50% off flights. Through Sunday only.",
+    "explanation": ""
+   }
+  ]
+ },
+ {
   "slug": "onu",
   "name": "United Nations",
   "head": {
@@ -555,7 +596,7 @@ const PROJECTS=[
   ]
  }
 ];
-const HOMEPAGE_ORDER=["hilux","gm-oleo","derdic","onu","coco-de-passarinho","corolla","mercedes-sprinter","hopi-hari","metro","3m","sw4","hopi-hari-brinquedos","centro-cultura-judaica","droga-raia","sony-walkman","salompas","ciam","sony-microsystem","sony-bravia","monkey-cyber-cafe"];
+const HOMEPAGE_ORDER=["hilux","gm-oleo","derdic","123milhas","onu","coco-de-passarinho","corolla","mercedes-sprinter","hopi-hari","metro","3m","sw4","hopi-hari-brinquedos","centro-cultura-judaica","droga-raia","sony-walkman","salompas","ciam","sony-microsystem","sony-bravia","monkey-cyber-cafe"];
 const project=document.getElementById("project");
 if(project){
  const slug=new URLSearchParams(location.search).get("id");
@@ -574,14 +615,14 @@ if(project){
  const prefix='<section class="project-head project-'+slug+'"><p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:400;line-height:1.5;margin:0;padding:0;">'+headHtml+'</p></section>';
  const label=(text,after=false)=>'<p class="ci-label'+(after?' ci-label-after':'')+'">'+text+'</p>';
  const integrated=["monkey-cyber-cafe","ciam","sw4","onu","corolla","hilux"].includes(slug);
- const firstLabels={"mercedes-sprinter":"Print","sony-microsystem":"Classified Ad","sony-bravia":"Magazine Insert","salompas":"Film","sony-walkman":"Double-Page Newspaper Ad","droga-raia":"Ambient Media","centro-cultura-judaica":"Print","hopi-hari-brinquedos":"Print","3m":"Print","metro":"Print","derdic":"Film","hopi-hari":"Ambient Media","coco-de-passarinho":"Ambient Media","gm-oleo":"Double-Page Newspaper Ad"};
+ const firstLabels={"mercedes-sprinter":"Print","sony-microsystem":"Classified Ad","sony-bravia":"Magazine Insert","salompas":"Film","sony-walkman":"Double-Page Newspaper Ad","droga-raia":"Ambient Media","centro-cultura-judaica":"Print","hopi-hari-brinquedos":"Print","3m":"Print","metro":"Print","derdic":"Film","hopi-hari":"Ambient Media","coco-de-passarinho":"Ambient Media","gm-oleo":"Double-Page Newspaper Ad","123milhas":"Campaign concept"};
  const sections=p.items.map((item,i)=>{
  let heading="";
  if(i===0)heading=label(integrated?'Integrated Campaign<br>'+(item.kind==="video"?'Film':'Print'):firstLabels[slug]);
  else if(slug!=="hopi-hari"&&item.kind!==p.items[i-1].kind)heading=label(slug==="ciam"?'Activation':item.kind==="video"?'Film':'Print',true);
- const media=item.kind==="image"?'<div class="metro-media"'+(slug==="sony-microsystem"?' style="background:transparent"':'')+'><a target="_blank" rel="noopener noreferrer" href="'+item.src.replaceAll(" ","%20")+'" aria-label="Open original artwork"><img loading="lazy" alt="'+escaped(p.name+" — original print advertisement")+'" src="'+item.src.replaceAll(" ","%20")+'"'+(slug==="sony-microsystem"?' style="width:min(430px,100%)"':'')+'></a></div>':
+ const media=item.kind==="image"?'<div class="metro-media"'+(slug==="sony-microsystem"?' style="background:transparent"':'')+'><a target="_blank" rel="noopener noreferrer" href="'+item.src.replaceAll(" ","%20")+'" aria-label="Open original artwork"><img loading="lazy" alt="'+escaped(p.name+(slug==="123milhas"?" — campaign concept artwork":" — original print advertisement"))+'" src="'+item.src.replaceAll(" ","%20")+'"'+(slug==="sony-microsystem"?' style="width:min(430px,100%)"':'')+'></a></div>':
  '<div class="metro-media"'+(slug==="derdic"?' style="flex-direction:column"':'')+'><video controls playsinline preload="metadata" aria-label="'+escaped(p.name+" campaign film")+'" src="'+item.src.replaceAll(" ","%20")+'">'+(slug==="hilux"?'<track kind="subtitles" srclang="en" label="English" src="../assets/hilux-en.vtt" default>':'')+(slug==="derdic"?'<track kind="subtitles" srclang="en" label="English" src="../assets/derdic-en.vtt">':'')+(slug==="sw4"?'<track kind="subtitles" srclang="en" label="English" src="../assets/sw4-en.vtt" default>':'')+(slug==="corolla"?'<track kind="subtitles" srclang="en" label="English" src="../assets/corolla-en.vtt" default>':'')+(slug==="salompas"?'<track kind="subtitles" srclang="en" label="English" src="../assets/salompas-en.vtt" default>':'')+(slug==="ciam"?'<track kind="subtitles" srclang="en" label="English" src="../assets/ciam-en.vtt" default>':'')+'Your browser does not support video playback.</video>'+(slug==="derdic"?'<div class="derdic-captions" style="background:#000;color:#fff;text-align:center;padding:10px 12px;font-size:15px;line-height:1.4;min-height:2.8em;width:100%;box-sizing:border-box" aria-live="polite"></div>':'')+'</div>';
- const translatedSlugs=["hilux","corolla","sw4","mercedes-sprinter","sony-bravia","ciam","sony-walkman","centro-cultura-judaica","hopi-hari-brinquedos","hopi-hari","droga-raia","gm-oleo"];
+ const translatedSlugs=["123milhas","hilux","corolla","sw4","mercedes-sprinter","sony-bravia","ciam","sony-walkman","centro-cultura-judaica","hopi-hari-brinquedos","hopi-hari","droga-raia","gm-oleo"];
  let translation="";
  if(item.kind==="image"&&translatedSlugs.includes(slug)){
   const note=slug==="ciam"?item.explanation.split("This time, the note read:\n\n")[1]:"";
@@ -589,12 +630,13 @@ if(project){
  }
  return heading+translation+media;
  }).join("");
+ const footNote=slug==="123milhas"?'<p style="font-size:12px;color:#777;margin-top:24px">Some of these headlines adapt Brazilian idioms and wordplay into equivalent English expressions rather than translating them literally. Pix is the instant payment system used in Brazil.<br>Photos: Wikimedia Commons (CC BY-SA) and Pexels.</p>':'';
  const navHtml='<nav class="metro-bottom-nav"><a href="index.html">← HOMEPAGE</a><a href="'+nextUrl+'">NEXT PROJECT →</a></nav>';
  if(slug==="3m"){
   const alts=["pink poster","yellow poster","blue poster"];
   project.innerHTML=prefix+'<div class="project-media">'+label(firstLabels[slug])+'<div class="three-m-grid">'+p.items.map((item,i)=>'<div class="media"><img loading="lazy" alt="'+escaped("3M Surround Sound Headphones — "+(alts[i]||"poster"))+'" src="'+item.src.replaceAll(" ","%20")+'"></div>').join("")+'</div></div>'+navHtml;
  } else {
- project.innerHTML=prefix+'<div class="project-media">'+sections+'</div>'+navHtml;
+ project.innerHTML=prefix+'<div class="project-media">'+sections+'</div>'+footNote+navHtml;
  }
  if(slug==="3m"){
 
