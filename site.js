@@ -2,10 +2,10 @@ const projects = [
   ['123milhas', '123 milhas', 'Campanha'],
   ['mercedes-sprinter', 'Mercedes-Benz Sprinter', 'Anúncio'],
   ['sony-microsystem', 'Sony Microsystem', 'Anúncio'],
-  ['monkey-cyber-cafe', 'Monkey Cyber Cafe', 'Campanha'],
+  ['monkey-cyber-cafe', 'Monkey Cyber Café', 'Campanha'],
   ['sony-bravia', 'Sony Bravia', 'Anúncio'],
   ['ciam', 'CIAM', 'Campanha'],
-  ['salompas', 'Salompas', 'Filme'],
+  ['salompas', 'Salonpas', 'Filme'],
   ['sony-walkman', 'Sony Walkman', 'Anúncio'],
   ['centro-cultura-judaica', 'Centro da Cultura Judaica', 'Anúncio'],
   ['hopi-hari-brinquedos', 'Hopi Hari — Brinquedos', 'Campanha impressa'],
@@ -27,12 +27,12 @@ const descriptions = {
   '123milhas': '<span class="ph-title">123 milhas.<br><span class="ph-sub">Um, dois, três e já.</span></span><span class="ph-open">O desafio era reposicionar a 123milhas como a melhor e mais econômica plataforma online de passagens e pacotes de viagens. A proposta unia posicionamento de marca e varejo numa campanha integrada, online e offline, com produção de baixo custo e uso de banco de imagens. Um, dois, três e já.</span><span class="ph-credit">Atuação: redação / direção de arte / conceito</span>',
   'mercedes-sprinter': '<span class="ph-title">Mercedes-Benz Sprinter<br><span class="ph-sub">Ou Você Tem Ou Você Quer</span></span><span class="ph-open">Nem todo mundo sonha com um furgão na garagem. Mas coloque uma estrela da Mercedes-Benz na frente e a conversa muda. A ideia foi tratar a Sprinter como o que ela é: um veículo premium no segmento de veículos utilitários, com status de objeto de desejo. Para quem já tem, motivo de orgulho. Para quem não tem, motivo para desejar.</span><span class="ph-credit">Atuação: conceito / redação</span>',
   'sony-microsystem': '<span class="ph-title">Sony Microsystem<br><span class="ph-sub">Nota De Esclarecimento</span></span><span class="ph-open">Tem ideia criativa que precisa de uma página dupla colorida para vender o produto. Essa precisou só de um quadradinho na página dos classificados. Para apresentar o microsystem MHC-GTX88, a Sony publica uma nota de esclarecimento, daquelas bem formais. O que parece um comunicado sério é o jeito mais bem-humorado de provar a potência do aparelho.</span><span class="ph-credit">Atuação: criação / redação</span>',
-  'monkey-cyber-cafe': '<span class="ph-title">Monkey Cyber Cafe<br><span class="ph-sub">Load games, not guns</span></span><span class="ph-open">Numa campanha de conscientização sobre o desarmamento promovida pelo cyber cafe, os anúncios invertem a ordem: em vez do mundo virtual imitar a realidade, a realidade imita o mundo virtual. No estilo gráfico dos games, pessoas reais em ruas reais. O susto é real. A arma é real.</span><span class="ph-credit">Atuação: criação / redação / direção de arte</span>',
+  'monkey-cyber-cafe': '<span class="ph-title">Monkey Cyber Café<br><span class="ph-sub">Load games, not guns</span></span><span class="ph-open">Numa campanha de conscientização sobre o desarmamento promovida pelo cyber cafe, os anúncios invertem a ordem: em vez do mundo virtual imitar a realidade, a realidade imita o mundo virtual. No estilo gráfico dos games, pessoas reais em ruas reais. O susto é real. A arma é real.</span><span class="ph-credit">Atuação: criação / redação / direção de arte</span>',
   'sony-bravia': '<span class="ph-title">Sony Bravia<br><span class="ph-sub">Fina como você nunca viu</span></span><span class="ph-open">Como mostrar que uma TV é ultrafina usando uma revista? Com um encarte que o leitor puxa: no lugar de um cartão, uma Bravia. Pra sair da revista direto para a mão de quem lê.</span><span class="ph-credit">Atuação: criação / redação / direção de arte</span>',
   'ciam': '<span class="ph-title">CIAM<br><span class="ph-sub">Doe o exemplo</span></span><span class="ph-open">Todo filme de propaganda tem custo, por menor que seja. O comercial do CIAM - Centro Israelita de Apoio Multidisciplinar - cortou os que dava para cortar: sem edição, sem letreiro, sem logo em cartela. Um funcionário escreve a mensagem num papel e mostra para a câmera. Para a instituição, todo valor tem que render para as pessoas de quem cuida. Nas peças gráficas, o CIAM dá o exemplo: doa primeiro e convida quem recebeu a doar também, passando a responsabilidade adiante.</span><span class="ph-credit">Atuação: criação / redação / direção de arte</span>',
-  'salompas': '<span class="ph-title">Salompas<br><span class="ph-sub">Torcicolo</span></span><span class="ph-open">Conviver com a dor dá mais trabalho do que tratar. Cada gesto vira manobra. O filme faz essa conta e fecha com a resposta simples: direto na dor.</span><span class="ph-credit">Atuação: cocriação / direção de arte</span>',
+  'salompas': '<span class="ph-title">Salonpas<br><span class="ph-sub">Torcicolo</span></span><span class="ph-open">Conviver com a dor dá mais trabalho do que tratar. Cada gesto vira manobra. O filme faz essa conta e fecha com a resposta simples: direto na dor.</span><span class="ph-credit">Atuação: cocriação / direção de arte</span>',
   'sony-walkman': '<span class="ph-title">Sony Walkman<br><span class="ph-sub">A Cópia Nunca É Igual Ao Original</span></span><span class="ph-open">Uma página dupla de jornal contra os MP3 players falsificados. A página da esquerda trazia o anúncio; a da direita estava em branco. Com o jornal fechado, a tinta de uma página se transferia para a outra e revelava a mensagem, espelhada e manchada. A cópia nunca é igual ao original. A prova estava na própria impressão do jornal.</span><span class="ph-credit">Atuação: criação / redação / direção de arte</span>',
-  'centro-cultura-judaica': '<span class="ph-title">Mostra \'Cultura Judaica no Brasil\'<br><span class="ph-sub">O Brasil Influencia Logo Na Entrada</span></span><span class="ph-open">Para divulgar a mostra \'Cultura Judaica no Brasil\' e sua entrada gratuita no Centro da Cultura Judaica, brinquei com o clichê que associa judeus a dinheiro. A piada abriu as portas. E não cobrou ingresso.</span><span class="ph-credit">Atuação: redação / direção de arte</span>',
+  'centro-cultura-judaica': '<span class="ph-title">Mostra “Cultura Judaica no Brasil”<br><span class="ph-sub">O Brasil Influencia Logo Na Entrada</span></span><span class="ph-open">Para divulgar a mostra \'Cultura Judaica no Brasil\' e sua entrada gratuita no Centro da Cultura Judaica, brinquei com o clichê que associa judeus a dinheiro. A piada abriu as portas. E não cobrou ingresso.</span><span class="ph-credit">Atuação: redação / direção de arte</span>',
   'hopi-hari-brinquedos': '<span class="ph-title">Hopi Hari<br><span class="ph-sub">Os Brinquedos Que Todo Mundo Quer</span></span><span class="ph-open">Presente de dia das crianças se compra em loja de brinquedo. Por isso o Hopi Hari foi parar na prateleira.</span><span class="ph-credit">Atuação: criação / redação / direção de arte</span>',
   'metro': '<span class="ph-title">Metrô De São Paulo<br><span class="ph-sub">Tá Com Pressa? Passa Por Baixo</span></span><span class="ph-open">São Paulo trava em cima, o Metrô corre por baixo. Enquanto lá fora todo mundo procura uma saída, a campanha aponta com humor outra direção. E o Metrô entra na conversa de quem não tem tempo a perder. Afinal, para passar na frente do trânsito, nem sempre é preciso ultrapassar. Às vezes, basta passar por baixo.</span><span class="ph-credit">Atuação: redação / direção de arte</span>',
   'derdic': '<span class="ph-title">Derdic<br><span class="ph-sub">Mais Visibilidade Para As Pessoas Surdas</span></span><span class="ph-open">A Derdic, Divisão de Educação e Reabilitação dos Distúrbios da Comunicação, é uma instituição dedicada à acessibilidade. Num tempo em que tanta gente fala de inclusão, este comercial fez a sua dentro da própria tela: quem se comunica por sinais virou o protagonista, e a fala foi para a janelinha. Um filme que deu muita alegria de fazer, especialmente quando foi apresentado dentro da Derdic às pessoas surdas atendidas pela instituição, que reagiram com muita emoção.</span><span class="ph-credit">Atuação: criação</span><span class="ph-awards">Prêmio:<br>Anuário do Clube de <br class="ph-br-d">Criação de São Paulo</span>',
@@ -155,8 +155,8 @@ const thumbnails = [
   },
   {
     "image": "assets/16%20salompas%20thumb%20copy.jpg",
-    "title": "Salompas",
-    "advertiser": "Salompas",
+    "title": "Salonpas",
+    "advertiser": "Salonpas",
     "slug": "salompas"
   },
   {
@@ -235,10 +235,10 @@ if (project) {
     } else if (slug === 'monkey-cyber-cafe') {
       media = `<p class="ci-label">Campanha Integrada<br>Anúncios</p>
         
-        <div class="media"><img src="assets/Young%20man%20copy.jpg" alt="Monkey Cyber Cafe — Young man"></div>
-        <div class="media"><img src="assets/Woman%20copy.jpg" alt="Monkey Cyber Cafe — Woman"></div>
-        <div class="media"><img src="assets/Man%20copy.jpg" alt="Monkey Cyber Cafe — Man"></div>
-        <div class="media"><img src="assets/FAVELA%20FINAL%20copy.jpg" alt="Monkey Cyber Cafe — Favela"></div>
+        <div class="media"><img src="assets/Young%20man%20copy.jpg" alt="Monkey Cyber Café — Young man"></div>
+        <div class="media"><img src="assets/Woman%20copy.jpg" alt="Monkey Cyber Café — Woman"></div>
+        <div class="media"><img src="assets/Man%20copy.jpg" alt="Monkey Cyber Café — Man"></div>
+        <div class="media"><img src="assets/FAVELA%20FINAL%20copy.jpg" alt="Monkey Cyber Café — Favela"></div>
         <p class="ci-label ci-label-after">Filme</p>
         <div class="media video-with-play">
           <video preload="metadata" playsinline src="assets/Monkey%20Game.mp4"></video>
