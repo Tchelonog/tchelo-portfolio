@@ -98,8 +98,8 @@ const thumbnails = [
   },
   {
     "image": "assets/16%20salompas%20thumb%20copy.jpg",
-    "title": "Salompas",
-    "advertiser": "Salompas",
+    "title": "Salonpas",
+    "advertiser": "Salonpas",
     "slug": "salompas"
   },
   {
