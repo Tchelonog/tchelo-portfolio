@@ -6,7 +6,7 @@ const PROJECTS=[
   "name": "Mercedes-Benz Sprinter",
   "head": {
    "title": "Mercedes-Benz Sprinter",
-   "sub": "Either You Have One Or You Want One",
+   "sub": "Either You Have One or You Want One",
    "paragraph": "Not everyone dreams of a van in the driveway. But put a Mercedes-Benz star on the hood and the conversation changes. The idea was to treat the Sprinter for what it is: a premium vehicle in the utility segment, with the status of an object of desire. For those who already have one, a source of pride. For everyone else, a reason to want one.",
    "role": "concept / copywriting"
   },
@@ -43,7 +43,7 @@ const PROJECTS=[
   "slug": "monkey-cyber-cafe",
   "name": "Monkey Cyber Café",
   "head": {
-   "title": "Monkey Cyber Cafe",
+   "title": "Monkey Cyber Café",
    "sub": "Load games, not guns",
    "paragraph": "In a disarmament awareness campaign run by the cyber cafe, the ads flip the usual order: instead of the virtual world imitating reality, reality imitates the virtual world. Real people, real streets, in the graphic style of a video game. The shock is real. The gun is real.",
    "role": "concept / copywriting / art direction"
@@ -106,7 +106,7 @@ const PROJECTS=[
   "name": "CIAM",
   "head": {
    "title": "CIAM",
-   "sub": "Lead By Giving",
+   "sub": "Lead by Giving",
    "paragraph": "Every commercial costs money, however little. The CIAM - Centro Israelita de Apoio Multidisciplinar - film cut every cost it could: no editing, no supers, no logo end card. An employee writes the message on a sheet of paper and holds it up to the camera. For the institution, every cent has to go further for the people it cares for. In the print pieces, CIAM goes first: volunteers hand out small bags of candy as a gift and invite whoever receives one to give something back with a donation, passing the responsibility on.",
    "role": "concept / copywriting / art direction"
   },
@@ -128,9 +128,9 @@ const PROJECTS=[
  },
  {
   "slug": "salompas",
-  "name": "Salompas",
+  "name": "Salonpas",
   "head": {
-   "title": "Salompas",
+   "title": "Salonpas",
    "sub": "Stiff Neck",
    "paragraph": "Living with pain is harder work than treating it. Every gesture becomes a maneuver. The film does the math and closes with the simple answer: straight to the pain.",
    "role": "co-creation / art direction"
@@ -150,7 +150,7 @@ const PROJECTS=[
   "name": "Sony Walkman",
   "head": {
    "title": "Sony Walkman",
-   "sub": "A Copy Is Never The Same As The Original",
+   "sub": "A Copy Is Never the Same as the Original",
    "paragraph": "A newspaper double page against counterfeit MP3 players. The left page carried the ad; the right one ran blank. Close the newspaper and the ink transferred from one page to the other, revealing the message, mirrored and smudged. A copy is never the same as the original. The proof was in the paper itself.",
    "role": "concept / copywriting / art direction"
   },
@@ -168,9 +168,9 @@ const PROJECTS=[
   "slug": "centro-cultura-judaica",
   "name": "Centro da Cultura Judaica",
   "head": {
-   "title": "'Jewish Culture in Brazil' Exhibition",
-   "sub": "The Brazilian Influence Starts At The Entrance",
-   "paragraph": "To promote the 'Jewish Culture in Brazil' exhibition and its free admission at the Jewish Culture Center, I played with the cliché that links Jews to money. The joke opened the doors. And didn't charge admission.",
+   "title": "“Jewish Culture in Brazil” Exhibition",
+   "sub": "The Brazilian Influence Starts at the Entrance",
+   "paragraph": "To promote the “Jewish Culture in Brazil” exhibition and its free admission at the Jewish Culture Center, I played with the cliché that links Jews to money. The joke opened the doors. And didn't charge admission.",
    "role": "copywriting / art direction"
   },
   "description": "Print advertisement for a film program celebrating Jewish culture in Brazil.",
@@ -222,7 +222,7 @@ const PROJECTS=[
   "name": "São Paulo Metro",
   "head": {
    "title": "São Paulo Metro",
-   "sub": "In A Hurry? Go Under It",
+   "sub": "In a Hurry? Go Under It",
    "paragraph": "São Paulo grinds to a halt above ground; the Metro keeps running below it. While everyone outside looks for a way out, the campaign points the other way, with humor. And the Metro joins the conversation of people with no time to lose. After all, to get past the traffic, you don't always have to overtake it. Sometimes you just go under it.",
    "role": "copywriting / art direction"
   },
@@ -253,7 +253,7 @@ const PROJECTS=[
   "name": "Derdic",
   "head": {
    "title": "Derdic",
-   "sub": "More Visibility For Deaf People",
+   "sub": "More Visibility for Deaf People",
    "paragraph": "Derdic, the Division of Education and Rehabilitation of Communication Disorders, is an institution dedicated to accessibility. At a time when so many people talk about inclusion, this commercial did its share inside the screen itself: the person who communicates through signs became the protagonist, and speech moved to the little window. A film that was a joy to make, above all when it was screened inside Derdic for the deaf people the institution serves, who reacted with deep emotion.",
    "role": "concept",
    "awards": [
@@ -383,7 +383,7 @@ const PROJECTS=[
   "name": "Toyota Hilux",
   "head": {
    "title": "Toyota Hilux",
-   "sub": "The Journey Is The Destination",
+   "sub": "The Journey Is the Destination",
    "paragraph": "A life without obstacles would be so much better, right? Not for pickup drivers, according to the research I took part in. The launch campaign for the new Hilux bet on exactly that: mud, potholes and challenge as an invitation, not a problem. Hence the concept 'The journey is the destination'. I followed the campaign through production: shoots, stills, finishing and delivery to the client.",
    "role": "co-creation / concept / art direction / headline writing"
   },
@@ -423,7 +423,7 @@ const PROJECTS=[
   "name": "Hopi Hari — Escalator",
   "head": {
    "title": "Hopi Hari",
-   "sub": "The Escalator That Became A Roller Coaster",
+   "sub": "The Escalator That Became a Roller Coaster",
    "paragraph": "An escalator is usually the least exciting part of the day out. Until Hopi Hari enters the story. With stickers on the steps, the way down gained rows of passengers with their arms in the air and turned into a roller coaster. An invitation to trade that calm ride down for one that is anything but.",
    "role": "concept / copywriting / art direction",
    "awards": [
@@ -569,7 +569,7 @@ const PROJECTS=[
   "name": "3M — Surround Sound",
   "head": {
    "title": "3M Surround Sound Headphones",
-   "sub": "An Explosion Of Sound Waves",
+   "sub": "An Explosion of Sound Waves",
    "paragraph": "Music and image stop being separate things. Sound waves spring from where the sound is born and build the figure of the person making it. An explosion that takes shape and spreads across the page: the graphic expression of the headphones' power and of the idea of surround sound, where music fills everything around you.",
    "role": "concept / copywriting / art direction"
   },
