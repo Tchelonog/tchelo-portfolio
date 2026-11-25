@@ -283,28 +283,28 @@ const PROJECTS=[
   "items": [
    {
     "kind": "image",
-    "src": "../assets/123milhas-en-1-extra-days.jpg",
+    "src": "../assets/11-123milhas-en-1-extra-days.jpg",
     "headline": "Extra days off. Extra months to pay.",
     "tagline": "Travel packages in up to 12 interest-free installments on your card.",
     "explanation": ""
    },
    {
     "kind": "image",
-    "src": "../assets/123milhas-en-2-this-fare.jpg",
+    "src": "../assets/12-123milhas-en-2-this-fare.jpg",
     "headline": "This fare is for real.",
     "tagline": "São Paulo–Fortaleza. Get 15% off when you pay with Pix.",
     "explanation": ""
    },
    {
     "kind": "image",
-    "src": "../assets/123milhas-en-3-daydreams.jpg",
+    "src": "../assets/15-123milhas-en-3-daydreams.jpg",
     "headline": "The trip of your daydreams.",
     "tagline": "The destination on your mind now fits your budget. Flights in 12 interest-free installments.",
     "explanation": ""
    },
    {
     "kind": "image",
-    "src": "../assets/123milhas-en-4-half-price.jpg",
+    "src": "../assets/14-123milhas-en-4-half-price.jpg",
     "headline": "A whole weekend at half price.",
     "tagline": "50% off flights. Through Sunday only.",
     "explanation": ""
