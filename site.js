@@ -216,10 +216,10 @@ if (project) {
     if (slug === '123milhas') {
       media = `<p class="ci-label ci-label-after">Mood boards</p>
 
-        <div class="media"><img src="assets/2-123milhas-anuncio-2.jpg" alt="123milhas — Feriado prolongado. Parcelas idem."></div>
-        <div class="media"><img src="assets/2-123milhas-anuncio-4-passagem-v1.jpg" alt="123milhas — É verdade esse bilhete. São Paulo - Fortaleza com 15% de desconto no Pix."></div>
-        <div class="media"><img src="assets/1-123milhas-anuncio-3-v4.jpg" alt="123milhas — A viagem dos seus sonhos acordados."></div>
-        <div class="media"><img src="assets/8-123milhas-anuncio-1.jpg" alt="123milhas — Fim de semana inteiro pela metade do preço."></div>
+        <div class="media"><img src="assets/3-123milhas-anuncio-2-v2.jpg" alt="123milhas — Feriado prolongado. Parcelas idem."></div>
+        <div class="media"><img src="assets/4-123milhas-anuncio-4-passagem-v2.jpg" alt="123milhas — É verdade esse bilhete. São Paulo - Fortaleza com 15% de desconto no Pix."></div>
+        <div class="media"><img src="assets/5-123milhas-anuncio-3-v5.jpg" alt="123milhas — A viagem dos seus sonhos acordados."></div>
+        <div class="media"><img src="assets/6-123milhas-anuncio-1-v2.jpg" alt="123milhas — Fim de semana inteiro pela metade do preço."></div>
         <p style="font-size:12px;color:#777;margin-top:24px">Fotos: Wikimedia Commons (CC BY-SA) e Pexels.</p>
       `;
     } else if (slug === 'mercedes-sprinter') {
@@ -531,4 +531,3 @@ if (project) {
     if (event.key === 'Escape' && !lightbox.hidden) close();
   });
 }
-
