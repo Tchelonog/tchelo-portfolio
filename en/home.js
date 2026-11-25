@@ -19,6 +19,12 @@ const thumbnails = [
     "slug": "derdic"
   },
   {
+    "image": "assets/7-123milhas-thumb.jpg",
+    "title": "123 milhas",
+    "advertiser": "123 milhas",
+    "slug": "123milhas"
+  },
+  {
     "image": "assets/04%20un%20thumb%20copy.jpg",
     "title": "ONU",
     "advertiser": "ONU",
