@@ -630,7 +630,7 @@ if(project){
  }
  return heading+translation+media;
  }).join("");
- const footNote=slug==="123milhas"?'<p style="font-size:12px;color:#777;margin-top:24px">Photos: Wikimedia Commons (CC BY-SA) and Pexels.</p>':'';
+ const footNote=slug==="123milhas"?'<p style="font-size:12px;color:#777;margin-top:24px">Some headlines have been adapted from Brazilian idioms and wordplay rather than translated literally.<br>Photos: Wikimedia Commons (CC BY-SA) and Pexels.</p>':'';
  const navHtml='<nav class="metro-bottom-nav"><a href="index.html">← HOMEPAGE</a><a href="'+nextUrl+'">NEXT PROJECT →</a></nav>';
  if(slug==="3m"){
   const alts=["pink poster","yellow poster","blue poster"];
