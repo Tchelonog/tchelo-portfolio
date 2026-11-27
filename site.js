@@ -366,6 +366,11 @@ if (project) {
         <p class="ci-label ci-label-after">Anúncios</p>
         <div class="media"><img src="assets/an%20corolla%20copy1.jpg" alt="Toyota Corolla — anúncio 1"></div>
         <div class="media"><img src="assets/an%20corolla%20copy2.jpg" alt="Toyota Corolla — anúncio 2"></div>
+        <p class="ci-label ci-label-after">Filme</p>
+        <div class="media video-with-play">
+          <video preload="metadata" playsinline src="assets/1-corolla-posto.mp4"></video>
+          <button class="center-play" type="button" aria-label="Reproduzir vídeo">▶</button>
+        </div>
       `;
     } else if (slug === 'coco-de-passarinho') {
       media = `<p class="ci-label ci-label-after">Mídia Alternativa</p>
