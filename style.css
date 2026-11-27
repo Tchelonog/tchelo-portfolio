@@ -254,3 +254,6 @@ body.lightbox-open{overflow:hidden}
 @media(min-width:531px){.project-head .ph-br-m{display:none !important}}
 @media(max-width:530px){.project-head .ph-title{font-size:17px !important}.project-head .ph-sub{font-size:17px !important}.project-head .ph-open{font-size:12px !important}.project-head .ph-credit{font-size:12px !important;font-style:italic !important}.project-head .ph-awards{font-size:10px !important;text-align:left !important}.project-head .ph-dot{font-size:8px !important}.project-head .ph-br-d{display:none !important}}
 @media(max-width:530px){.project-head:has(.ph-title){padding-bottom:12px !important}}
+
+/* mobile: keep BRANDING with the second segment in the 3-part PT header */
+@media(max-width:530px){.brand-line:has(>span:nth-of-type(6))>span:nth-of-type(1),.brand-line:has(>span:nth-of-type(6))>span:nth-of-type(3){display:none}.brand-line:has(>span:nth-of-type(6))>span:nth-of-type(2){flex:0 0 100%}}
